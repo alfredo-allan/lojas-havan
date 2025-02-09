@@ -1,0 +1,78 @@
+.product-card {
+  border: 1px solid var(--card--edge-color);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 2px var(--card--edge-color);
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 38vh;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  /* background-color: #ff4d4f; */
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.product-name {
+  font-size: 16px;
+  margin-bottom: 8px;
+  width: 22vh;
+  text-align: left;
+}
+
+/* .product-prices {
+  margin: 16px 0;
+  text-align: left;
+} */
+.discount-price {
+  font-size: 23px;
+  font-weight: 900;
+  color: var(--navy-blue-color);
+  display: block;
+  margin-bottom: 0px;
+  width: 100%;
+  margin-left: -34px;
+}
+.installments {
+  margin-left: -30px;
+}
+.installments .text {
+  font-size: 12px;
+  color: var(--navy-blue-color);
+  margin-left: -33px;
+  margin-right: 39px;
+}
+
+.installments .text b {
+  font-weight: bold;
+}
+
+.pix-price {
+  font-size: 14px;
+  color: #28a745;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 2vh;
+}
+
+.product-image {
+  width: 85%;
+  padding: 25px 0px;
+}

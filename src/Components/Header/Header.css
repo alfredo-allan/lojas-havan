@@ -1,0 +1,205 @@
+header {
+  background-color: var(--blue-color); /* Azul padrão da Havan */
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 3px;
+  padding: 1vh;
+}
+
+/* Ícone de Menu */
+#IcoMenu {
+  width: 40px;
+  cursor: pointer;
+  margin: 2vh 4vh;
+  margin-right: -17px;
+  margin-top: -7px;
+}
+
+/* Localização */
+#IcoLocalizacao {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-top: 90px;
+  margin-left: -287px;
+}
+
+#Text-Input {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 5px;
+  position: absolute;
+  margin: 0vh -26vh;
+  margin-top: 0px;
+  margin-top: 90px;
+}
+
+#Input-Cep {
+  position: absolute;
+  margin-left: -17vh;
+  height: 25px;
+  margin-top: 90px;
+  width: 130px;
+  border-radius: 7px;
+  background-color: var(--blue-color);
+  border: none;
+  color: white; /* Cor do texto digitado */
+  padding: 5px;
+  outline: none; /* Remove o contorno padrão */
+  transition: border 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+#Input-Cep::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+#Input-Cep:focus {
+  border: 1px solid white; /* Ativa a borda branca */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Adiciona um brilho ao redor */
+}
+
+#Input-Cep:focus::placeholder {
+  color: white;
+}
+
+/* Logo */
+#logo {
+  width: 164px;
+  height: auto;
+  margin: 0 30px;
+  position: absolute;
+  margin: -3vh -51vh;
+}
+
+/* Barra de Pesquisa */
+#InputPesquisa {
+  width: 768px;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  margin-left: -60vh;
+  margin-top: 10px;
+}
+
+#Lupa {
+  width: 25px;
+  cursor: pointer;
+  margin-left: 14vh;
+  margin-top: -8vh;
+}
+
+/* Ícones de usuário e carrinho */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.icon img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  position: absolute;
+  margin-left: -17%;
+}
+
+.icon img:hover {
+  transform: scale(1.1);
+}
+
+#UserLogin {
+  margin-right: 19vh;
+  margin-top: -17px;
+}
+
+#Carrinho {
+  margin-left: -20vh;
+  margin-top: -17px;
+}
+#Text-Login {
+  width: 6%;
+  position: absolute;
+  margin-left: -36vh;
+  margin-top: 0px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 13px;
+  text-align: left;
+}
+
+/* #IcoLocalizacao {
+} */
+/* Ajuste responsivo */
+/* @media (max-width: 1024px) {
+  #InputPesquisa {
+  }
+} */
+
+@media (max-width: 760px) {
+  #IcoMenu {
+    margin-left: -20px;
+  }
+  #InputPesquisa {
+    width: 345px;
+    margin-left: 1vh;
+    margin-top: 20px;
+  }
+  #logo {
+    margin-left: -29vh;
+  }
+  #Text-Login {
+    display: none;
+  }
+  .icon {
+    margin-left: 47vh;
+  }
+  #UserLogin {
+    margin-top: -244px;
+    margin-left: -85px;
+  }
+  #Carrinho {
+    margin-left: -112vh;
+    margin-top: -242px;
+  }
+  #Input-Cep {
+    margin-top: 240px;
+    margin-left: -70px;
+  }
+  #Text-Input {
+    margin-top: 241px;
+    margin-left: -154px;
+  }
+  #IcoLocalizacao {
+    margin-left: -187px;
+    margin-top: 240px;
+  }
+  #lupa {
+    margin-left: 295px;
+  }
+  .navbar.navbar-expand-lg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

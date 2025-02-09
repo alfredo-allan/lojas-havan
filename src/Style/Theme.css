@@ -1,0 +1,11 @@
+/* theme.css */
+:root {
+  --font-primary: "Montserrat", sans-serif; /* Define a fonte Roboto como padrão */
+  --blue-color: #0c3bdd;
+  --navy-blue-color: #334156;
+  --yellow-alert-color: #fbbb00;
+  --card--edge-color: #cee2ff;
+  --footer-lyrics: #002776;
+  --discount--color: #008423;
+  --discount-background: rgba(210, 241, 210, 0.7);
+}

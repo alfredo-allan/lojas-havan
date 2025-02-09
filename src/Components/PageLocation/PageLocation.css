@@ -1,0 +1,22 @@
+.text-page-location {
+  position: absolute;
+  margin-left: 310px;
+  margin-top: 25px;
+  color: var(--blue-color);
+}
+
+.result-page-location {
+  position: absolute;
+  margin-left: -648px;
+  margin-top: 2px;
+}
+
+@media (max-width: 760px) {
+  .text-page-location {
+    margin: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

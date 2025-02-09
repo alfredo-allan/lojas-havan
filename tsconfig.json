@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Compatível com os navegadores modernos
+    "module": "ESNext", // Usa o sistema de módulos ES6
+    "jsx": "react-jsx", // Suporte para JSX no React
+    "strict": true, // Ativa verificações estritas
+    "moduleResolution": "node", // Resolve módulos no estilo Node.js
+    "esModuleInterop": true, // Suporte para importação de módulos CommonJS
+    "skipLibCheck": true, // Ignora verificações em arquivos de biblioteca
+    "forceConsistentCasingInFileNames": true // Força consistência em nomes de arquivos
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/declarations.d.ts"], // Define que apenas arquivos dentro de "src" serão compilados
+  "exclude": ["node_modules", "build"] // Exclui esses diretórios da compilação
+}

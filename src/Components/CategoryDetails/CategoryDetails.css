@@ -1,0 +1,127 @@
+.product-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px; /* Espaçamento entre os cards */
+}
+
+.product-section {
+  margin-top: -50vh;
+  margin-bottom: 260px;
+  margin-left: 50vh;
+  width: 65%;
+  padding: 65px;
+}
+
+@media (max-width: 768px) {
+  .product-section {
+    margin-top: 11vh;
+    margin-left: 2vh;
+    width: auto;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .circle-of-the-heart {
+    margin-left: 124px;
+  }
+}
+
+/* .product-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-color: var(--card--edge-color);
+} */
+
+/* .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+} */
+
+.product-card .discount-badge {
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  background: var(--discount-background);
+  color: var(--discount--color);
+  padding: 5px 50px;
+  border-radius: 14px;
+  font-weight: 900;
+}
+
+.product-card .product-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  max-width: 98%;
+}
+
+.product-card .price-container {
+  margin-top: 10px;
+}
+
+.product-card .original-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.product-card .current-price {
+  font-size: 20px;
+  color: green;
+}
+
+.product-card .buy-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.circle-of-the-heart {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #cee2ff59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
+  margin-left: 124px;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Ícone padrão (coração) aparece por padrão */
+.default-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Ícone de "thumbs-up" fica oculto inicialmente */
+.hover-icon {
+  width: 44px;
+  height: 44px;
+  display: none;
+  position: absolute;
+}
+
+/* No hover, esconde o coração e exibe o "thumbs-up" */
+.circle-of-the-heart:hover {
+  background-color: #ffffff;
+}
+
+.circle-of-the-heart:hover .default-icon {
+  display: none;
+}
+
+.circle-of-the-heart:hover .hover-icon {
+  display: block;
+}
