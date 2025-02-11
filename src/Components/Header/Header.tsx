@@ -33,11 +33,12 @@ const Header = () => {
 
                     {/* Logo */}
                     <a className="navbar-brand" href="#" onClick={(e) => e.preventDefault()}>
-                        <img id="logo" src={LogoHavan} alt="Havan Name Logo" />
                     </a>
 
                     {/* Barra de Pesquisa */}
                     <div className="search-container">
+                        <img id="logo" src={LogoHavan} alt="Havan Name Logo" />
+
                         <input
                             className="form-control"
                             type="search"
@@ -49,14 +50,10 @@ const Header = () => {
                     </div>
 
                     {/* Ícones de Usuário e Carrinho */}
-                    <div className="d-flex align-items-center">
-                        <div className="icon">
-                            <img src={UserLoginIco} id='UserLogin' alt="Usuário" />
-                            <a id='Text-Login' href="#"  > Olá, Entre na conta ou Cadastre-se </a>
-                        </div>
-                        <div className="icon">
-                            <img src={CarrinhoCompras} id='Carrinho' alt="Carrinho de Compras" />
-                        </div>
+                    <div className="icon">
+                        <img src={UserLoginIco} id='UserLogin' alt="Usuário" />
+                        <a id='Text-Login' href="#"  > Olá, Entre na conta ou Cadastre-se </a>
+                        <img src={CarrinhoCompras} id='Carrinho' alt="Carrinho de Compras" />
                     </div>
                 </div>
             </nav>

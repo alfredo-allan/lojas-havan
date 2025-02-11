@@ -15,6 +15,28 @@ interface CategoryDetailsProps {
 const CategoryDetails: React.FC<CategoryDetailsProps> = ({ category }) => {
     const exampleProducts = [
 
+    {
+        name: "Fone De Ouvido Bluetooth Philco Pfo03bta - Azul",
+        image: require('../../Assets/Img/fone-de-ouvido-bluetooth-philco-pfo03bta_1004613.webp'),
+        icoHeart,
+        discountPrice: "R$ 71,99",
+        installment: "R$ 7,20",
+        installments: "de 10x",
+        hasInterest: false,
+        discount: "40%"
+    },
+
+    {
+        name: "Fone De Ouvido Motorola Bluetooth Moto Xt220 - Preto",
+        image: require('../../Assets/Img/fone-de-ouvido-bluetooth-xt-220-motorola_879198.webp'),
+        icoHeart,
+        discountPrice: "R$ 79,99",
+        installment: "R$ 8,00",
+        installments: "de 10x",
+        hasInterest: false,
+        discount: ""
+    },
+
         {
             name: "Kit Teclado e Mouse Wireless Logitech MK220",
             image: require('../../Assets/Img/kit-teclado-e-mouse-wireless-logitech-mk220_93412_1.webp'),

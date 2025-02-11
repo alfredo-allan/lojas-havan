@@ -130,13 +130,13 @@ header {
 }
 
 #UserLogin {
-  margin-right: 19vh;
-  margin-top: -17px;
+  margin-left: -27%;
+  top: 35%;
 }
 
 #Carrinho {
-  margin-left: -20vh;
-  margin-top: -17px;
+  position: absolute;
+  margin-left: -10%;
 }
 #Text-Login {
   width: 6%;
@@ -149,51 +149,44 @@ header {
   text-align: left;
 }
 
-/* #IcoLocalizacao {
-} */
-/* Ajuste responsivo */
-/* @media (max-width: 1024px) {
-  #InputPesquisa {
-  }
-} */
-
 @media (max-width: 760px) {
   #IcoMenu {
-    margin-left: -20px;
+    margin-left: 0%;
   }
   #InputPesquisa {
-    width: 345px;
-    margin-left: 1vh;
-    margin-top: 20px;
+    margin-left: auto;
+    width: 330px;
+    margin-right: auto;
   }
   #logo {
-    margin-left: -29vh;
+    margin: 25%;
+    margin-top: -14%;
+    justify-content: normal;
+    display: flex;
+  }
+  #Lupa {
+    width: 20px;
+    cursor: pointer;
+    margin-left: 84%;
+    margin-top: -22%;
   }
   #Text-Login {
     display: none;
   }
   .icon {
-    margin-left: 47vh;
-  }
-  #UserLogin {
-    margin-top: -244px;
-    margin-left: -85px;
-  }
-  #Carrinho {
-    margin-left: -112vh;
-    margin-top: -242px;
+    display: none;
   }
   #Input-Cep {
-    margin-top: 240px;
-    margin-left: -70px;
+    margin-top: 54%;
+    margin-left: -18%;
   }
   #Text-Input {
-    margin-top: 241px;
-    margin-left: -154px;
+    margin-top: 54%;
+    margin-left: -40%;
   }
   #IcoLocalizacao {
-    margin-left: -187px;
-    margin-top: 240px;
+    margin-left: -46%;
+    margin-top: 54%;
   }
   #lupa {
     margin-left: 295px;
@@ -201,5 +194,8 @@ header {
   .navbar.navbar-expand-lg {
     margin-left: auto;
     margin-right: auto;
+  }
+  .navbar .container {
+    padding: 5% 5%;
   }
 }

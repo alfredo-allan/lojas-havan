@@ -76,3 +76,17 @@
   width: 85%;
   padding: 25px 0px;
 }
+
+@media (max-width: 760px) {
+  .product-card {
+    width: 95%;
+    margin-left: 2%;
+    height: 100%;
+  }
+  .installments {
+    margin-left: 18%;
+  }
+  .discount-price {
+    margin-left: -12%;
+  }
+}
