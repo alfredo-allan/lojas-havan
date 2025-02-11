@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lojas-havan/static/css/main.5dfee72c.css",
-    "main.js": "/lojas-havan/static/js/main.5e14cf64.js",
+    "main.css": "/lojas-havan/static/css/main.ad9ba4b5.css",
+    "main.js": "/lojas-havan/static/js/main.ce7d2434.js",
     "static/media/havanNameHeader.png": "/lojas-havan/static/media/havanNameHeader.7253d1e02e29716dff0a.png",
     "static/media/kit-teclado-e-mouse-wireless-logitech-mk220_93412_1.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-wireless-logitech-mk220_93412_1.fd769355b913067409d4.webp",
     "static/media/fone-de-ouvido-bluetooth-handz-air_785725.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-handz-air_785725.ca36abc8df5e160c3feb.webp",
@@ -20,9 +20,11 @@
     "static/media/fone-de-ouvido-bluetooth-t520-jbl_845631.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-t520-jbl_845631.e56fd50bd4b8878a8155.webp",
     "static/media/teclado-oficeeasy-maxprint-com-fio_1027190.webp": "/lojas-havan/static/media/teclado-oficeeasy-maxprint-com-fio_1027190.ea2a64c680fcde8ed3ec.webp",
     "static/media/kit-teclado-e-mouse-maxprint-arteck-sem-fio_1003563.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-maxprint-arteck-sem-fio_1003563.9cc8ebbbb93dd1af595f.webp",
+    "static/media/fone-de-ouvido-bluetooth-philco-pfo03bta_1004613.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-philco-pfo03bta_1004613.2c03c6e96ca26ecdb110.webp",
     "static/media/teclado-com-fio-multilaser-soft-silence-tc144_855016.webp": "/lojas-havan/static/media/teclado-com-fio-multilaser-soft-silence-tc144_855016.95c5f081e01f5456db71.webp",
     "static/media/kit-teclado-e-mouse-logitech-com-fio_1000340.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-logitech-com-fio_1000340.b326011ff25a1070f9ac.webp",
     "static/media/mochila-notebook-samsonite-ikonn-iii_941047.webp": "/lojas-havan/static/media/mochila-notebook-samsonite-ikonn-iii_941047.548e6cc79141d97bbc6e.webp",
+    "static/media/fone-de-ouvido-bluetooth-xt-220-motorola_879198.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-xt-220-motorola_879198.35f2f35ea37af4fe0d59.webp",
     "static/media/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003414.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003414.a8bbaa44cfd688ed81d3.webp",
     "static/media/kit-teclado-e-mouse-maxprint-essential-com-fio_1003421.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-maxprint-essential-com-fio_1003421.b4df3f69f60c56804995.webp",
     "static/media/carregador-wireless-tecnologia-qi-elg_1032081.webp": "/lojas-havan/static/media/carregador-wireless-tecnologia-qi-elg_1032081.b28f49776d01b2f68bb3.webp",
@@ -63,11 +65,11 @@
     "static/media/carregador-portatil-power-bank-xiaomi-10000mah_1052586.webp": "/lojas-havan/static/media/carregador-portatil-power-bank-xiaomi-10000mah_1052586.d6b19b041359fba81003.webp",
     "static/media/carregador-portatil-power-bank-redmi-10000mah_1012368.webp": "/lojas-havan/static/media/carregador-portatil-power-bank-redmi-10000mah_1012368.dbc4106fa27484182e90.webp",
     "static/media/mousepad-gamer-logitech-tecido-g-g640_1031937.webp": "/lojas-havan/static/media/mousepad-gamer-logitech-tecido-g-g640_1031937.489ca159437d5198231d.webp",
-    "main.5dfee72c.css.map": "/lojas-havan/static/css/main.5dfee72c.css.map",
-    "main.5e14cf64.js.map": "/lojas-havan/static/js/main.5e14cf64.js.map"
+    "main.ad9ba4b5.css.map": "/lojas-havan/static/css/main.ad9ba4b5.css.map",
+    "main.ce7d2434.js.map": "/lojas-havan/static/js/main.ce7d2434.js.map"
   },
   "entrypoints": [
-    "static/css/main.5dfee72c.css",
-    "static/js/main.5e14cf64.js"
+    "static/css/main.ad9ba4b5.css",
+    "static/js/main.ce7d2434.js"
   ]
 }
