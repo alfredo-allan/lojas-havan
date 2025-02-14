@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './ProductInspect.css';
 import { ProductCardProps } from '../ProductCard/ProductCard';
+import PixIcon from "../../Assets/Img/pix-icon.png";
+import CardIcon from "../../Assets/Img/credit-card.png";
+import TruckDelivery from "../../Assets/Img/caminhao-de-entrega.png";
 
 interface ProductInspectProps extends ProductCardProps {
     onBack: () => void;
@@ -45,17 +48,21 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                 </div>
                 <div className="payment-information">
                     <h1>{name}</h1>
-                    <p className="discount-price"> {discountPrice}</p>
+                    <p className="discount-price" style={{ color: "var(--blue-color)", fontSize: "30px", marginLeft: "-6%" }}>
+                        {discountPrice}
+                    </p>
                     <p className="installments">Em até {installments}x de R$ {installment} sem juros</p>
 
                     <div className="payment-options">
-                        <button className="payment-button">💳 Cartão de Crédito</button>
-                        <button className="payment-button">💰 Pix</button>
+                        <span className="payment-method">Opções de pagamento:</span>
+                        <button className="payment-button"><img src={CardIcon} alt="" /> Cartão de Crédito</button>
+                        <button className="payment-button"><img src={PixIcon} alt="" /> Pix</button>
                     </div>
 
                     <div className="quantity-selector">
+                        <span className="quantity">Escolha a qantidade:</span>
                         <button onClick={decreaseQuantity}>-</button>
-                        <span>{quantity}</span>
+                        <span className='numeral-indicator'>{quantity}</span>
                         <button onClick={increaseQuantity}>+</button>
                     </div>
                     <div className="buy-buttons">
@@ -63,6 +70,8 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                         <button className="add-to-cart-button">Adicionar ao Carrinho</button>
                     </div>
                     <div className="shipping-calculator">
+                        <span>Calcule o valor do frete e prazo de entrega</span>
+                        <img className='truck-delivery' src={TruckDelivery} alt="" />
                         <input type="text" placeholder="Digite o CEP" />
                         <button>Calcular</button>
                     </div>
