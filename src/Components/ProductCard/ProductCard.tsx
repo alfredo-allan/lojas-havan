@@ -1,10 +1,10 @@
+// ProductCard.tsx
+
 import React, { useState } from 'react';
 import './ProductCard.css';
-
-// Importação da nova imagem
 import thumbsUpIcon from '../../Assets/Img/thumbs-up.png';
 
-interface ProductCardProps {
+export interface ProductCardProps {
     name: string;
     image: string;
     discountPrice: string;
@@ -12,7 +12,12 @@ interface ProductCardProps {
     installments: string;
     discount: string;
     icoHeart: string;
+    onClick?: () => void;
+    gallery: string[];
+    description: { title?: string; content: string | string[] }[]; // Aqui precisa ser array
 }
+
+
 
 const ProductCard: React.FC<ProductCardProps> = ({
     name,
@@ -22,22 +27,17 @@ const ProductCard: React.FC<ProductCardProps> = ({
     installment,
     installments,
     discount,
+    onClick,
 }) => {
     const [liked, setLiked] = useState(false);
 
     return (
-        <div className="product-card">
+        <div className="product-card" onClick={onClick}> {/* Adicionado evento de clique */}
             {discount && <span className="discount-badge">{discount} OFF</span>}
             <img src={image} alt={name} className="product-image" />
 
-            <div
-                className="circle-of-the-heart"
-                onClick={() => setLiked(!liked)} // Troca ícone no clique (mobile e desktop)
-            >
-                {/* Ícone padrão (coração) */}
+            <div className="circle-of-the-heart" onClick={() => setLiked(!liked)}>
                 <img src={icoHeart} alt="Favoritar" className={`icoHeart default-icon ${liked ? "hidden" : ""}`} />
-
-                {/* Ícone "thumbs-up" */}
                 <img src={thumbsUpIcon} alt="Like" className={`icoHeart hover-icon ${liked ? "" : "hidden"}`} />
             </div>
 
