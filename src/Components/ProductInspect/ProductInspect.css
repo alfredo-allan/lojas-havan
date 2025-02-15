@@ -9,7 +9,7 @@
   display: grid;
   justify-content: flex-start;
   gap: 27px;
-  margin-top: -43%;
+  margin-top: -39%;
   margin-left: 19%;
   margin-bottom: 20%;
 }
@@ -74,6 +74,7 @@ h1 {
   letter-spacing: 1px;
   font-size: 18px;
   font-weight: bold;
+  width: 65%;
 }
 
 button.add-to-cart-button {
@@ -164,12 +165,12 @@ div.quantity-selector button {
     margin-bottom: 2%;
   }
   input {
-    width: 20%;
-    height: 45px;
+    width: 26%;
+    height: 40px;
     border-radius: 7px;
     border: 1px solid var(--blue-color);
-    outline: none; /* Remove o contorno padrão do navegador */
-    margin-right: 2%;
+    outline: none;
+    margin-right: 3%;
   }
   input:hover {
     border-color: var(--blue-color);
@@ -181,9 +182,9 @@ div.quantity-selector button {
   button {
     background-color: var(--blue-color);
     color: white;
-    height: 45px;
+    height: 40px;
     border-radius: 18px;
-    width: 16%;
+    width: 25%;
     border: none;
     font-weight: bold;
   }
@@ -195,4 +196,134 @@ div.quantity-selector button {
 
 .truck-delivery {
   margin-right: 2%;
+}
+
+.calendar {
+  margin-top: 3%;
+  margin-left: 2%;
+  margin-right: 0%;
+}
+
+.delivery-condition {
+  display: grid;
+  border: dashed 2px var(--card--edge-color); /* Borda tracejada */
+  width: 61%;
+  margin-top: 6%;
+}
+.descripition-delivery {
+  width: 90%;
+  margin-top: -8%;
+  margin-left: 11%;
+  font-size: 15px;
+}
+
+.delivery-time {
+  margin-top: 7%;
+  display: grid;
+  border: 1px solid var(--card--edge-color);
+  color: var(--navy-blue-color);
+  width: 61%;
+}
+
+.title-time {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f7f7f7;
+  height: 148%;
+  width: 100%;
+  padding: 10px 15px 0px;
+}
+
+.standard-delivery {
+  margin-left: 15%;
+  margin-top: -12%;
+}
+.p-time {
+  margin-left: 15%;
+  margin-top: -6%;
+}
+
+#truck-green {
+  width: 45px;
+  margin-top: 2%;
+  margin-left: 1%;
+}
+
+.title-divider {
+  color: var(--navy-blue-color);
+}
+
+#building {
+  width: 45px;
+  margin-top: 2%;
+  margin-left: 1%;
+}
+
+.availability {
+  margin-left: 15%;
+  margin-top: -10%;
+  padding: 0% 0%;
+  margin-bottom: 4%;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.205);
+  width: 75%;
+}
+
+.product-description {
+  color: var(--navy-blue-color);
+  width: 80%;
+  list-style: none;
+  border: 1px solid var(--card--edge-color);
+  margin: 15%;
+  text-align: left;
+  padding: 2% 2%;
+  li {
+    list-style: none;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.title-box-decription {
+  position: absolute;
+  margin: -4% 0%;
+  background-color: var(--card--edge-color);
+  padding: 7px 2%;
+  width: 9%;
+
+  /* Arredondando apenas o topo */
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  color: var(--blue-color);
+  font-size: 20px;
+}
+
+.back-button {
+  cursor: pointer;
+  margin-left: -30%;
+  margin-top: 2%;
+  animation: pulsate 1.5s ease-in-out infinite; /* Aplica a animação */
+  margin-bottom: 4%;
+  margin-right: 1%;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1); /* Tamanho normal */
+    opacity: 0.8; /* Um pouco mais transparente */
+  }
+  50% {
+    transform: scale(1.1); /* Aumenta o tamanho */
+    opacity: 1; /* Torna completamente visível */
+  }
+  100% {
+    transform: scale(1); /* Volta ao tamanho normal */
+    opacity: 0.8; /* Um pouco mais transparente novamente */
+  }
+}
+
+.back-text {
+  color: var(--navy-blue-color);
 }

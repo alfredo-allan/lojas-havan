@@ -10,6 +10,6 @@
   --discount-background: rgba(210, 241, 210, 0.7);
 }
 
-div li p span ul h1 h3 {
+div li p span ul h1 h2 h3 {
   font-family: var(--font-primary);
 }

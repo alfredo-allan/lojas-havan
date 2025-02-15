@@ -4,6 +4,10 @@ import { ProductCardProps } from '../ProductCard/ProductCard';
 import PixIcon from "../../Assets/Img/pix-icon.png";
 import CardIcon from "../../Assets/Img/credit-card.png";
 import TruckDelivery from "../../Assets/Img/caminhao-de-entrega.png";
+import CheckedCalendar from '../../Assets/Img/check-mark.png';
+import TruckDeliveryGreen from '../../Assets/Img/caminhao-de-entrega-verde.png';
+import BuildingIcon from "../../Assets/Img/fotor-20250214194212.png";
+import GoBack from "../../Assets/Img/voltar.png";
 
 interface ProductInspectProps extends ProductCardProps {
     onBack: () => void;
@@ -24,15 +28,39 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
 }) => {
     const [selectedImage, setSelectedImage] = useState(image);
     const [quantity, setQuantity] = useState(1);
+    const [cep, setCep] = useState("");
+    const [showDelivery, setShowDelivery] = useState(false);
 
     const increaseQuantity = () => setQuantity(quantity + 1);
     const decreaseQuantity = () => {
         if (quantity > 1) setQuantity(quantity - 1);
     };
 
+    const handleCepChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        let value = event.target.value.replace(/\D/g, ""); // Remove tudo que não for número
+        if (value.length > 5) {
+            value = value.slice(0, 5) + "-" + value.slice(5, 8);
+        }
+        setCep(value);
+    };
+
+    const handleCalculateClick = () => {
+        if (cep.length === 9) {
+            setShowDelivery(true); // Mostra a seção de entrega somente se o CEP for válido
+        } else {
+            setShowDelivery(false); // Caso o CEP não tenha 9 caracteres, não mostra
+        }
+    };
+
+
+
+
     return (
         <div className="product-inspect">
-            <button className="back-button" onClick={onBack}>← Voltar</button>
+            <b className='back-text'>
+                <img src={GoBack} className="back-button" onClick={onBack} alt="Ícone de voltar" />
+                Voltar
+            </b>
             <div className="product-details">
                 <img src={selectedImage} alt={name} className="product-image-large" />
                 <div className="gallery">
@@ -60,7 +88,7 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                     </div>
 
                     <div className="quantity-selector">
-                        <span className="quantity">Escolha a qantidade:</span>
+                        <span className="quantity">Escolha a quantidade:</span>
                         <button onClick={decreaseQuantity}>-</button>
                         <span className='numeral-indicator'>{quantity}</span>
                         <button onClick={increaseQuantity}>+</button>
@@ -72,12 +100,38 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                     <div className="shipping-calculator">
                         <span>Calcule o valor do frete e prazo de entrega</span>
                         <img className='truck-delivery' src={TruckDelivery} alt="" />
-                        <input type="text" placeholder="Digite o CEP" />
-                        <button>Calcular</button>
+                        <input type="text" placeholder="Digite o CEP" value={cep} onChange={handleCepChange} maxLength={9} />
+                        <button onClick={handleCalculateClick}>Calcular</button>
+                        <div className="delivery-condition">
+                            <img className='calendar' src={CheckedCalendar} alt="" />
+                            <span className="descripition-delivery">Os prazos de entrega começam a contar a partir da confirmação de pagamento!</span>
+                        </div>
+                        {showDelivery && (
+                            <>
+                                <div className="delivery-time">
+                                    <h2 className='title-time' >Entrega</h2>
+                                    <hr className="title-divider" />
+                                    <img id='truck-green' src={TruckDeliveryGreen} alt="" />
+                                    <b className='standard-delivery'>Entrega Padrão</b>
+                                    <p className='p-time'>Em até 2 dias úteis <b>R$ 10,99</b></p>
+                                    <hr className="title-divider" />
+                                    <img id='truck-green' src={TruckDeliveryGreen} alt="" />
+                                    <b className='standard-delivery'>Entrega Expressa</b>
+                                    <p className='p-time' >Em até 1 dias útil <b>R$ 20,99</b></p>
+                                </div>
+                                <div className="delivery-time">
+                                    <h2 className='title-time' >Retire em loja</h2>
+                                    <hr className="title-divider" />
+                                    <img id='building' src={BuildingIcon} alt="" />
+                                    <b className='availability'>Produto indisponível para retirada nas lojas próximas à localidade informada.</b>
+                                </div>
+                            </>
+                        )}
                     </div>
                 </div>
 
                 <div className="product-description">
+                    <h4 className='title-box-decription'>Detalhes</h4>
                     {description.map((section, index) => (
                         <div key={index}>
                             {section.title && <h3>{section.title}</h3>}
