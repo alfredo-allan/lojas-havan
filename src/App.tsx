@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Header/Header';
 import CategoryDetails from './Components/CategoryDetails/CategoryDetails';
 import PageLocation from './Components/PageLocation/PageLocation';
+import Footer from './Components/Footer/Footer';
 
 import './Style/Theme.css';
 
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <PageLocation />
       <CategoryDetails />
+      <Footer />
 
 
     </div>

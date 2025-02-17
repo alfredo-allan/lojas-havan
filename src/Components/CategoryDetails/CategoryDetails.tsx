@@ -603,11 +603,119 @@ const CategoryDetails: React.FC = () => {
             hasInterest: false,
             discount: "36%",
             gallery: [
+                // require('../../Assets/Img/fone-de-ouvido-bluetooth-jbl-wave-flex_904462.webp'),
                 require('../../Assets/Img/fone-de-ouvido-bluetooth-jbl-wave-flex_904463.webp'),
                 require('../../Assets/Img/fone-de-ouvido-bluetooth-jbl-wave-flex_904464.webp'),
                 require('../../Assets/Img/fone-de-ouvido-bluetooth-jbl-wave-flex_904465.webp'),
                 require('../../Assets/Img/fone-de-ouvido-bluetooth-jbl-wave-flex_904466.webp')
             ],
+            description: [
+                {
+                    "content": "JBL Deep Bass Sound"
+                },
+                {
+                    "content": "Aproveite ao máximo seus mixes com áudio de alta qualidade nos fones de ouvido seguros e confiáveis com drivers de 12 mm e som JBL Deep Bass."
+                },
+                {
+                    "content": "Ajuste confortável"
+                },
+                {
+                    "content": "O design ergonômico do stick aberto do JBL Wave Flex se encaixa tão confortavelmente que você pode esquecer que está usando. O design de stick aberto permite que você aproveite todo o som sem bloquear seu canal auditivo."
+                },
+                {
+                    "content": "Bateria com até 32h (8h + 24h) de duração e carregamento rápido"
+                },
+                {
+                    "content": "Com até 8 horas de duração da bateria nos fones de ouvido e até 24 no estojo, o JBL Wave Flex oferece áudio o dia todo. E quando precisar de mais energia, você pode acelerar o carregamento para mais duas horas de reprodução em apenas 10 minutos."
+                },
+                {
+                    "content": "Headphone bluetooth com cancelamento de ruído"
+                },
+                {
+                    "content": "Leve seu som para todos os lugares. Com graves que você pode sentir, até 32 horas de bateria e um design seguro, confortável de stick aberto, o JBL Wave Flex é resistente a respingos e poeira foi projetado para o seu entretenimento diário. Quer você esteja andando pelas ruas da cidade ou relaxando na praia, suas chamadas viva voz estéreo serão sempre nítidas, enquanto a tecnologia Smart Ambient mantém você ciente dos arredores. E quando precisar de um impulso extra, você pode acelerar a carga com duas horas adicionais de reprodução em apenas 10 minutos."
+                },
+                {
+                    "content": "Características"
+                },
+                {
+                    "content": "Driver: 12mm."
+                },
+                {
+                    "content": "Sensibilidade do Driver a 1kHz1mW: 105dB."
+                },
+                {
+                    "content": "Resposta de Frequência Dinâmica: 20Hz – 20kHz."
+                },
+                {
+                    "content": "Impedância de entrada: 16ohms."
+                },
+                {
+                    "content": "Versão do Bluetooth: 5.2."
+                },
+                {
+                    "content": "Perfis bluetooth: A2DP V1.3, AVRCP V1.6, HFP V1.7."
+                },
+                {
+                    "content": "Potência de emissão de bluetooth: <13 dBm."
+                },
+                {
+                    "content": "Tempo de carregamento bateria: 2 horas."
+                },
+                {
+                    "content": "Tempo máximo de jogo: 32 horas."
+                },
+                {
+                    "content": "Classificação IPX: IP54."
+                },
+                {
+                    "content": "Sensibilidade ao Ambiente: Sim."
+                },
+                {
+                    "content": "Microfone integrado: Sim."
+                },
+                {
+                    "content": "Chamada Sem Utilizar as Mãos: Sim."
+                },
+                {
+                    "content": "Controle sensível ao toque: Sim."
+                },
+                {
+                    "content": "True Wireless: Sim."
+                },
+                {
+                    "content": "Resistente à Água: Sim."
+                },
+                {
+                    "content": "Carregamento rápido: Sim."
+                },
+                {
+                    "content": "Especificações Técnicas"
+                },
+                {
+                    "content": "Marca: JBL."
+                },
+                {
+                    "content": "Modelo: Wave Flex."
+                },
+                {
+                    "content": "Dimensão aproximada embalagem (LxAxC): 8,5cm x 2,5cm x 12,8cm."
+                },
+                {
+                    "content": "Peso Fone: 7,6g."
+                },
+                {
+                    "content": "Peso Caixa carga: 35g."
+                },
+                {
+                    "content": "Conteúdo da Embalagem:"
+                },
+                {
+                    "content": "Fones de ouvido JBL Wave Flex, 1x estojo de carregamento, 1x cabo de recarga USB-C."
+                },
+                {
+                    "content": "Garantia Fornecedor: 01 ano (contra defeitos de fabricação)."
+                }
+            ]
         },
 
         {
@@ -625,6 +733,132 @@ const CategoryDetails: React.FC = () => {
                 require('../../Assets/Img/impressora-hp-multifuncional-wi-fi-smart-tank-583_940329.webp'),
                 require('../../Assets/Img/impressora-hp-multifuncional-wi-fi-smart-tank-583_940330.webp')
             ],
+            description:
+                [
+                    {
+                        "content": "A impressora de tanque inteligente e conectada"
+                    },
+                    {
+                        "content": "Aproveite a confiabilidade rotineira da impressora multifuncional sem fio HP Smart Tank 583 que proporciona a qualidade HP que você espera e a economia que você precisa. Venha já conferir."
+                    },
+                    {
+                        "content": "Características"
+                    },
+                    {
+                        "content": "Impressão"
+                    },
+                    {
+                        "content": "Tecnologia de impressão: HP Thermal Inkjet."
+                    },
+                    {
+                        "content": "Velocidade de impressão: Preto (ISO): Até 12 ppm; Cor (ISO): Até 5 ppm; Saída da primeira página preto: Até 14 segundos; Saída da primeira página em cores: Velocidade máxima 21 seg.; Preto rascunho (A4): Até 22 ppm; Rascunho a cores (A4): Até 16 ppm."
+                    },
+                    {
+                        "content": "Resolução de impressão Preto (Melhor): Até 1200 x 1200 dpi renderizados; Cor (Melhor): Até 4800 x 1200 dpi otimizados em cores (quando imprimir a partir de um computador) e 1200 dpi de entrada."
+                    },
+                    {
+                        "content": "Tintas para impressoras: 4 (1 cada frasco de preto, conjunto 3 frascos de cores)."
+                    },
+                    {
+                        "content": "Impressão sem margens: Sim (até 8,5 x 11 polegadas, 210 x 297 mm)."
+                    },
+                    {
+                        "content": "Digitalização"
+                    },
+                    {
+                        "content": "Tipo de digitalização / Tecnologia de digitalização: Somente mesa / Sensor de imagem por contato (contact image sensors - CIS)."
+                    },
+                    {
+                        "content": "Resolução da digitalização: Hardware: Até 1200 x 1200 dpi; Ótica: Até 1200 dpi."
+                    },
+                    {
+                        "content": "Formatos dos arquivos digitalizados: JPEG; PDF."
+                    },
+                    {
+                        "content": "Modos de entrada de digitalização: Copiar; Software HP; EWS."
+                    },
+                    {
+                        "content": "Tamanho máximo do scanner: Base plana: 216 x 297 mm."
+                    },
+                    {
+                        "content": "Características padrão transmissão digital: Digitalizar para arquivo (pelo software); HP Smart Tasks."
+                    },
+                    {
+                        "content": "Cópia"
+                    },
+                    {
+                        "content": "Velocidade de cópia Preto (ISO): Até 10 cpm; Cor (ISO): Até 2 com."
+                    },
+                    {
+                        "content": "Resolução de cópia Preto (textos e gráficos): Até 1200 dpi; Até 1200 dpi; Cor (texto e gráficos): Até 1200 x 1200 dpi de velocidade reduzida."
+                    },
+                    {
+                        "content": "Número máximo de cópias: Até 99 cópias."
+                    },
+                    {
+                        "content": "Definições de copiadora: Número de cópias, redimensionar, qualidade, mais claro/mais escuro, tamanho do papel, tipo de papel, cópia de identidade, aprimoramento."
+                    },
+                    {
+                        "content": "Conexões e especificações"
+                    },
+                    {
+                        "content": "Conectividade padrão: 1 USB 2.0 de alta velocidade (dispositivo); 1 porta Wi-Fi 802.11b/g/n; 1 Wi-Fi Direct."
+                    },
+                    {
+                        "content": "Capacidades de rede: Sim (via WiFi)."
+                    },
+                    {
+                        "content": "Capacidade sem fios: Sim, Wi-Fi 2.4G incorporado, Wi-Fi Direct."
+                    },
+                    {
+                        "content": "Capacidade de impressão móvel: Aplicativo HP Smart; Apple AirPrint; Plug-in de serviço de impressão HP (impressão Android); Wi-Fi Direct Printing."
+                    },
+                    {
+                        "content": "Memória Padrão: 64 MB DDR1 integrado; Máximo: 64 MB."
+                    },
+                    {
+                        "content": "Velocidade do processador: 980 MHz."
+                    },
+                    {
+                        "content": "Ciclo de trabalho: Mensalmente, A4: Até 3.000 páginas."
+                    },
+                    {
+                        "content": "Volume mensal de páginas recomendado: 400 a 800."
+                    },
+                    {
+                        "content": "Tipos de mídia suportados: Papel comum, papéis foscos para folhetos, papéis brilhantes para folhetos, papéis fotográficos, envelopes."
+                    },
+                    {
+                        "content": "Tamanhos de mídia suportados: A4; B5; A6; Envelope DL, ofício."
+                    },
+                    {
+                        "content": "Especificações Técnicas"
+                    },
+                    {
+                        "content": "Marca: HP."
+                    },
+                    {
+                        "content": "Modelo: Smart Tank 583."
+                    },
+                    {
+                        "content": "Dimensão do produto (LxAxP): 43,4cm x 15,7cm x 36,1cm."
+                    },
+                    {
+                        "content": "Dimensão da embalagem (LxAxP): 43,4cm x 25,9cm x 58cm."
+                    },
+                    {
+                        "content": "Peso produto: 5kg."
+                    },
+                    {
+                        "content": "Conteúdo da Embalagem:"
+                    },
+                    {
+                        "content": "Impressora multifuncional HP Smart Tank 583, Frasco de tinta original HP GT53XL preto (135 ml), Frasco de tinta original HP GT52 ciano (50 ml), Frasco de tinta original HP GT52 magenta (50 ml), Frasco de tinta original HP GT52 amarelo (50 ml), Cabeçote de impressão HP Smart Tank, Guia de configuração, Guia de referência, Panfleto de cuidados com a tinta, Panfleto regulamentar, Panfleto de garantia, Cabo de alimentação."
+                    },
+                    {
+                        "content": "Garantia do Fornecedor: 1 ano (contra defeito de fabricação)."
+                    }
+                ]
         },
 
         {
@@ -637,12 +871,104 @@ const CategoryDetails: React.FC = () => {
             hasInterest: false,
             discount: "45%",
             gallery: [
-                require('../../Assets/Img/tablet-7-multilaser-minnie-64gb-nb414_946118.webp'),
+                // require('../../Assets/Img/tablet-7-multilaser-minnie-64gb-nb414_946118.webp'),
                 require('../../Assets/Img/tablet-7-multilaser-minnie-64gb-nb414_946119.webp'),
                 require('../../Assets/Img/tablet-7-multilaser-minnie-64gb-nb414_946120.webp'),
                 require('../../Assets/Img/tablet-7-multilaser-minnie-64gb-nb414_946123.webp'),
                 require('../../Assets/Img/tablet-7-multilaser-minnie-64gb-nb414_946124.webp')
             ],
+            description: [
+                {
+                    "content": "Com o Tablet Minnie Multi a diversão nunca tem fim!"
+                },
+                {
+                    "content": "Desenvolvido com Memória RAM de 4GB* + 64GB de Armazenamento interno e um Super Processador Quad-Core de 1.6GHz, Você pode jogar, ver vídeos, navegar na internet e muito mais, tudo isso ao mesmo tempo e sem travamentos ou lentidão, devido ao sistema operacional Android 13 (GO EDITION) que permite turbinar seu tablet com milhares de aplicativos no Google Play."
+                },
+                {
+                    "content": "Além disso, os pais podem ficar tranquilos já que o Tablet do Minnie possui um sistema de Controle Parental que permite à criança utilizar o tablet com muito mais segurança!"
+                },
+                {
+                    "content": "O Seu tablet da Minnie possui o Google Kids Space, que é um ambiente seguro e divertido. Desenvolvido pela Google, o Google Kids Space proporciona inúmeros conteúdos educacionais e de entretenimento, para que voce possa aproveitar o seu tablet de maneira divertida e criativa!"
+                },
+                {
+                    "content": "* O seu Tablet Minnie possui memória virtual. A memória virtual expande a capacidade da memória RAM do dispositivo, permitindo que o tablet utilize uma parte da Memória de Armazenamento como memória RAM, melhorando a performance do Tablet."
+                },
+                {
+                    "content": "*Indicado para +3 anos. Vem com case emborrachado que permite ajuste de ângulo facilitando o uso do seu pequeno!"
+                },
+                {
+                    "content": "Características"
+                },
+                {
+                    "content": "Sistema operacional e processador"
+                },
+                {
+                    "content": "Sistema Operacional: Android 13."
+                },
+                {
+                    "content": "Processador: Quad-Core."
+                },
+                {
+                    "content": "Memória"
+                },
+                {
+                    "content": "Memória: 2GB interno + 2GB Virtual Ram."
+                },
+                {
+                    "content": "Tela"
+                },
+                {
+                    "content": "Tamanho da Tela: 7\" Polegadas."
+                },
+                {
+                    "content": "Câmera Frontal: 2MP."
+                },
+                {
+                    "content": "Armazenamento"
+                },
+                {
+                    "content": "Armazenamento: 64GB."
+                },
+                {
+                    "content": "Conectividade"
+                },
+                {
+                    "content": "Wi-Fi: Sim."
+                },
+                {
+                    "content": "Conexão: USB/USB-C."
+                },
+                {
+                    "content": "Bateria"
+                },
+                {
+                    "content": "Bateria: 2.800mAh."
+                },
+                {
+                    "content": "Especificações Técnicas"
+                },
+                {
+                    "content": "Marca: Multilaser."
+                },
+                {
+                    "content": "Modelo: Minnie NB414."
+                },
+                {
+                    "content": "Dimensões do Produto (LxAxC): 11,6cm x 1,3cm x 19,1cm."
+                },
+                {
+                    "content": "Peso: 500g."
+                },
+                {
+                    "content": "Conteúdo da Embalagem:"
+                },
+                {
+                    "content": "1x Tablet, 1x Cabo USB-C, 1x Carregador, 1x Guia rápido e 1x Case de silicone da Minnie."
+                },
+                {
+                    "content": "Garantia do Fornecedor: 1 ano (contra defeitos de fabricação)."
+                }
+            ]
         },
 
         {
@@ -655,12 +981,104 @@ const CategoryDetails: React.FC = () => {
             hasInterest: false,
             discount: "40%",
             gallery: [
-                require('../../Assets/Img/tablet-7-multilaser-mickey-64gb-nb413_946159.webp'),
+                // require('../../Assets/Img/tablet-7-multilaser-mickey-64gb-nb413_946159.webp'),
                 require('../../Assets/Img/tablet-7-multilaser-mickey-64gb-nb413_946462.webp'),
                 require('../../Assets/Img/tablet-7-multilaser-mickey-64gb-nb413_946463.webp'),
                 require('../../Assets/Img/tablet-7-multilaser-mickey-64gb-nb413_946464.webp'),
                 require('../../Assets/Img/tablet-7-multilaser-mickey-64gb-nb413_946466.webp'),
             ],
+            description: [
+                {
+                    "content": "Com o Tablet Mickey Multi a diversão nunca tem fim!"
+                },
+                {
+                    "content": "Desenvolvido com Memória RAM de 4GB* + 64GB de Armazenamento interno e um Super Processador Quad-Core, você pode jogar, ver vídeos, navegar na internet e muito mais, tudo isso ao mesmo tempo e sem travamentos ou lentidão, devido ao sistema operacional Android 13 (GO EDITION) que permite turbinar seu tablet com milhares de aplicativos no Google Play."
+                },
+                {
+                    "content": "Além disso, os pais podem ficar tranquilos já que o Tablet do Mickey possui um sistema de Controle Parental que permite à criança utilizar o tablet com muito mais segurança!"
+                },
+                {
+                    "content": "O Seu tablet do Mickey possui o Google Kids Space, que é um ambiente seguro e divertido. Desenvolvido pela Google, o Google Kids Space proporciona inúmeros conteúdos educacionais e de entretenimento, para que você possa aproveitar o seu tablet de maneira divertida e criativa!"
+                },
+                {
+                    "content": "* O seu Tablet Mickey possui memória virtual. A memória virtual expande a capacidade da memória RAM do dispositivo, permitindo que o tablet utilize uma parte da Memória de Armazenamento como memória RAM, melhorando a performance do Tablet."
+                },
+                {
+                    "content": "*Indicado para +3 anos. Vem com case emborrachado que permite ajuste de ângulo facilitando o uso do seu pequeno!"
+                },
+                {
+                    "content": "Características"
+                },
+                {
+                    "content": "Sistema operacional e processador"
+                },
+                {
+                    "content": "Sistema Operacional: Android 13."
+                },
+                {
+                    "content": "Processador: Quad-Core."
+                },
+                {
+                    "content": "Memória"
+                },
+                {
+                    "content": "Memória: 2GB interno + 2GB Virtual Ram."
+                },
+                {
+                    "content": "Tela"
+                },
+                {
+                    "content": "Tamanho da Tela: 7\" Polegadas."
+                },
+                {
+                    "content": "Câmera Frontal: 2MP."
+                },
+                {
+                    "content": "Armazenamento"
+                },
+                {
+                    "content": "Armazenamento: 64GB."
+                },
+                {
+                    "content": "Conectividade"
+                },
+                {
+                    "content": "Wi-Fi: Sim."
+                },
+                {
+                    "content": "Conexão: USB/USB-C."
+                },
+                {
+                    "content": "Bateria"
+                },
+                {
+                    "content": "Bateria: 2.800mAh."
+                },
+                {
+                    "content": "Especificações Técnicas"
+                },
+                {
+                    "content": "Marca: Multi."
+                },
+                {
+                    "content": "Modelo: Mickey NB413."
+                },
+                {
+                    "content": "Dimensões do Produto (LxAxC): 11,6cm x 1,3cm x 19,1cm."
+                },
+                {
+                    "content": "Peso: 500g."
+                },
+                {
+                    "content": "Conteúdo da Embalagem:"
+                },
+                {
+                    "content": "1x Tablet, 1x Cabo USB-C, 1x Carregador, 1x Guia rápido e 1x Case de silicone do Mickey."
+                },
+                {
+                    "content": "Garantia do Fornecedor: 1 ano (contra defeitos de fabricação)."
+                }
+            ]
         },
 
         {
@@ -676,7 +1094,75 @@ const CategoryDetails: React.FC = () => {
                 require('../../Assets/Img/camera-webcam-full-hd-brio-100-logitech_968304.webp'),
                 require('../../Assets/Img/camera-webcam-full-hd-brio-100-logitech_968305.webp'),
                 require('../../Assets/Img/camera-webcam-full-hd-brio-100-logitech_968306.webp'),
-            ],
+            ], description: [
+                {
+                    "content": "Imagem mais nítida, mais clara e mais precisa"
+                },
+                {
+                    "content": "Suas chamadas de vídeo em Full HD, equilíbrio de iluminação automática, microfone integrado e protetor de privacidade. Graças a sua resolução Full HD 1080p você tem melhor clareza e nitidez nas suas reuniões e chamadas de vídeo. A webcam Logitech Brio 100 conta também com tecnologia RightLight, que aumenta o brilho em até 50%, reduzindo sombras para que você tenha sempre a melhor aparência possível."
+                },
+                {
+                    "content": "Cuidadosamente desenhada para o seu trabalho em casa, a proteção de privacidade integrada proporciona maior confiabilidade para a sua segurança, após uma reunião ou até mesmo quando o dia de trabalho terminar, basta deslizar o obturador e pronto. A Brio 100 traz um microfone mono embutido que permite que você seja sempre ouvido de maneira clara. Com sua conexão via cabo USB-A e Plug-and-Play a Brio 100 é compatível com as principais plataformas de chamadas, como: Microsoft Teams, Google Meet, Zoom. Confira!"
+                },
+                {
+                    "content": "Características"
+                },
+                {
+                    "content": "1080p/30 fps (1920 x 1080 pixels)."
+                },
+                {
+                    "content": "720p/30 fps (1280x720 pixels)."
+                },
+                {
+                    "content": "Megapixels da câmera: 2MP."
+                },
+                {
+                    "content": "Tipo de foco: foco fixo."
+                },
+                {
+                    "content": "Tecnologia de lente: lente de quatro camadas personalizada com revestimento antirreflexo."
+                },
+                {
+                    "content": "Comprimento do cabo: 1,5 metros."
+                },
+                {
+                    "content": "Compatibilidade"
+                },
+                {
+                    "content": "Windows."
+                },
+                {
+                    "content": "MacOS."
+                },
+                {
+                    "content": "ChromeOS."
+                },
+                {
+                    "content": "Porta USB."
+                },
+                {
+                    "content": "Especificações técnicas"
+                },
+                {
+                    "content": "Marca: Logitech."
+                },
+                {
+                    "content": "Modelo: Webcam Brio 100."
+                },
+                {
+                    "content": "Conteúdo da embalagem"
+                },
+                {
+                    "content": "01 Webcam Brio 100."
+                },
+                {
+                    "content": "01 Documentação do usuário."
+                },
+                {
+                    "content": "Garantia do fornecedor: 1 ano (contra defeitos de fabricação)."
+                }
+            ]
+
         },
 
         {
@@ -689,9 +1175,85 @@ const CategoryDetails: React.FC = () => {
             hasInterest: false,
             discount: "",
             gallery: [
+                require('../../Assets/Img/fone-de-ouvido-bluetooth-handz-air-pro_968523.webp'),
                 require('../../Assets/Img/fone-de-ouvido-bluetooth-handz-air-pro_969407.webp'),
                 require('../../Assets/Img/fone-de-ouvido-bluetooth-handz-air-pro_969408.webp'),
             ],
+            description:
+                [
+                    {
+                        "content": "Este é novo produto Handz, o Fone Handz Air Pro. E ele está pronto para viver grandes histórias com você. E sabe o que é melhor? Foi produzido com alta tecnologia e resistência para durar mais. Sem contar o design moderno e elegante. Para chegar neste produto, buscamos inspiração na adrenalina, é ela que nos move. E vamos continuar trabalhando para isso. Para oferecer produtos que gostaríamos de usar. Produtos carregados de tudo aquilo que acreditamos."
+                    },
+                    {
+                        "content": "Poluição sonora? Não sob o meu comando. Venho equipado com tecnologia Active Noise Cancelling (ANC) e Environmental Noise Cancellation (ENC) de primeira linha, conte comigo para bloquear os ruídos sonoros do mundo e permitir que você mergulhe de cabeça na sua música preferida. Afinal, amigo é pra isso!"
+                    },
+                    {
+                        "content": "Características"
+                    },
+                    {
+                        "content": "Resposta de frequência: 20Hz-20KHz."
+                    },
+                    {
+                        "content": "Sensibilidade: 1,5dB a 1KHz."
+                    },
+                    {
+                        "content": "Impedância do alto-falante: 320."
+                    },
+                    {
+                        "content": "Feito em ABS reciclado."
+                    },
+                    {
+                        "content": "Microfone acoplado."
+                    },
+                    {
+                        "content": "Bluetooth 5.3."
+                    },
+                    {
+                        "content": "Cancelamento Ativo de Ruído (ANC)."
+                    },
+                    {
+                        "content": "Cancelamento de ruído ambiental (ENC)."
+                    },
+                    {
+                        "content": "Capacidade da caixa de carga: 300mAh."
+                    },
+                    {
+                        "content": "Capacidade de carga dos fones de ouvido: 30mAh."
+                    },
+                    {
+                        "content": "Tempo de reprodução: 4-5 horas."
+                    },
+                    {
+                        "content": "Tempo de carregamento: 1-2 horas."
+                    },
+                    {
+                        "content": "Alcance do Bluetooth: até 10 metros."
+                    },
+                    {
+                        "content": "Acompanha cabo Type C para carregamento."
+                    },
+                    {
+                        "content": "Especificações Técnicas"
+                    },
+                    {
+                        "content": "Marca: Handz."
+                    },
+                    {
+                        "content": "Modelo: Air Pro."
+                    },
+                    {
+                        "content": "Conteúdo da Embalagem"
+                    },
+                    {
+                        "content": "1 Fone Handz Air Pro."
+                    },
+                    {
+                        "content": "Garantia Fornecedor: 1 ano (contra defeitos de fabricação)."
+                    },
+                    {
+                        "content": "Imagem meramente ilustrativa."
+                    }
+                ]
         },
 
 
