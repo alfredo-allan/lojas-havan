@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lojas-havan/static/css/main.99e0ed44.css",
-    "main.js": "/lojas-havan/static/js/main.46e8f637.js",
+    "main.css": "/lojas-havan/static/css/main.04970610.css",
+    "main.js": "/lojas-havan/static/js/main.fc62fd0a.js",
     "static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940330.webp": "/lojas-havan/static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940330.f570abff67ce4283b23d.webp",
     "static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940329.webp": "/lojas-havan/static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940329.82a83082970a42ae102a.webp",
     "static/media/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003418.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003418.d308031e5757fe75ca16.webp",
@@ -9,6 +9,7 @@
     "static/media/fone-de-ouvido-bluetooth-handz-air_785728.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-handz-air_785728.db3d5b96226aed77af43.webp",
     "static/media/fone-de-ouvido-bluetooth-philco-pfo03bta_1004615.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-philco-pfo03bta_1004615.d2dd6be6bc7e05ab13c5.webp",
     "static/media/fone-de-ouvido-bluetooth-handz-air_785725.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-handz-air_785725.b8b09dd22ee0c424d713.webp",
+    "static/media/Xicon.png": "/lojas-havan/static/media/Xicon.435d52f2e6170cc1be0f.png",
     "static/media/fone-de-ouvido-bluetooth-philco-pfo03bta_1004616.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-philco-pfo03bta_1004616.a789cbddc475c3c4ba90.webp",
     "static/media/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003415.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003415.11b46aab7b669332caa0.webp",
     "static/media/fone-de-ouvido-bluetooth-philco-pfo03bta_1004613.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-philco-pfo03bta_1004613.20d8d7eeb00f759f4d72.webp",
@@ -20,11 +21,14 @@
     "static/media/fone-de-ouvido-bluetooth-xt-220-motorola_879200.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-xt-220-motorola_879200.1002378b79fd18621f95.webp",
     "static/media/tablet-7-multilaser-minnie-64gb-nb414_946117.webp": "/lojas-havan/static/media/tablet-7-multilaser-minnie-64gb-nb414_946117.c8cc4a6a87ede5cfabdc.webp",
     "static/media/tablet-7-multilaser-minnie-64gb-nb414_946119.webp": "/lojas-havan/static/media/tablet-7-multilaser-minnie-64gb-nb414_946119.fef1001c52cac104593e.webp",
+    "static/media/instagran.png": "/lojas-havan/static/media/instagran.ca9fe3d381b72142bc35.png",
     "static/media/tablet-7-multilaser-mickey-64gb-nb413_946464.webp": "/lojas-havan/static/media/tablet-7-multilaser-mickey-64gb-nb413_946464.d85341b49e32d0ecfa30.webp",
     "static/media/teclado-com-fio-multilaser-soft-silence-tc144_855017.webp": "/lojas-havan/static/media/teclado-com-fio-multilaser-soft-silence-tc144_855017.186c2b587d7bf333e992.webp",
     "static/media/fone-de-ouvido-bluetooth-xt-220-motorola_879198.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-xt-220-motorola_879198.9b97aa7f3ba819b6ce8f.webp",
+    "static/media/tiktok.png": "/lojas-havan/static/media/tiktok.d32da95f71784b3355b0.png",
     "static/media/fone-de-ouvido-wave-pfo02-philco_307789_1.webp": "/lojas-havan/static/media/fone-de-ouvido-wave-pfo02-philco_307789_1.687cc5987155d65705da.webp",
     "static/media/kit-teclado-e-mouse-maxprint-arteck-sem-fio_1003564.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-maxprint-arteck-sem-fio_1003564.7ee4d3c449ea98097fab.webp",
+    "static/media/youtube.png": "/lojas-havan/static/media/youtube.d4ac2de20809397aa3de.png",
     "static/media/fone-de-ouvido-bluetooth-t520-jbl_845633.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-t520-jbl_845633.4810794391a121aa89a3.webp",
     "static/media/kit-teclado-e-mouse-wireless-logitech-mk220_93413_1.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-wireless-logitech-mk220_93413_1.dccfcc6766d54271bd91.webp",
     "static/media/fone-de-ouvido-bluetooth-handz-air_785726.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-handz-air_785726.9ad844d77700af66700c.webp",
@@ -35,7 +39,7 @@
     "static/media/teclado-com-fio-multilaser-soft-silence-tc144_855018.webp": "/lojas-havan/static/media/teclado-com-fio-multilaser-soft-silence-tc144_855018.386d48a10c471f26d52c.webp",
     "static/media/tablet-7-multilaser-minnie-64gb-nb414_946124.webp": "/lojas-havan/static/media/tablet-7-multilaser-minnie-64gb-nb414_946124.99c8b0e0f14b8a215b7a.webp",
     "static/media/tablet-7-multilaser-minnie-64gb-nb414_946120.webp": "/lojas-havan/static/media/tablet-7-multilaser-minnie-64gb-nb414_946120.2cfb5a89e8956d708983.webp",
-    "static/media/tablet-7-multilaser-minnie-64gb-nb414_946118.webp": "/lojas-havan/static/media/tablet-7-multilaser-minnie-64gb-nb414_946118.a2c41b64693f5effd72a.webp",
+    "static/media/facebook.png": "/lojas-havan/static/media/facebook.236a8b7c66371fda2ee6.png",
     "static/media/fone-de-ouvido-bluetooth-xt-220-motorola_879201.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-xt-220-motorola_879201.a6e941aa5893e1c0e8f2.webp",
     "static/media/tablet-7-multilaser-mickey-64gb-nb413_946462.webp": "/lojas-havan/static/media/tablet-7-multilaser-mickey-64gb-nb413_946462.9732104bfef6f80bb946.webp",
     "static/media/kit-teclado-e-mouse-wireless-logitech-mk220_93414_1.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-wireless-logitech-mk220_93414_1.f5631230d1480a631794.webp",
@@ -60,6 +64,7 @@
     "static/media/fone-de-ouvido-bluetooth-t520-jbl_845631.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-t520-jbl_845631.389e22ebb10997ce409f.webp",
     "static/media/fone-de-ouvido-bluetooth-t520-jbl_845632.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-t520-jbl_845632.39a5742df3200b34c6c0.webp",
     "static/media/fone-de-ouvido-bluetooth-t520-jbl_845634.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-t520-jbl_845634.f2f712319eb6fedfac50.webp",
+    "static/media/QR-code-Footer.png": "/lojas-havan/static/media/QR-code-Footer.3efbe436521e1bc8de76.png",
     "static/media/cabo-usb-tipo-c-1-metro-motorola_980530.webp": "/lojas-havan/static/media/cabo-usb-tipo-c-1-metro-motorola_980530.6f38e3694ef6df101e8e.webp",
     "static/media/headset-gamer-jbl-quantum-100-m2_1030062.webp": "/lojas-havan/static/media/headset-gamer-jbl-quantum-100-m2_1030062.4221646c6f508d7401db.webp",
     "static/media/fone-de-ouvido-wave-pfo02-philco_307787_1.webp": "/lojas-havan/static/media/fone-de-ouvido-wave-pfo02-philco_307787_1.b33dbade56904e4a53b9.webp",
@@ -77,6 +82,7 @@
     "static/media/fone-de-ouvido-bluetooth-jbl-tune-flex_1035182.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-jbl-tune-flex_1035182.48c5844bdd657e634a9e.webp",
     "static/media/fone-de-ouvido-bluetooth-jbl-tune-flex_1035186.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-jbl-tune-flex_1035186.8ed11d03119fb9975f8f.webp",
     "static/media/fone-de-ouvido-bluetooth-jbl-tune-flex_1035192.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-jbl-tune-flex_1035192.af58e31435f5c9375042.webp",
+    "static/media/fone-de-ouvido-bluetooth-jbl-wave-flex_904462.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-jbl-wave-flex_904462.c436e4d0b690de8844da.webp",
     "static/media/headset-gamer-jbl-quantum-100-m2_1030059.webp": "/lojas-havan/static/media/headset-gamer-jbl-quantum-100-m2_1030059.beead8aedf3d72d6d30c.webp",
     "static/media/fone-de-ouvido-bluetooth-handz-pods_970006.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-handz-pods_970006.a393849ad5c7d8dde100.webp",
     "static/media/fone-de-ouvido-bluetooth-jbl-wave-flex_904464.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-jbl-wave-flex_904464.982a14a79ce917205169.webp",
@@ -122,7 +128,6 @@
     "static/media/mouse-sem-fio-multilaser-mo277_499554.webp": "/lojas-havan/static/media/mouse-sem-fio-multilaser-mo277_499554.11b4aedcd4fbadd7b03b.webp",
     "static/media/impressora-multifuncional-fotografica-megatank-g610_1031972.webp": "/lojas-havan/static/media/impressora-multifuncional-fotografica-megatank-g610_1031972.538386b614a4f3521672.webp",
     "static/media/mouse-sem-fio-logitech-m190_430052.webp": "/lojas-havan/static/media/mouse-sem-fio-logitech-m190_430052.2d20433ae150b3d90acc.webp",
-    "static/media/fone-de-ouvido-bluetooth-jbl-wave-flex_904462.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-jbl-wave-flex_904462.3975c36499c0820104bc.webp",
     "static/media/mouse-maxprint-airy-sem-fio-1600-dpi_1003695.webp": "/lojas-havan/static/media/mouse-maxprint-airy-sem-fio-1600-dpi_1003695.6d10cfe3f12767e9daf0.webp",
     "static/media/fone-de-ouvido-bluetooth-tws-drop-pulse_1050416.webp": "/lojas-havan/static/media/fone-de-ouvido-bluetooth-tws-drop-pulse_1050416.776f8651dc902713d619.webp",
     "static/media/carregador-portatil-power-bank-redmi-10000mah_1012373.webp": "/lojas-havan/static/media/carregador-portatil-power-bank-redmi-10000mah_1012373.bab42c17279bbf069dcb.webp",
@@ -143,11 +148,11 @@
     "static/media/fone-de-ouvido-pace-105-motorola_467927.webp": "/lojas-havan/static/media/fone-de-ouvido-pace-105-motorola_467927.44f0320d9555f62d3937.webp",
     "static/media/carregador-portatil-power-bank-xiaomi-10000mah_1052586.webp": "/lojas-havan/static/media/carregador-portatil-power-bank-xiaomi-10000mah_1052586.d6b19b041359fba81003.webp",
     "static/media/mousepad-gamer-logitech-tecido-g-g640_1031937.webp": "/lojas-havan/static/media/mousepad-gamer-logitech-tecido-g-g640_1031937.489ca159437d5198231d.webp",
-    "main.99e0ed44.css.map": "/lojas-havan/static/css/main.99e0ed44.css.map",
-    "main.46e8f637.js.map": "/lojas-havan/static/js/main.46e8f637.js.map"
+    "main.04970610.css.map": "/lojas-havan/static/css/main.04970610.css.map",
+    "main.fc62fd0a.js.map": "/lojas-havan/static/js/main.fc62fd0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.99e0ed44.css",
-    "static/js/main.46e8f637.js"
+    "static/css/main.04970610.css",
+    "static/js/main.fc62fd0a.js"
   ]
 }
