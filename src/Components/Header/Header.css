@@ -1,68 +1,39 @@
 header {
-  background-color: var(--blue-color); /* Azul padrão da Havan */
-  padding: 10px 0;
+  background-color: var(--blue-color);
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px;
+.iteration-user {
+  text-align: left;
+  text-wrap: nowrap;
 }
-
-.navbar .container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1400px;
-  margin-bottom: 3px;
-  padding: 1vh;
-}
-
-/* Ícone de Menu */
-#IcoMenu {
-  width: 40px;
-  cursor: pointer;
-  margin: 2vh 4vh;
-  margin-right: -17px;
-  margin-top: -7px;
-}
-
-/* Localização */
 #IcoLocalizacao {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  margin-top: 90px;
-  margin-left: -287px;
+  margin-top: 30%;
+  width: 25px;
+}
+#IcoMenu {
+  margin: 0px -12px;
+  cursor: pointer;
 }
 
 #Text-Input {
-  color: #fff;
+  margin-top: 34%;
+  margin-left: 7%;
+  color: white;
   font-weight: bold;
-  font-size: 15px;
-  margin-right: 5px;
-  position: absolute;
-  margin: 0vh -26vh;
-  margin-top: 0px;
-  margin-top: 90px;
 }
 
 #Input-Cep {
-  position: absolute;
-  margin-left: -17vh;
   height: 25px;
-  margin-top: 90px;
+  margin-top: 80px;
   width: 130px;
   border-radius: 7px;
   background-color: var(--blue-color);
   border: none;
-  color: white; /* Cor do texto digitado */
-  padding: 5px;
-  outline: none; /* Remove o contorno padrão */
-  transition: border 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  color: white;
+  padding: 5px 25px;
+  outline: none;
+  transition: border 0.1sease -in-out, box-shadow 0.1sease -in-out;
+  margin-left: 2%;
 }
 
 #Input-Cep::placeholder {
@@ -81,121 +52,86 @@ header {
   color: white;
 }
 
-/* Logo */
 #logo {
-  width: 164px;
-  height: auto;
-  margin: 0 30px;
-  position: absolute;
-  margin: 10px -47%;
+  width: 160px;
+  margin-left: 15%;
 }
 
-/* Barra de Pesquisa */
-#InputPesquisa {
-  width: 768px;
-  border-radius: 5px;
-  padding: 10px;
-  border: none;
-  transition: all 0.3s ease-in-out;
-  margin-left: -60vh;
-  margin-top: 10px;
+.search-container {
+  margin: 0;
+  width: 50%;
+  margin-top: -20px;
+}
+
+.icon {
+  display: flex;
+  margin-top: -35px;
+  #Text-Login {
+    width: 44%;
+    color: white;
+    font-size: 14px;
+  }
+  #UserLogin {
+    width: 35px;
+    height: 35px;
+    margin-right: 4%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  #Carrinho {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+#UserLogin:hover,
+#Carrinho:hover {
+  transform: translateY(-2px);
 }
 
 #Lupa {
-  width: 25px;
-  cursor: pointer;
-  margin-left: 14vh;
-  margin-top: -8vh;
+  margin-top: -10%;
+  margin-left: 90%;
+  width: 4%;
+}
+.d-flex.align-items-center {
+  margin-top: -23%;
 }
 
-/* Ícones de usuário e carrinho */
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 20px;
-}
-
-.icon img {
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-  position: absolute;
-  margin-left: -17%;
-}
-
-.icon img:hover {
-  transform: scale(1.1);
-}
-
-#UserLogin {
-  margin-left: -27%;
-  top: 35%;
-}
-
-#Carrinho {
-  position: absolute;
-  margin-left: -10%;
-}
-#Text-Login {
-  width: 6%;
-  position: absolute;
-  margin-left: -36vh;
-  margin-top: 0px;
-  font-weight: 500;
-  color: #fff;
-  font-size: 13px;
-  text-align: left;
-}
-
-@media (max-width: 760px) {
-  #IcoMenu {
-    margin-left: 0%;
-  }
-  #InputPesquisa {
-    margin-left: auto;
-    width: 330px;
-    margin-right: auto;
-  }
-  #logo {
-    margin: 25%;
-    margin-top: -14%;
-    justify-content: normal;
-    display: flex;
-  }
-  #Lupa {
-    width: 20px;
-    cursor: pointer;
-    margin-left: 84%;
-    margin-top: -22%;
-  }
+@media (max-width: 768px) {
   #Text-Login {
     display: none;
+  }
+  #InputPesquisa {
+    margin: -50px 26%;
+    margin-bottom: -50px;
+    margin-bottom: -45px;
+    width: 150%;
+    margin-bottom: 13%;
+  }
+  #logo {
+    margin: 15px 65px;
+  }
+  #IcoLocalizacao {
+    margin-top: 35%;
+    width: 20px;
+  }
+  #Text-Input {
+    margin-top: 35%;
+    margin-left: 2%;
+  }
+  #Input-Cep {
+    margin-top: 35%;
+    padding: 5px 2px;
   }
   .icon {
     display: none;
   }
-  #Input-Cep {
-    margin-top: 54%;
-    margin-left: -18%;
-  }
-  #Text-Input {
-    margin-top: 54%;
-    margin-left: -40%;
-  }
-  #IcoLocalizacao {
-    margin-left: -46%;
-    margin-top: 54%;
-  }
-  #lupa {
-    margin-left: 295px;
-  }
-  .navbar.navbar-expand-lg {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .navbar .container {
-    padding: 5% 5%;
+  #Lupa {
+    margin-top: -63%;
+    width: 20px;
+    margin-left: 155%;
   }
 }

@@ -9,7 +9,7 @@
   cursor: pointer;
   margin-bottom: 10px;
   width: 100%;
-  height: 38vh;
+  height: auto;
 }
 
 .discount-badge {

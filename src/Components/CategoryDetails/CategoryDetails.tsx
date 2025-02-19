@@ -1272,6 +1272,53 @@ const CategoryDetails: React.FC = () => {
                 require('../../Assets/Img/fone-de-ouvido-bluetooth-handz-pods_970008.webp'),
                 require('../../Assets/Img/fone-de-ouvido-bluetooth-handz-pods_970009.webp'),
             ],
+            description: [
+                {
+                    "content": "Pronto para embarcar nessa jornada musical sustentável com os Händz Pods? O som impecável e a pegada ecológica fazem deles a escolha perfeita para os amantes de música que também se preocupam com o futuro do nosso planeta. Imagine ter um amigo sonoro sempre ao seu lado, pronto para embarcar em todas as suas aventuras auditivas. Feito com plástico reciclado, cada Handz Pod é uma pequena contribuição para um planeta mais verde."
+                },
+                {
+                    "content": "E o som? Ah, o som é simplesmente espetacular!"
+                },
+                {
+                    "content": "Caracteristicas"
+                },
+                {
+                    "content": "Frequência: 20Hz-20KHz."
+                },
+                {
+                    "content": "Sensibilidade: 100db3dB a 1KHz."
+                },
+                {
+                    "content": "Distância efetiva: 10m."
+                },
+                {
+                    "content": "Bateria dos fones de ouvido: 30mAh."
+                },
+                {
+                    "content": "Bateria do estojo de carregamento: 150mAh."
+                },
+                {
+                    "content": "Tempo de Reprodução: 3-4 horas."
+                },
+                {
+                    "content": "Tempo de carregamento: cerca de 1-2 horas."
+                },
+                {
+                    "content": "Especificações Técnicas"
+                },
+                {
+                    "content": "Marca: Handz."
+                },
+                {
+                    "content": "Modelo: FB-08."
+                },
+                {
+                    "content": "Garantia Fornecedor: 01 Ano (contra defeitos de fabricação)."
+                },
+                {
+                    "content": "Imagem meramente ilustrativa."
+                }
+            ]
         },
 
         {
@@ -1284,9 +1331,42 @@ const CategoryDetails: React.FC = () => {
             hasInterest: false,
             discount: "",
             gallery: [
+                require('../../Assets/Img/cabo-usb-tipo-c-1-metro-motorola_980529.webp'),
                 require('../../Assets/Img/cabo-usb-tipo-c-1-metro-motorola_980530.webp'),
                 require('../../Assets/Img/cabo-usb-tipo-c-1-metro-motorola_980531.webp'),
             ],
+            description: [
+                {
+                    "content": "O Cabo USB Tipo-C de 1 metro da Motorola é um acessório essencial para quem busca eficiência e praticidade no carregamento e transferência de dados. Com 1 metro de comprimento, oferece flexibilidade e alcance adequados para uso em diversas situações, seja no escritório, em casa ou no carro. A ponta Tipo-C é compatível com uma ampla gama de dispositivos modernos, garantindo uma conexão segura e estável. Fabricado com materiais de alta qualidade, este cabo é durável e resistente, suportando o desgaste diário. Ideal para quem precisa de um carregamento rápido e confiável, além de uma sincronização eficiente de dados."
+                },
+                {
+                    "content": "Características"
+                },
+                {
+                    "content": "Comprimento: 1 metro."
+                },
+                {
+                    "content": "Cor: Preto."
+                },
+                {
+                    "content": "Especificações Técnicas"
+                },
+                {
+                    "content": "Marca: Motorola."
+                },
+                {
+                    "content": "Modelo: Tipo C."
+                },
+                {
+                    "content": "Conteúdo da Embalagem"
+                },
+                {
+                    "content": "1 Cabo Tipo-C."
+                },
+                {
+                    "content": "Garantia do Fornecedor: 1 ano (contra defeitos de fabricação)."
+                }
+            ]
         },
 
         {
@@ -1299,9 +1379,72 @@ const CategoryDetails: React.FC = () => {
             hasInterest: false,
             discount: "",
             gallery: [
+                require('../../Assets/Img/fone-de-ouvido-motorola-earbuds-3cs_984929.webp'),
                 require('../../Assets/Img/fone-de-ouvido-motorola-earbuds-3cs_984930.webp'),
                 require('../../Assets/Img/fone-de-ouvido-motorola-earbuds-3cs_984931.webp'),
             ],
+            description: [
+                {
+                    "content": "Qualidade do som HD"
+                },
+                {
+                    "content": "Possui drivers de 9,4 mm, que garantem uma experiência de som cristalina. A porta de graves integrada oferece graves profundos, proporcionando uma rica experiência de som."
+                },
+                {
+                    "content": "Design ergonômico"
+                },
+                {
+                    "content": "O tubo acústico angular proporciona um ajuste confortável. Acompanha pares extras de borracha protetora para garantir um ajuste personalizado."
+                },
+                {
+                    "content": "Chamadas viva voz"
+                },
+                {
+                    "content": "Com um microfone embutido, alterne facilmente entre música e chamadas telefônicas."
+                },
+                {
+                    "content": "Características"
+                },
+                {
+                    "content": "Entradas Conector USB-C."
+                },
+                {
+                    "content": "Microfone para chamadas viva-voz."
+                },
+                {
+                    "content": "Conector de áudio de 135° para maior durabilidade."
+                },
+                {
+                    "content": "Isolamento passivo de ruído com borracha intra-auricular."
+                },
+                {
+                    "content": "Controle de play pausa."
+                },
+                {
+                    "content": "Cabo de 1,2 metros."
+                },
+                {
+                    "content": "Driver dos Alto-falantes de 9.4mm."
+                },
+                {
+                    "content": "Especificações Técnicas"
+                },
+                {
+                    "content": "Marca: Motorola."
+                },
+                {
+                    "content": "Modelo: Earbuds 3C-S BL."
+                },
+                {
+                    "content": "Conteúdo da Embalagem"
+                },
+                {
+                    "content": "01 Fone de ouvido Earbuds 3C-S BL."
+                },
+                {
+                    "content": "Garantia do Fornecedor: 01 Ano (contra defeito de fabricação)."
+                }
+            ]
         },
 
         {
@@ -1316,6 +1459,63 @@ const CategoryDetails: React.FC = () => {
             gallery: [
                 require('../../Assets/Img/mousepad-gamer-flakes-power-speed-elg-flkmp001_999936.webp')
             ],
+            description: [
+                {
+                    "content": "A Havan apresenta o Mousepad Speed Flakes Power da marca Elg, ideal para gamers exigentes que buscam precisão e desempenho. Fabricado em tecido de alta densidade, proporciona máxima precisão nos movimentos. Sua superfície de baixa fricção é perfeita para mouses de alta resolução, garantindo uma experiência suave e responsiva."
+                },
+                {
+                    "content": "Com a tecnologia Photoptimized, este mousepad maximiza a performance de sensores ópticos e laser. As bordas possuem costura reforçada que não desfia, e a trama otimizada oferece um balanço perfeito entre os eixos, essencial para jogadas rápidas e precisas. A base de borracha com textura antiderrapante assegura firmeza mesmo durante movimentos intensos e rápidos."
+                },
+                {
+                    "content": "O Mousepad Speed Flakes Power é ultra slim, com apenas 3mm de espessura, proporcionando conforto e estilo ao seu setup. Suas dimensões de 36 cm x 30 cm x 0,3 cm são ideais para garantir espaço e controle total em suas partidas. Escolha o Mousepad Speed Flakes Power da Elg e eleve seu desempenho nos jogos!"
+                },
+                {
+                    "content": "Características:"
+                },
+                {
+                    "content": "Fabricado em tecido de alta densidade para máxima precisão de movimentos;"
+                },
+                {
+                    "content": "Superfície de baixa fricção, ideal para mouses de alta resolução;"
+                },
+                {
+                    "content": "Tecnologia Photoptimized para extrair o máximo de sensores ópticos e laser;"
+                },
+                {
+                    "content": "Possui bordas com costura perfeita que não desfiam;"
+                },
+                {
+                    "content": "Trama otimizada para perfeito balanço entre eixos."
+                },
+                {
+                    "content": "Base em borracha com textura antiderrapante, mesmo em movimentos fortes e rápidos;"
+                },
+                {
+                    "content": "Ultra slim: 3mm de espessura;"
+                },
+                {
+                    "content": "Dimensões de 36 cm x 30 cm x 0,3 cm."
+                },
+                {
+                    "content": "Especificações técnicas"
+                },
+                {
+                    "content": "Marca: Elg."
+                },
+                {
+                    "content": "Modelo: FLKMP001 - Flakes Power."
+                },
+                {
+                    "content": "Conteúdo Da Embalagem:"
+                },
+                {
+                    "content": "01 Mousepad Gamer Speed FLKMP001 Flakes Power Elg."
+                },
+                {
+                    "content": "Garantia do Fornecedor: 02 Anos (contra defeitos de Fabricação)."
+                }
+            ]
+
         },
 
         {
@@ -1332,6 +1532,122 @@ const CategoryDetails: React.FC = () => {
                 require('../../Assets/Img/kit-teclado-e-mouse-logitech-com-fio_1000342.webp'),
                 require('../../Assets/Img/kit-teclado-e-mouse-logitech-com-fio_1000343.webp'),
             ],
+            description: [
+                {
+                    "content": "Uma dupla resistente que combina conforto, elegância e simplicidade. Seu conforto está garantido com este teclado em layout ABNT2 e graças às silenciosas teclas de baixo perfil com tamanho padrão, teclas F e teclado numérico. Com um design de baixo perfil e resistente a derramamento, teclas resistentes e suportes de inclinação ajustáveis, este teclado não tem apenas um aspecto e funcionamento agradáveis foi feito para durar. Além disso, possui teclas de fácil leitura. O mouse óptico de alta definição oferece conforto e controle com rastreamento suave e preciso e um formato ambidestro. A instalação é simples basta ligar o teclado e o mouse às portas USB."
+                },
+                {
+                    "content": "Elegância robusta"
+                },
+                {
+                    "content": "O teclado delgado não é apenas elegante  tem um design resistente a derramamentos, suportes inclináveis robustos e teclas duráveis."
+                },
+                {
+                    "content": "Percurso suave"
+                },
+                {
+                    "content": "Você fará movimentos suaves com um mouse óptico preciso de alta definição para ajudar a concluir tarefas."
+                },
+                {
+                    "content": "Digitação silenciosa e confortável"
+                },
+                {
+                    "content": "Você desfrutará de uma confortável e silenciosa experiência de digitação graças às teclas de perfil baixo que praticamente não emitem som e ao layout padrão com teclas F em tamanho normal e teclado numérico."
+                },
+                {
+                    "content": "Design resistente a derramamentos"
+                },
+                {
+                    "content": "Líquidos derramados são escoados do teclado, por isso não é preciso se preocupar com arruinar seu investimento com derramamentos acidentais. Testado em condições limitadas (máximo derramamento de líquido de 60 ml). Não mergulhe o teclado em líquido."
+                },
+                {
+                    "content": "Rastreamento óptico de alta definição"
+                },
+                {
+                    "content": "Você desfrutará de um controle sensível e suave do cursor com o rastreamento óptico de alta definição (1000 dpi)."
+                },
+                {
+                    "content": "Perfil fino"
+                },
+                {
+                    "content": "O teclado tem um perfil fino que acrescenta um elegante aspecto à escrivaninha e ao mesmo tempo mantém suas mãos em uma posição neutra mais confortável."
+                },
+                {
+                    "content": "Teclas duráveis"
+                },
+                {
+                    "content": "As teclas podem durar até dez milhões de pressionamentos de modo que você continuará a digitar muito tempo depois de vários teclados ficarem inutilizáveis. Exclui a tecla Num Lock."
+                },
+                {
+                    "content": "Suportes inclináveis, robustos e ajustáveis"
+                },
+                {
+                    "content": "Você pode estender os robustos suportes articuláveis para aumentar a inclinação do teclado em oito graus, conforme suas necessidades ergonômicas."
+                },
+                {
+                    "content": "Conexões USB plug-and-play"
+                },
+                {
+                    "content": "A configuração é simples — basta conectar o teclado e o mouse a portas USB no computador de mesa, laptop ou notebook e começar a usá-los."
+                },
+                {
+                    "content": "Teclas fáceis de ler Padrão ABNT2"
+                },
+                {
+                    "content": "Os caracteres brancos brilhantes facilitam a leitura das teclas e são perfeitos para quem tem uma visão menos do que perfeita. E também são mais resistentes ao desgaste."
+                },
+                {
+                    "content": "Barra de espaço curva"
+                },
+                {
+                    "content": "Mantém suas mãos em uma posição mais natural, para uma digitação mais confortável."
+                },
+                {
+                    "content": "Características"
+                },
+                {
+                    "content": "Resistente ao derramamento de líquido."
+                },
+                {
+                    "content": "Conectividade plug-and-play."
+                },
+                {
+                    "content": "Conexão: Com Fio."
+                },
+                {
+                    "content": "Layout do Teclado: ABNT2."
+                },
+                {
+                    "content": "Mouse em tamanho normal."
+                },
+                {
+                    "content": "Rastreamento óptico de alta definição."
+                },
+                {
+                    "content": "Conexão USB plug-and-play."
+                },
+                {
+                    "content": "Nenhuma instalação de software."
+                },
+                {
+                    "content": "Especificações técnicas"
+                },
+                {
+                    "content": "Marca: Logitech."
+                },
+                {
+                    "content": "Modelo: MK120 (920-004429)."
+                },
+                {
+                    "content": "Conteúdo da embalagem"
+                },
+                {
+                    "content": "01 Mouse, 01 Teclado."
+                },
+                {
+                    "content": "Garantia do fornecedor: 03 Anos (contra defeitos de fabricação)."
+                }
+            ]
         },
 
         {
@@ -1348,6 +1664,78 @@ const CategoryDetails: React.FC = () => {
                 require('../../Assets/Img/fone-de-ouvido-bluetooth-jbl-tune-buds_1001725.webp'),
                 require('../../Assets/Img/fone-de-ouvido-bluetooth-jbl-tune-buds_1001726.webp'),
             ],
+            description: [
+                {
+                    "content": "Fone de Ouvido Bluetooth JBL Tune Buds oferece uma experiência sonora excepcional com a reconhecida qualidade de áudio JBL. Esses fones são projetados para proporcionar conforto durante o uso prolongado, graças ao seu design ergonômico e leve. Com conectividade Bluetooth 5.3, os JBL Tune Buds garantem uma conexão estável e sem interrupções com seus dispositivos. Os controles integrados nos fones permitem fácil gerenciamento de músicas e chamadas, e a tecnologia de cancelamento de ruído passivo ajuda a bloquear sons indesejados do ambiente, aprimorando a experiência auditiva. Com um design moderno o JBL Tune Buds é ideal para quem procura praticidade, estilo e excelente qualidade de som em um único produto."
+                },
+                {
+                    "content": "Características"
+                },
+                {
+                    "content": "Áudio"
+                },
+                {
+                    "content": "Frequência: 20 Hz – 20 kHz."
+                },
+                {
+                    "content": "Impedância: 32 Ohms."
+                },
+                {
+                    "content": "Sensibilidade:101 dB SPL."
+                },
+                {
+                    "content": "Alto falantes: 10 mm."
+                },
+                {
+                    "content": "Microfone"
+                },
+                {
+                    "content": "Sensibilidade: -38 dBV/Pa a 1 kHz."
+                },
+                {
+                    "content": "Conectividade"
+                },
+                {
+                    "content": "Bluetooth: Sim 5.3."
+                },
+                {
+                    "content": "Bateria"
+                },
+                {
+                    "content": "Tempo de carregamento: 2 horas."
+                },
+                {
+                    "content": "Bateria: Até 12 horas fones / 36 horas estojo de carregamento."
+                },
+                {
+                    "content": "Indicador de nível: Sim."
+                },
+                {
+                    "content": "Especificações Técnicas"
+                },
+                {
+                    "content": "Marca: JBL."
+                },
+                {
+                    "content": "Modelo: Tune."
+                },
+                {
+                    "content": "Dimensões do Produto (LxAxP): 4,9cm x 6cm x 2,9cm."
+                },
+                {
+                    "content": "Peso: 164g."
+                },
+                {
+                    "content": "Conteúdo da Embalagem"
+                },
+                {
+                    "content": "01 fone de ouvido JBL Tune Buds, 01 estojo para recarga, 01 cabo de recarga USB-C."
+                },
+                {
+                    "content": "Garantia do Fornecedor: 01 Ano (contra defeito de fabricação)."
+                }
+            ]
+
         },
 
         {
@@ -1366,6 +1754,74 @@ const CategoryDetails: React.FC = () => {
                 require('../../Assets/Img/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003418.webp'),
 
             ],
+            descrition: [
+                {
+                    "content": "O Kit Exagon da MaxPrint, além de unir um custo x beneficio e um design office, contando com 107 teclas com padrão ABNT2, mouse com 1200DPI, faz a junção perfeita de ferramentas que otimizem seu dia a dia no trabalho ou em casa de forma fácil e completa."
+                },
+                {
+                    "content": "Características"
+                },
+                {
+                    "content": "Compatibilidade: Windows XP/Vista/7 e Superior/MAC."
+                },
+                {
+                    "content": "Conexão wireless 2.4G por nano receptor."
+                },
+                {
+                    "content": "Pilhas não inclusas (2 AAA + 1 AA)."
+                },
+                {
+                    "content": "Teclas: 107."
+                },
+                {
+                    "content": "Padrão ABNT2."
+                },
+                {
+                    "content": "Tipo Membrana."
+                },
+                {
+                    "content": "Distancia de funcionamento: 10 m."
+                },
+                {
+                    "content": "1200 DPI."
+                },
+                {
+                    "content": "Sensor: 8650."
+                },
+                {
+                    "content": "Mouse com 3 botões."
+                },
+                {
+                    "content": "Especificações técnicas"
+                },
+                {
+                    "content": "Marca: Maxprint."
+                },
+                {
+                    "content": "Modelo: Exgon (60000146)."
+                },
+                {
+                    "content": "Dimensões do Mouse (LxAxP): 6,0cm x 3,5cm x 10cm."
+                },
+                {
+                    "content": "Peso mouse: 400g."
+                },
+                {
+                    "content": "Dimensões do teclado (LxAxP): 14,2cm x 2,6cm x 46cm."
+                },
+                {
+                    "content": "Peso do produto teclado: 600g."
+                },
+                {
+                    "content": "Conteúdo da embalagem"
+                },
+                {
+                    "content": "01 Mouse, 01 Teclado."
+                },
+                {
+                    "content": "Garantia do fornecedor: 1 ano (contra defeitos de fabricação)."
+                }
+            ]
         },
 
         {

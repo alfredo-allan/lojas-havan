@@ -21,14 +21,19 @@ const Header = () => {
         <header>
             <nav className="navbar navbar-expand-lg">
                 <div className="container">
-                    {/* Ícone de Menu */}
-                    <img src={MenuIco} id="IcoMenu" alt="Ícone de Menu" />
+                    <div className="iteration-user">
+                        {/* Ícone de Menu */}
+                        <img src={MenuIco} id="IcoMenu" alt="Ícone de Menu" />
+                        <img id="logo" src={LogoHavan} alt="Havan Name Logo" />
 
-                    {/* Localização e CEP */}
-                    <div className="d-flex align-items-center">
-                        <img src={Localizacao} id="IcoLocalizacao" alt="Localização" />
-                        <span id="Text-Input">Enviar Para</span>
-                        <input id="Input-Cep" type="text" placeholder="Digite o CEP" />
+
+                        {/* Localização e CEP */}
+
+                        <div className="d-flex align-items-center">
+                            <img src={Localizacao} id="IcoLocalizacao" alt="Localização" />
+                            <span id="Text-Input">Enviar Para</span>
+                            <input id="Input-Cep" type="text" placeholder="Digite o CEP" />
+                        </div>
                     </div>
 
                     {/* Logo */}
@@ -37,7 +42,6 @@ const Header = () => {
 
                     {/* Barra de Pesquisa */}
                     <div className="search-container">
-                        <img id="logo" src={LogoHavan} alt="Havan Name Logo" />
 
                         <input
                             className="form-control"
