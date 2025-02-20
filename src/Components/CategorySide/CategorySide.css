@@ -9,7 +9,7 @@
   cursor: pointer;
   font-family: var(--font-primary);
   margin-left: 6%;
-  margin-top: 2%;
+  margin-top: 6%;
   border: none;
 }
 @media (max-width: 760px) {

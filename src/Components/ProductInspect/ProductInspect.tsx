@@ -57,10 +57,11 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
 
     return (
         <div className="product-inspect">
-            <b className='back-text'>
+            <div className="to-go-back">
+                <b className="back-text">Voltar</b>
                 <img src={GoBack} className="back-button" onClick={onBack} alt="Ícone de voltar" />
-                Voltar
-            </b>
+
+            </div>
             <div className="product-details">
                 <img src={selectedImage} alt={name} className="product-image-large" />
                 <div className="gallery">
@@ -75,7 +76,7 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                     ))}
                 </div>
                 <div className="payment-information">
-                    <h1>{name}</h1>
+                    <h1 className='inspection-name'>{name}</h1>
                     <p className="discount-price" style={{ color: "var(--blue-color)", fontSize: "30px", marginLeft: "-6%" }}>
                         {discountPrice}
                     </p>
