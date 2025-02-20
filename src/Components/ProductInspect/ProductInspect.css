@@ -52,7 +52,7 @@
 
 .payment-button,
 .shipping-calculator,
-.installments {
+.installments-pi {
   margin-left: -6%;
 }
 
@@ -392,20 +392,23 @@ div.quantity-selector button {
     text-align: left;
     position: absolute;
     width: 100%;
+    overflow-x: hidden;
   }
 
   .product-description {
     color: var(--navy-blue-color);
-    width: 80%;
+    width: 95%;
     list-style: none;
     border: 1px solid var(--card--edge-color);
     margin: 210% auto;
     text-align: left;
     padding: 2% 2%;
+    margin-bottom: 30%;
+    margin-top: 315%;
   }
   .numeral-indicator {
     display: inline-block;
-    width: 11%;
+    width: 16%;
     text-align: center;
     padding: 4px 10px;
     border: 1px solid var(--blue-color);
@@ -417,28 +420,80 @@ div.quantity-selector button {
     position: absolute;
     margin-left: -6%;
     height: 35px;
-    margin: 0% -20%;
+    margin: 0% -13%;
   }
-  .installments,
+  .installments-pi,
   .payment-method,
   .payment-method,
   .quantity,
-  .buy-buttons {
-    margin-left: 15%;
+  .buy-buttons,
+  .discount-price-details,
+  .shipping-calculator {
+    margin-left: 15% !important;
   }
-  .discount-price {
-    p {
-      margin-left: 15%;
-    }
-  }
+
   .payment-button {
     margin-left: 15%;
     margin-right: -12%;
   }
-  .discount-price {
+  .discount-price-details {
+    font-weight: 900;
     margin-left: 15%;
   }
   div.quantity-selector button {
     margin-left: 15%;
+  }
+  .shipping-calculator {
+    width: 100%;
+  }
+  .calendar {
+    width: 25px;
+    height: 25px;
+  }
+  .descripition-delivery {
+    font-size: 13px;
+    margin: -12% 15%;
+    margin-bottom: -12%;
+    margin-bottom: 2%;
+  }
+  .title-box-decription {
+    margin: -12% 0%;
+    width: 25%;
+    padding: 2% 10px;
+  }
+  .back-button {
+    cursor: pointer;
+    animation: pulsate 1.5s ease-in-out infinite;
+    margin: 25% -52%;
+    margin-bottom: 25%;
+    margin-bottom: 0%;
+  }
+  .back-text {
+    margin-left: -40%;
+    margin-right: 38%;
+    color: var(--navy-blue-color);
+  }
+  .delivery-condition,
+  .delivery-time {
+    width: 65%;
+  }
+  #truck-green {
+    width: 30px;
+    margin: -2% 1%;
+  }
+  .installments-pi-pi,
+  #shipping-deadline {
+    width: 65%;
+  }
+  #building {
+    width: 30px;
+  }
+  .shipping-calculator {
+    & span {
+      display: grid;
+      color: var(--navy-blue-color);
+      margin-bottom: 2%;
+      width: 84%;
+    }
   }
 }
