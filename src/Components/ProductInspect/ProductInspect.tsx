@@ -63,6 +63,7 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
 
             </div>
             <div className="product-details">
+                <h1 className='inspection-name'>{name}</h1>
                 <img src={selectedImage} alt={name} className="product-image-large" />
                 <div className="gallery">
                     {gallery.map((img, index) => (
@@ -76,7 +77,6 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                     ))}
                 </div>
                 <div className="payment-information">
-                    <h1 className='inspection-name'>{name}</h1>
                     <p className="discount-price-details" style={{ color: "var(--blue-color)", fontSize: "30px", marginLeft: "-6%" }}>
                         {discountPrice}
                     </p>
@@ -131,7 +131,7 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                     </div>
                 </div>
 
-                <div className="product-description">
+                <div className={`product-description ${showDelivery ? "with-delivery" : ""}`}>
                     <h4 className='title-box-decription'>Detalhes</h4>
                     {description.map((section, index) => (
                         <div key={index}>

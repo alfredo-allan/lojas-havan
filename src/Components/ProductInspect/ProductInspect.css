@@ -36,10 +36,13 @@
 .inspection-name {
   font-size: 1.5rem;
   position: absolute;
-  margin: -12% -45%;
+  margin: 0px;
   font-family: var(--font-primary);
   font-weight: lighter;
   color: var(--navy-blue-color);
+  justify-content: center;
+  display: flex;
+  margin-left: 19%;
 }
 
 .payment-information {
@@ -377,13 +380,8 @@ div.quantity-selector button {
   }
 
   .inspection-name {
-    font-size: 18px;
-    position: absolute;
-    margin-top: -326%;
-    font-family: var(--font-primary);
-    font-weight: lighter;
-    color: var(--navy-blue-color);
-    margin-left: -27%;
+    margin-left: 0;
+    margin-top: 1%;
   }
 
   .payment-information {
@@ -404,7 +402,6 @@ div.quantity-selector button {
     text-align: left;
     padding: 2% 2%;
     margin-bottom: 30%;
-    margin-top: 315%;
   }
   .numeral-indicator {
     display: inline-block;
@@ -495,5 +492,8 @@ div.quantity-selector button {
       margin-bottom: 2%;
       width: 84%;
     }
+  }
+  .with-delivery {
+    margin-top: 150vh; /* Ajuste esse valor conforme necessário */
   }
 }
