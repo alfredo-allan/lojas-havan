@@ -5,7 +5,12 @@ import ProductInspect from '../ProductInspect/ProductInspect'; // <-- Importa o 
 import './CategoryDetails.css';
 import icoHeart from '../../Assets/Img/heart.png';
 
-const CategoryDetails: React.FC = () => {
+interface CategoryDetailsProps {
+    searchTerm: string;
+}
+
+
+const CategoryDetails: React.FC<CategoryDetailsProps> = ({ searchTerm }) => {
     const [selectedProduct, setSelectedProduct] = useState<ProductCardProps | null>(null);
 
     const exampleProducts = [
@@ -2351,6 +2356,12 @@ const CategoryDetails: React.FC = () => {
 
     ];
 
+
+    // Filtra os produtos com base no termo de pesquisa
+    const filteredProducts = exampleProducts.filter(product =>
+        product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
     // Se um produto foi selecionado, renderiza ProductInspect
     if (selectedProduct) {
         return (
@@ -2369,20 +2380,18 @@ const CategoryDetails: React.FC = () => {
         );
     }
 
-
     return (
         <div className="category-details">
             <CategorySide />
             <div className="product-section">
-                {exampleProducts.map((product, index) => (
+                {filteredProducts.map((product, index) => (
                     <ProductCard
                         key={index}
                         {...product}
-                        description={product.description ?? []} // 🔥 Garante que sempre será um array
+                        description={product.description ?? []}
                         onClick={() => setSelectedProduct({ ...product, description: product.description ?? [] })}
                     />
                 ))}
-
             </div>
         </div>
     );

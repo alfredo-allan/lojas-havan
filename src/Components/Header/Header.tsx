@@ -9,7 +9,11 @@ import Localizacao from '../../Assets/Img/location.png';
 import UserLoginIco from '../../Assets/Img/user.png';
 import CarrinhoCompras from '../../Assets/Img/shopping-cart.png';
 
-const Header = () => {
+interface HeaderProps {
+    onSearch: (term: string) => void; // Função que vem do App.tsx para atualizar o termo de pesquisa
+}
+
+const Header: React.FC<HeaderProps> = ({ onSearch }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const toggleMobileMenu = () => {
@@ -26,9 +30,7 @@ const Header = () => {
                         <img src={MenuIco} id="IcoMenu" alt="Ícone de Menu" />
                         <img id="logo" src={LogoHavan} alt="Havan Name Logo" />
 
-
                         {/* Localização e CEP */}
-
                         <div className="d-flex align-items-center">
                             <img src={Localizacao} id="IcoLocalizacao" alt="Localização" />
                             <span id="Text-Input">Enviar Para</span>
@@ -37,18 +39,17 @@ const Header = () => {
                     </div>
 
                     {/* Logo */}
-                    <a className="navbar-brand" href="#" onClick={(e) => e.preventDefault()}>
-                    </a>
+                    <a className="navbar-brand" href="#" onClick={(e) => e.preventDefault()}></a>
 
                     {/* Barra de Pesquisa */}
                     <div className="search-container">
-
                         <input
                             className="form-control"
                             type="search"
                             placeholder="Pesquisar..."
                             aria-label="Pesquisar"
                             id="InputPesquisa"
+                            onChange={(e) => onSearch(e.target.value)} // Atualiza o termo de pesquisa no App
                         />
                         <img id="Lupa" src={Lupa} alt="Buscar" />
                     </div>
@@ -56,7 +57,7 @@ const Header = () => {
                     {/* Ícones de Usuário e Carrinho */}
                     <div className="icon">
                         <img src={UserLoginIco} id='UserLogin' alt="Usuário" />
-                        <a id='Text-Login' href="#"  > Olá, Entre na conta ou Cadastre-se </a>
+                        <a id='Text-Login' href="#">Olá, Entre na conta ou Cadastre-se</a>
                         <img src={CarrinhoCompras} id='Carrinho' alt="Carrinho de Compras" />
                     </div>
                 </div>

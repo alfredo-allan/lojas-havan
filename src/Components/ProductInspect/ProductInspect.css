@@ -343,6 +343,10 @@ div.quantity-selector button {
   display: ruby;
 }
 
+.discount-price-details {
+  font-weight: 900;
+}
+
 @media (max-width: 768px) {
   .gallery {
     display: grid;
@@ -434,7 +438,6 @@ div.quantity-selector button {
     margin-right: -12%;
   }
   .discount-price-details {
-    font-weight: 900;
     margin-left: 15%;
   }
   div.quantity-selector button {
