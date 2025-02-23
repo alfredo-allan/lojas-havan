@@ -172,8 +172,8 @@ header {
     margin: 0px 0px;
   }
   #Lupa {
-    margin-left: 12%;
-    margin-top: -9%;
+    margin-left: 15%;
+    margin-top: -10%;
   }
   #logo {
     margin-top: -10%;
@@ -224,7 +224,7 @@ header {
     display: flex;
     align-items: center;
     position: absolute;
-    top: -85px;
+    top: -40px;
     right: 51px;
     width: 290px;
     background: white;
@@ -232,24 +232,32 @@ header {
     padding: 5px;
     border: 1px solid #ccc;
     z-index: 10;
+    padding-left: 7%;
   }
   .search-box input {
     flex: 1;
     border: none;
     outline: none;
     padding: 8px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
   }
   .search-icon {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
-    margin-right: 10px;
+    top: 33%;
+    position: absolute;
+    margin-left: -7%;
   }
   .close-icon {
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
     cursor: pointer;
+    top: 19px;
+    position: absolute;
+    left: 262px;
   }
   .search-desktop {
     display: none; /* Esconde o campo de pesquisa do desktop */

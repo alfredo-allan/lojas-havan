@@ -3,7 +3,7 @@
   max-width: 26%;
   display: block;
   margin-left: 29%;
-  margin-top: 10%;
+  margin-top: -3%;
 }
 
 .product-details {
@@ -36,7 +36,7 @@
 .inspection-name {
   font-size: 1.5rem;
   position: absolute;
-  margin: 0px;
+  margin: -10%;
   font-family: var(--font-primary);
   font-weight: lighter;
   color: var(--navy-blue-color);
@@ -232,7 +232,6 @@ div.quantity-selector button {
 
 .delivery-time {
   margin-top: 7%;
-  display: grid;
   border: 1px solid var(--card--edge-color);
   color: var(--navy-blue-color);
   width: 61%;
@@ -346,6 +345,42 @@ div.quantity-selector button {
 .discount-price-details {
   font-weight: 900;
 }
+.back-button {
+  cursor: pointer;
+  animation: pulsate 1.5s ease-in-out infinite;
+  margin: 4% -29%;
+}
+
+.product-iteration {
+  display: block ruby;
+  position: absolute;
+  margin: -13% 21%;
+  .box-share,
+  .box-heart-product,
+  .box-description-list {
+    width: 45px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--card--edge-color);
+    padding: 5px;
+    margin-right: 3%;
+  }
+  img {
+    width: 20px;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--navy-blue-color);
+    margin-right: 4%;
+  }
+  span.heart-product {
+    margin-right: 4%;
+    font-weight: 500;
+    color: var(--navy-blue-color);
+  }
+}
 
 @media (max-width: 768px) {
   .gallery {
@@ -385,12 +420,16 @@ div.quantity-selector button {
 
   .inspection-name {
     margin-left: 0;
-    margin-top: 21%;
+    margin-top: 145%;
+    font-size: 16px;
+    width: 95%;
+    font-weight: bold;
+    color: var(--navy-blue-color);
   }
 
   .payment-information {
     margin-left: 0;
-    margin-top: 22%;
+    margin-top: 65%;
     text-align: left;
     position: absolute;
     width: 100%;
@@ -402,7 +441,7 @@ div.quantity-selector button {
     width: 95%;
     list-style: none;
     border: 1px solid var(--card--edge-color);
-    margin: 210% auto;
+    margin: 230% auto;
     text-align: left;
     padding: 2% 2%;
     margin-bottom: 30%;
@@ -412,7 +451,7 @@ div.quantity-selector button {
     width: 16%;
     text-align: center;
     padding: 4px 10px;
-    border: 1px solid var(--blue-color);
+    border: 1px solid var(--card--edge-color);
     border-radius: 7px;
     font-weight: bold;
     font-size: 1rem;
@@ -421,7 +460,7 @@ div.quantity-selector button {
     position: absolute;
     margin-left: -6%;
     height: 35px;
-    margin: 0% -13%;
+    margin: 0% -19%;
   }
   .installments-pi,
   .payment-method,
@@ -430,18 +469,18 @@ div.quantity-selector button {
   .buy-buttons,
   .discount-price-details,
   .shipping-calculator {
-    margin-left: 15% !important;
+    margin-left: 2% !important;
   }
 
   .payment-button {
-    margin-left: 15%;
-    margin-right: -12%;
+    margin-left: 2%;
+    margin-right: 1%;
   }
   .discount-price-details {
     margin-left: 15%;
   }
   div.quantity-selector button {
-    margin-left: 15%;
+    margin-left: 2%;
   }
   .shipping-calculator {
     width: 100%;
@@ -464,7 +503,7 @@ div.quantity-selector button {
   .back-button {
     cursor: pointer;
     animation: pulsate 1.5s ease-in-out infinite;
-    margin-top: -23%;
+    margin-top: -84px;
     position: absolute;
     margin-left: -46%;
   }
@@ -475,7 +514,11 @@ div.quantity-selector button {
   }
   .delivery-condition,
   .delivery-time {
-    width: 65%;
+    width: 95%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 6%;
+    padding: 2% 5%;
   }
   #truck-green {
     width: 30px;
@@ -483,7 +526,11 @@ div.quantity-selector button {
   }
   .installments-pi-pi,
   #shipping-deadline {
-    width: 65%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
   }
   #building {
     width: 30px;
@@ -497,6 +544,101 @@ div.quantity-selector button {
     }
   }
   .with-delivery {
-    margin-top: 150vh; /* Ajuste esse valor conforme necessário */
+    margin-top: 170vh;
+  }
+  .product-iteration {
+    margin: 90px 10px;
+    .heart-product,
+    .share-text {
+      display: none;
+    }
+    .description-link {
+      background-color: var(--card--edge-color);
+      margin: -17% -9%;
+      padding: 6% 48%;
+      position: absolute;
+      border-radius: 4px;
+      color: var(--blue-color);
+    }
+  }
+  .buy-buttons {
+    display: none;
+    display: block;
+    position: absolute;
+    margin-top: 14px;
+    left: 17px;
+    padding: 0% 0% !important;
+    margin-right: auto !important;
+    width: 131% !important;
+  }
+
+  .shipping-calculator {
+    width: 95%;
+    border: 1px solid var(--card--edge-color);
+    margin-top: 35%;
+  }
+  .shipping-calculator {
+    input {
+      width: 85%;
+      height: 40px;
+      border-radius: 7px;
+      border: 1px solid var(--card--edge-color);
+      outline: none;
+      margin-right: 3%;
+      box-shadow: 0 0 5px gray; /* Adiciona um efeito sutil ao focar */
+    }
+  }
+  .shipping-calculator {
+    padding: 1% 1%;
+    box-shadow: 0 0 5px gray; /* Adiciona um efeito sutil ao focar */
+
+    & button {
+      background-color: var(--blue-color);
+      color: white;
+      height: 40px;
+      border-radius: 18px;
+      width: 95%;
+      border: none;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      padding: 2%;
+      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4%;
+    }
+  }
+  .title-time {
+    font-size: 20px !important;
+    font-weight: bold;
+    height: 148%;
+    width: 100%;
+    padding: 7px 0px 0px !important;
+    background: white !important;
+  }
+  .delivery-time {
+    .p-time {
+      margin-left: 15%;
+      margin-top: 0 !important;
+    }
+    .standard-delivery {
+      margin-left: 3%;
+      margin-top: -12%;
+    }
+  }
+  .availability {
+    padding: 0% 0%;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.205);
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin: -42px 41px;
+    margin-top: -42px;
+    margin-right: 41px;
+    margin-bottom: -42px;
+    margin-left: 41px;
+    margin-bottom: 4%;
   }
 }

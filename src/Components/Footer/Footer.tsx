@@ -40,7 +40,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="contact-buttons">
-                        <button>Atendimento compras online <img src={Arrow} alt="seta" /></button>
+                        <button>Atendimento compras<img src={Arrow} alt="seta" /></button>
                         <button>Fale com uma loja <img src={Arrow} alt="seta" /></button>
                         <button>Negociar dívida Havan <img src={Arrow} alt="seta" /></button>
                         <button>Blog Havan <img src={Arrow} alt="seta" /></button>

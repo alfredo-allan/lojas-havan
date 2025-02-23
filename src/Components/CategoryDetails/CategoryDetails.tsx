@@ -4,6 +4,7 @@ import CategorySide from '../CategorySide/CategorySide';
 import ProductInspect from '../ProductInspect/ProductInspect'; // <-- Importa o componente de detalhes
 import './CategoryDetails.css';
 import icoHeart from '../../Assets/Img/heart.png';
+import PageLocation from '../PageLocation/PageLocation';
 
 interface CategoryDetailsProps {
     searchTerm: string;
@@ -2382,6 +2383,7 @@ const CategoryDetails: React.FC<CategoryDetailsProps> = ({ searchTerm }) => {
 
     return (
         <div className="category-details">
+            <PageLocation />
             <CategorySide />
             <div className="product-section">
                 {filteredProducts.map((product, index) => (

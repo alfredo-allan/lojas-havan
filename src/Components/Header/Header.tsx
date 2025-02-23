@@ -74,7 +74,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                         <div className="search-box search-desktop">
                             <input
                                 type="search"
-                                placeholder="Pesquisar..."
+                                placeholder="Buscar na Havan"
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
@@ -88,7 +88,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                             <div className="search-box search-mobile">
                                 <input
                                     type="search"
-                                    placeholder="Pesquisar..."
+                                    placeholder="Buscar na Havan"
                                     value={searchTerm}
                                     onChange={(e) => setSearchTerm(e.target.value)}
                                     onKeyPress={(e) => e.key === 'Enter' && handleSearch()}

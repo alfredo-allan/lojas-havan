@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProductInspect.css';
 import { ProductCardProps } from '../ProductCard/ProductCard';
 import PixIcon from "../../Assets/Img/pix-icon.png";
@@ -8,6 +8,14 @@ import CheckedCalendar from '../../Assets/Img/check-mark.png';
 import TruckDeliveryGreen from '../../Assets/Img/caminhao-de-entrega-verde.png';
 import BuildingIcon from "../../Assets/Img/fotor-20250214194212.png";
 import GoBack from "../../Assets/Img/back.png";
+import GoBackBlue from "../../Assets/Img/arrow-blue.png";
+import ProductInspectCarousel from '../ProductInspectCarousel/ProductInspectCarousel';
+import ShareIcon from '../../Assets/Img/share.png';
+import HeartProduct from '../../Assets/Img/heart-product.png';
+import DescriptionListIco from '../../Assets/Img/list.png';
+import HeartProductLike from '../../Assets/Img/heart-product-like.png';
+
+
 
 interface ProductInspectProps extends ProductCardProps {
     onBack: () => void;
@@ -30,6 +38,18 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
     const [quantity, setQuantity] = useState(1);
     const [cep, setCep] = useState("");
     const [showDelivery, setShowDelivery] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const increaseQuantity = () => setQuantity(quantity + 1);
     const decreaseQuantity = () => {
@@ -37,7 +57,7 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
     };
 
     const handleCepChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        let value = event.target.value.replace(/\D/g, ""); // Remove tudo que não for número
+        let value = event.target.value.replace(/\D/g, "");
         if (value.length > 5) {
             value = value.slice(0, 5) + "-" + value.slice(5, 8);
         }
@@ -45,35 +65,84 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
     };
 
     const handleCalculateClick = () => {
-        if (cep.length === 9) {
-            setShowDelivery(true); // Mostra a seção de entrega somente se o CEP for válido
-        } else {
-            setShowDelivery(false); // Caso o CEP não tenha 9 caracteres, não mostra
-        }
+        setShowDelivery(cep.length === 9);
+    };
+    const [liked, setLiked] = useState(false);
+
+    const toggleLike = () => {
+        setLiked(!liked);
     };
 
     return (
         <div className="product-inspect">
             <div className="to-go-back">
-                {/* <b className="back-text">Voltar</b> */}
-                <img src={GoBack} className="back-button" onClick={onBack} alt="Ícone de voltar" />
-
+                <img
+                    src={isMobile ? GoBack : GoBackBlue} // Troca o ícone dependendo da resolução
+                    className="back-button"
+                    onClick={onBack}
+                    alt="Ícone de voltar"
+                />
             </div>
+
             <div className="product-details">
                 <h1 className='inspection-name'>{name}</h1>
-                <img src={selectedImage} alt={name} className="product-image-large" />
-                <div className="gallery">
-                    {gallery.map((img, index) => (
-                        <img
-                            key={index}
-                            src={img}
-                            alt={`Imagem ${index + 1}`}
-                            className={`thumbnail ${selectedImage === img ? 'selected' : ''}`}
-                            onClick={() => setSelectedImage(img)}
-                        />
-                    ))}
+
+                {isMobile ? (
+                    <ProductInspectCarousel
+                        gallery={[image, ...gallery]}
+                        selectedImage={selectedImage}
+                        setSelectedImage={setSelectedImage}
+                    />
+                ) : (
+                    <>
+                        <img src={selectedImage} alt={name} className="product-image-large" />
+                        <div className="gallery">
+                            {gallery.map((img, index) => (
+                                <img
+                                    key={index}
+                                    src={img}
+                                    alt={`Imagem ${index + 1}`}
+                                    className={`thumbnail ${selectedImage === img ? 'selected' : ''}`}
+                                    onClick={() => setSelectedImage(img)}
+                                />
+                            ))}
+                        </div>
+                    </>
+                )}
+                <div className="product-iteration">
+                    <a
+                        href={`https://api.whatsapp.com/send?text=${encodeURIComponent('Confira este link: https://alfredo-allan.github.io/lojas-havan/')}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div className="box-share">
+                            <img src={ShareIcon} alt="Compartilhar" />
+                        </div>
+                        <span className='share-text'>Compartilhar</span>
+                    </a>
+
+                    <div className="box-heart-product" onClick={toggleLike} style={{ cursor: 'pointer' }}>
+                        <img src={liked ? HeartProductLike : HeartProduct} alt="Curtir Produto" />
+                    </div>
+
+                    <span className='heart-product' >Adicionar à lista de desejos</span>
+                    <a
+                        href="#"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            const target = document.querySelector(".product-description");
+                            if (target) {
+                                target.scrollIntoView({ behavior: "smooth", block: "start" });
+                            }
+                        }}
+                    >
+                        <div className="box-description-list">
+                            <img src={DescriptionListIco} alt="Descrição" />
+                        </div>
+                        <span className='description-link'>Detalhes</span>
+                    </a>
+
                 </div>
-                
                 <div className="payment-information">
                     <p className="discount-price-details" style={{ color: "var(--blue-color)", fontSize: "30px", marginLeft: "-6%" }}>
                         {discountPrice}
@@ -92,23 +161,27 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                         <span className='numeral-indicator'>{quantity}</span>
                         <button onClick={increaseQuantity}>+</button>
                     </div>
+
                     <div className="buy-buttons">
                         <button className="buy-button">Comprar Agora</button>
                         <button className="add-to-cart-button">Adicionar ao Carrinho</button>
                     </div>
+
                     <div className="shipping-calculator">
-                        <span id='shipping-deadline' >Calcule o valor do frete e prazo de entrega</span>
+                        <span id='shipping-deadline'>Calcule o valor do frete e prazo de entrega</span>
                         <img className='truck-delivery' src={TruckDelivery} alt="" />
                         <input type="text" placeholder="Digite o CEP" value={cep} onChange={handleCepChange} maxLength={9} />
                         <button onClick={handleCalculateClick}>Calcular</button>
+
                         <div className="delivery-condition">
                             <img className='calendar' src={CheckedCalendar} alt="" />
                             <span className="descripition-delivery">Os prazos de entrega começam a contar a partir da confirmação de pagamento!</span>
                         </div>
+
                         {showDelivery && (
                             <>
                                 <div className="delivery-time">
-                                    <h2 className='title-time' >Entrega</h2>
+                                    <h2 className='title-time'>Entrega</h2>
                                     <hr className="title-divider" />
                                     <img id='truck-green' src={TruckDeliveryGreen} alt="" />
                                     <b className='standard-delivery'>Entrega Padrão</b>
@@ -116,13 +189,20 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                                     <hr className="title-divider" />
                                     <img id='truck-green' src={TruckDeliveryGreen} alt="" />
                                     <b className='standard-delivery'>Entrega Expressa</b>
-                                    <p className='p-time' >Em até 1 dias útil <b>R$ 20,99</b></p>
+                                    <p className='p-time'>Em até 1 dia útil <b>R$ 20,99</b></p>
                                 </div>
+
                                 <div className="delivery-time">
-                                    <h2 className='title-time' >Retire em loja</h2>
+                                    <h2 className='title-time'>Retire em loja</h2>
                                     <hr className="title-divider" />
                                     <img id='building' src={BuildingIcon} alt="" />
                                     <b className='availability'>Produto indisponível para retirada nas lojas próximas à localidade informada.</b>
+                                </div>
+
+                                {/* Botões de compra agora visíveis apenas quando showDelivery é verdadeiro */}
+                                <div className="buy-buttons" style={{ display: showDelivery ? 'flex' : 'none' }}>
+                                    <button className="buy-button">Comprar Agora</button>
+                                    <button className="add-to-cart-button">Adicionar ao Carrinho</button>
                                 </div>
                             </>
                         )}

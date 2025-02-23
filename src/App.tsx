@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import Header from './Components/Header/Header';
 import CategoryDetails from './Components/CategoryDetails/CategoryDetails';
-import PageLocation from './Components/PageLocation/PageLocation';
 import Footer from './Components/Footer/Footer';
 import './Style/Theme.css';
 
@@ -36,7 +35,6 @@ function App() {
   return (
     <div className="App">
       <Header onSearch={handleSearch} /> {/* Passa a função de pesquisa para o Header */}
-      <PageLocation />
       <CategoryDetails searchTerm={searchTerm} /> {/* Passa o termo de pesquisa para o CategoryDetails */}
       <Footer />
     </div>

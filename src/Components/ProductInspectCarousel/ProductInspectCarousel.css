@@ -1,0 +1,45 @@
+.slick-slide img {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Customização dos indicadores (dots) */
+.slick-dots {
+  bottom: -45px;
+  display: flex !important;
+  justify-content: center;
+  gap: 10px; /* Distância entre os indicadores */
+}
+
+.slick-dots li {
+  width: 20px; /* Ajuste o tamanho horizontal do indicador */
+  height: 8px; /* Ajuste o tamanho vertical do indicador */
+  border-radius: 50px; /* Tornar o indicador oblong */
+  background-color: var(
+    --card--edge-color
+  ); /* Cor de fundo, use a cor do seu tema */
+  transition: background-color 0.3s ease; /* Transição suave para a cor */
+}
+
+/* Remover os pontinhos (conteúdo do ::before) */
+
+/* Estilo do indicador ativo */
+.slick-dots li.slick-active {
+  background-color: var(--blue-color); /* Cor de fundo do indicador ativo */
+}
+
+/* Opcional: para quando o mouse passa sobre o indicador */
+.slick-dots li:hover {
+  background-color: var(
+    --theme-hover-color,
+    #00bcd4
+  ); /* Cor de fundo no hover */
+}
+.slick-dots li.slick-active button::before {
+  opacity: 0.75;
+  color: #ffffff00;
+}
+.slick-dots li button::before {
+  color: #ffffff00;
+}
