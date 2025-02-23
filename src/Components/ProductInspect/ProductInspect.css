@@ -362,7 +362,7 @@ div.quantity-selector button {
     max-width: 70%;
     display: block;
     margin-left: 26%;
-    margin-top: 40%;
+    margin-top: 68%;
   }
 
   .gallery {
@@ -385,7 +385,7 @@ div.quantity-selector button {
 
   .inspection-name {
     margin-left: 0;
-    margin-top: 1%;
+    margin-top: 21%;
   }
 
   .payment-information {
@@ -464,9 +464,9 @@ div.quantity-selector button {
   .back-button {
     cursor: pointer;
     animation: pulsate 1.5s ease-in-out infinite;
-    margin: 25% -52%;
-    margin-bottom: 25%;
-    margin-bottom: 0%;
+    margin-top: -23%;
+    position: absolute;
+    margin-left: -46%;
   }
   .back-text {
     margin-left: -40%;

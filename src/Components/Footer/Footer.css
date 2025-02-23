@@ -27,7 +27,7 @@ footer {
 
 .box-suport {
   width: 12%;
-  height: 38px;
+  height: 45px;
   border: 2px solid var(--card--edge-color);
   border-radius: 5px;
   margin-left: -36%;
@@ -35,7 +35,7 @@ footer {
 }
 .box-temple {
   width: 12%;
-  height: 38px;
+  height: 45px;
   border: 2px solid var(--card--edge-color);
   border-radius: 5px;
   margin-right: 1%;
@@ -44,7 +44,7 @@ footer {
 
 .box-bank-slip {
   width: 12%;
-  height: 38px;
+  height: 45px;
   border: 2px solid var(--card--edge-color);
   border-radius: 5px;
 }
@@ -55,6 +55,12 @@ footer {
   font-size: 12px;
   text-decoration: none;
   color: var(--footer-lyrics);
+}
+.contact-icons {
+  a {
+    font-weight: bold;
+    max-width: 100%;
+  }
 }
 #temple {
   width: 22px;
@@ -218,33 +224,8 @@ footer {
   .divider-footer {
     display: none;
   }
-  .search-container {
-    display: contents;
-    width: 100%;
-    margin: 0;
-    #InputPesquisa {
-      margin: 0px 20px;
-      padding: 5px;
-    }
-  }
   .container {
     padding: 38px 0px;
-  }
-  .d-flex.align-items-center {
-    position: absolute;
-    margin: -9% 0%;
-    margin-left: 6%;
-  }
-  #IcoMenu {
-    margin: 0px 0px;
-  }
-  #Lupa {
-    margin-left: 83%;
-    width: 20px;
-    margin-top: -10%;
-  }
-  #logo {
-    margin: 15px 50px;
   }
   .discount-badge {
     margin: 0px -7%;

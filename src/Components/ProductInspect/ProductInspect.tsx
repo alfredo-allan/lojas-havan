@@ -7,7 +7,7 @@ import TruckDelivery from "../../Assets/Img/caminhao-de-entrega.png";
 import CheckedCalendar from '../../Assets/Img/check-mark.png';
 import TruckDeliveryGreen from '../../Assets/Img/caminhao-de-entrega-verde.png';
 import BuildingIcon from "../../Assets/Img/fotor-20250214194212.png";
-import GoBack from "../../Assets/Img/voltar.png";
+import GoBack from "../../Assets/Img/back.png";
 
 interface ProductInspectProps extends ProductCardProps {
     onBack: () => void;
@@ -52,13 +52,10 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
         }
     };
 
-
-
-
     return (
         <div className="product-inspect">
             <div className="to-go-back">
-                <b className="back-text">Voltar</b>
+                {/* <b className="back-text">Voltar</b> */}
                 <img src={GoBack} className="back-button" onClick={onBack} alt="Ícone de voltar" />
 
             </div>
@@ -76,6 +73,7 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                         />
                     ))}
                 </div>
+                
                 <div className="payment-information">
                     <p className="discount-price-details" style={{ color: "var(--blue-color)", fontSize: "30px", marginLeft: "-6%" }}>
                         {discountPrice}
