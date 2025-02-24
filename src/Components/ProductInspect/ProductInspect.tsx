@@ -162,10 +162,10 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                         <button onClick={increaseQuantity}>+</button>
                     </div>
 
-                    <div className="buy-buttons">
+                    {/* <div className="buy-buttons">
                         <button className="buy-button">Comprar Agora</button>
                         <button className="add-to-cart-button">Adicionar ao Carrinho</button>
-                    </div>
+                    </div> */}
 
                     <div className="shipping-calculator  with-delivery">
                         <span id='shipping-deadline'>Calcule o valor do frete e prazo de entrega</span>
