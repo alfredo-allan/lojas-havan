@@ -574,7 +574,7 @@ div.quantity-selector button {
   .shipping-calculator {
     width: 95%;
     border: 1px solid var(--card--edge-color);
-    margin-top: 60%;
+    margin-top: 48%;
   }
   .shipping-calculator {
     input {
