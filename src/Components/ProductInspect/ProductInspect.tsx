@@ -167,7 +167,7 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                         <button className="add-to-cart-button">Adicionar ao Carrinho</button>
                     </div>
 
-                    <div className="shipping-calculator">
+                    <div className="shipping-calculator ">
                         <span id='shipping-deadline'>Calcule o valor do frete e prazo de entrega</span>
                         <img className='truck-delivery' src={TruckDelivery} alt="" />
                         <input type="text" placeholder="Digite o CEP" value={cep} onChange={handleCepChange} maxLength={9} />

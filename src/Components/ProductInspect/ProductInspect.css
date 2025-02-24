@@ -441,7 +441,7 @@ div.quantity-selector button {
     width: 95%;
     list-style: none;
     border: 1px solid var(--card--edge-color);
-    margin: 230% auto;
+    margin: 260% auto;
     text-align: left;
     padding: 2% 2%;
     margin-bottom: 30%;
@@ -544,7 +544,7 @@ div.quantity-selector button {
     }
   }
   .with-delivery {
-    margin-top: 170vh;
+    margin-top: 180vh;
   }
   .product-iteration {
     margin: 90px 10px;
@@ -563,7 +563,6 @@ div.quantity-selector button {
   }
   .buy-buttons {
     display: none;
-    display: block;
     position: absolute;
     margin-top: 14px;
     left: 17px;
@@ -575,7 +574,7 @@ div.quantity-selector button {
   .shipping-calculator {
     width: 95%;
     border: 1px solid var(--card--edge-color);
-    margin-top: 35%;
+    margin-top: 60%;
   }
   .shipping-calculator {
     input {
@@ -641,4 +640,20 @@ div.quantity-selector button {
     margin-left: 41px;
     margin-bottom: 4%;
   }
+  button.buy-button {
+    padding: 1px;
+    margin: -164% auto;
+    margin-bottom: -144%;
+    margin-left: auto;
+    margin-left: -1%;
+    width: 68%;
+    margin-bottom: 3%;
+  }
+}
+button.add-to-cart-button {
+  margin: -153% 0%;
+  position: absolute;
+  padding: 1px;
+  width: 68%;
+  margin-left: -1%;
 }

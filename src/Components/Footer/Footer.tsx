@@ -23,7 +23,7 @@ const Footer = () => {
                         <div className="box-suport">
                             <a href="" className="suport-on-line">
                                 <img id="suport" src={SuportCall} alt="Suporte" />
-                                Atendimento compras online
+                                Atendimento compras
                             </a>
                         </div>
                         <div className="box-temple">
