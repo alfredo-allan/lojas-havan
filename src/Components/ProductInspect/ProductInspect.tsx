@@ -167,7 +167,7 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                         <button className="add-to-cart-button">Adicionar ao Carrinho</button>
                     </div>
 
-                    <div className="shipping-calculator ">
+                    <div className="shipping-calculator  with-delivery">
                         <span id='shipping-deadline'>Calcule o valor do frete e prazo de entrega</span>
                         <img className='truck-delivery' src={TruckDelivery} alt="" />
                         <input type="text" placeholder="Digite o CEP" value={cep} onChange={handleCepChange} maxLength={9} />
@@ -197,12 +197,6 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                                     <hr className="title-divider" />
                                     <img id='building' src={BuildingIcon} alt="" />
                                     <b className='availability'>Produto indisponível para retirada nas lojas próximas à localidade informada.</b>
-                                </div>
-
-                                {/* Botões de compra agora visíveis apenas quando showDelivery é verdadeiro */}
-                                <div className="buy-buttons" style={{ display: showDelivery ? 'flex' : 'none' }}>
-                                    <button className="buy-button">Comprar Agora</button>
-                                    <button className="add-to-cart-button">Adicionar ao Carrinho</button>
                                 </div>
                             </>
                         )}

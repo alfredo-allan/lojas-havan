@@ -564,7 +564,7 @@ div.quantity-selector button {
   }
   .buy-buttons {
     position: absolute;
-    margin-top: 14px;
+    margin-top: 61px;
     left: 17px;
     padding: 0% 0% !important;
     margin-right: auto !important;
@@ -640,20 +640,4 @@ div.quantity-selector button {
     margin-left: 41px;
     margin-bottom: 4%;
   }
-  button.buy-button {
-    padding: 1px;
-    margin: -164% auto;
-    margin-bottom: -144%;
-    margin-left: auto;
-    margin-left: -1%;
-    width: 68%;
-    margin-bottom: 3%;
-  }
-}
-button.add-to-cart-button {
-  margin: -153% 0%;
-  position: absolute;
-  padding: 1px;
-  width: 68%;
-  margin-left: -1%;
 }
