@@ -1,6 +1,10 @@
 .product-inspect {
   width: 100%;
   overflow-x: hidden;
+  overflow: hidden; /* Remove a rolagem vertical */
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 .product-image-large {
   width: 100%;
@@ -52,10 +56,11 @@
 .payment-information {
   text-align: left;
   width: 100%;
+  height: 100%;
   margin-left: 65%;
-  display: inline-block;
+  display: block;
   direction: ltr;
-  margin-top: -60%;
+  margin-top: -50%;
 }
 
 .payment-button,
@@ -458,6 +463,7 @@ div.quantity-selector button {
     text-align: left;
     position: absolute;
     width: 100%;
+    height: 100vh;
     overflow-x: hidden;
   }
 
@@ -539,7 +545,8 @@ div.quantity-selector button {
   }
   .delivery-condition,
   .delivery-time {
-    width: 95%;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     margin: auto;
     margin-top: 6%;
@@ -572,18 +579,19 @@ div.quantity-selector button {
     margin-top: 190vh;
   }
   .product-iteration {
-    margin: 90px 10px;
+    margin: 88px -85px;
     .heart-product,
     .share-text {
       display: none;
     }
     .description-link {
       background-color: var(--card--edge-color);
-      margin: -17% -9%;
-      padding: 6% 48%;
       position: absolute;
       border-radius: 4px;
       color: var(--blue-color);
+      top: 0px;
+      padding: 8px 42px;
+      left: 255px;
     }
   }
   .buy-buttons {
@@ -592,9 +600,13 @@ div.quantity-selector button {
     left: 17px;
     padding: 0% 0% !important;
     margin-right: auto !important;
-    width: 131% !important;
   }
-
+  .buy-buttons button {
+    width: 330px;
+  }
+  .availability {
+    text-align: center;
+  }
   .shipping-calculator {
     width: 95%;
     border: 1px solid var(--card--edge-color);
@@ -663,5 +675,15 @@ div.quantity-selector button {
     margin-bottom: -42px;
     margin-left: 41px;
     margin-bottom: 4%;
+  }
+  .box-share,
+  .box-heart-product {
+    margin-right: 1%;
+  }
+  .box-description-list {
+    width: 84px !important;
+  }
+  div.quantity-selector button {
+    margin-right: 26%;
   }
 }
