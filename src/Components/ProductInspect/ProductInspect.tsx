@@ -82,6 +82,7 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                     onClick={onBack}
                     alt="Ícone de voltar"
                 />
+                <b className='back-text'>Voltar</b>
             </div>
 
             <div className="product-details">
@@ -116,13 +117,13 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                         rel="noopener noreferrer"
                     >
                         <div className="box-share">
-                            <img src={ShareIcon} alt="Compartilhar" />
+                            <img id='shareicon' src={ShareIcon} alt="Compartilhar" />
                         </div>
                         <span className='share-text'>Compartilhar</span>
                     </a>
 
                     <div className="box-heart-product" onClick={toggleLike} style={{ cursor: 'pointer' }}>
-                        <img src={liked ? HeartProductLike : HeartProduct} alt="Curtir Produto" />
+                        <img id='hearticon' src={liked ? HeartProductLike : HeartProduct} alt="Curtir Produto" />
                     </div>
 
                     <span className='heart-product' >Adicionar à lista de desejos</span>
@@ -137,7 +138,7 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                         }}
                     >
                         <div className="box-description-list">
-                            <img src={DescriptionListIco} alt="Descrição" />
+                            <img id='descriptionicon' src={DescriptionListIco} alt="Descrição" />
                         </div>
                         <span className='description-link'>Detalhes</span>
                     </a>
@@ -162,10 +163,10 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                         <button onClick={increaseQuantity}>+</button>
                     </div>
 
-                    {/* <div className="buy-buttons">
+                    <div className="buy-buttons">
                         <button className="buy-button">Comprar Agora</button>
                         <button className="add-to-cart-button">Adicionar ao Carrinho</button>
-                    </div> */}
+                    </div>
 
                     <div className="shipping-calculator  with-delivery">
                         <span id='shipping-deadline'>Calcule o valor do frete e prazo de entrega</span>

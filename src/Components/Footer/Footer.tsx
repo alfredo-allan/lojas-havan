@@ -48,38 +48,24 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* <div className="footer-links">
-                    <div>
-                        <a href="#">Nossa história</a>
-                        <a href="#">Lista de presentes</a>
-                        <a href="#">Trabalhe conosco</a>
-                    </div>
-                    <div>
-                        <a href="#">Painel do colaborador</a>
-                        <a href="#">Seguros</a>
-                        <a href="#">Cartão Havan</a>
-                    </div>
-                    <div>
-                        <a href="#">Igualdade Salarial</a>
-                        <a href="#">Troco solidário</a>
-                    </div>
-                </div> */}
+
 
                 <div className="footer-app">
                     <h3>Aplicativo Havan</h3>
                     <p>Conheça as vantagens</p>
                     <img src={qrCode} alt="QR Code do App Havan" className="qr-code" />
                     <img src={IconsApp} alt="Icons APP" className="app-stores" />
-                </div>
 
-                <div className="footer-social">
-                    <img src={youtubeIcon} alt="YouTube" />
-                    <img src={instagramIcon} alt="Instagram" />
-                    <img src={xIcon} alt="X (Twitter)" />
-                    <img src={facebookIcon} alt="Facebook" />
-                    <img src={tiktokIcon} alt="TikTok" />
+                    <div className="footer-social">
+                        <img src={youtubeIcon} alt="YouTube" />
+                        <img src={instagramIcon} alt="Instagram" />
+                        <img src={xIcon} alt="X (Twitter)" />
+                        <img src={facebookIcon} alt="Facebook" />
+                        <img src={tiktokIcon} alt="TikTok" />
+                    </div>
                 </div>
             </div>
+
 
             <div className="footer-button">
                 {/* <a href="#">Guia de segurança</a>

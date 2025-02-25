@@ -1,3 +1,7 @@
+.product-inspect {
+  width: 100%;
+  overflow-x: hidden;
+}
 .product-image-large {
   width: 100%;
   max-width: 26%;
@@ -46,11 +50,12 @@
 }
 
 .payment-information {
-  margin-left: 64%;
-  margin-top: -50%;
-  margin-bottom: 25%;
   text-align: left;
-  margin-bottom: -5%;
+  width: 100%;
+  margin-left: 65%;
+  display: inline-block;
+  direction: ltr;
+  margin-top: -60%;
 }
 
 .payment-button,
@@ -68,7 +73,7 @@
 .buy-buttons {
   margin-left: -6%;
   width: 100%;
-  margin-top: 6%;
+  margin-top: 4%;
   line-height: 40px;
 }
 
@@ -81,7 +86,7 @@
   letter-spacing: 1px;
   font-size: 18px;
   font-weight: bold;
-  width: 65%;
+  width: 420px;
 }
 
 button.add-to-cart-button {
@@ -147,24 +152,24 @@ div.quantity-selector button {
   color: white;
   font-size: 22px;
   margin-left: -6%;
-  margin-right: 24%;
+  margin-right: 15%;
 }
 
 .numeral-indicator {
   display: inline-block;
-  width: 3%;
+  width: 5%;
   text-align: center;
   padding: 4px 10px;
-  border: 1px solid var(--blue-color);
+  border: 1px solid var(--card--edge-color);
   border-radius: 7px;
   font-weight: bold;
   font-size: 1rem;
   background-color: #fff;
   color: var(--blue-color);
-  position: absolute;
   margin-left: -6%;
   height: 35px;
-  margin: 0% -7%;
+  margin: 0% -13%;
+  position: absolute;
 }
 .payment-button {
   img {
@@ -173,17 +178,20 @@ div.quantity-selector button {
 }
 .shipping-calculator {
   span {
-    display: grid;
     color: var(--navy-blue-color);
     margin-bottom: 2%;
+    display: grid;
+    justify-content: left;
+    text-align: left;
+    width: 100%;
   }
   input {
-    width: 26%;
+    width: 170px;
     height: 40px;
     border-radius: 7px;
     border: 1px solid var(--blue-color);
     outline: none;
-    margin-right: 3%;
+    margin-right: 1%;
   }
   input:hover {
     border-color: var(--blue-color);
@@ -197,7 +205,7 @@ div.quantity-selector button {
     color: white;
     height: 40px;
     border-radius: 18px;
-    width: 25%;
+    width: 162px;
     border: none;
     font-weight: bold;
   }
@@ -220,8 +228,8 @@ div.quantity-selector button {
 .delivery-condition {
   display: grid;
   border: dashed 2px var(--card--edge-color); /* Borda tracejada */
-  width: 61%;
-  margin-top: 6%;
+  width: 420px;
+  margin-top: 4%;
 }
 .descripition-delivery {
   width: 90%;
@@ -231,10 +239,10 @@ div.quantity-selector button {
 }
 
 .delivery-time {
-  margin-top: 7%;
+  margin-top: 3%;
   border: 1px solid var(--card--edge-color);
   color: var(--navy-blue-color);
-  width: 61%;
+  width: 420px;
 }
 
 .title-time {
@@ -243,12 +251,12 @@ div.quantity-selector button {
   background-color: #f7f7f7;
   height: 148%;
   width: 100%;
-  padding: 10px 15px 0px;
+  padding: 11px 11px;
 }
 
 .standard-delivery {
-  margin-left: 15%;
-  margin-top: -12%;
+  margin-left: 3%;
+  margin-top: 0%;
 }
 .p-time {
   margin-left: 15%;
@@ -266,19 +274,22 @@ div.quantity-selector button {
 }
 
 #building {
-  width: 45px;
+  width: 40px;
   margin-top: 2%;
   margin-left: 1%;
+  display: flex;
+  justify-content: center;
+  margin: 1% 1%;
 }
 
 .availability {
-  margin-left: 15%;
-  margin-top: -10%;
   padding: 0% 0%;
   margin-bottom: 4%;
   color: red;
   background-color: rgba(255, 0, 0, 0.205);
-  width: 75%;
+  text-align: end;
+  display: flex;
+  margin: -11% 11% 5%;
 }
 
 .product-description {
@@ -335,9 +346,12 @@ div.quantity-selector button {
 }
 
 .back-text {
-  margin-left: -25%;
-  margin-right: 25%;
   color: var(--navy-blue-color);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: -14%;
+  margin-left: 24%;
 }
 .to-go-back {
   display: ruby;
@@ -349,37 +363,47 @@ div.quantity-selector button {
 .back-button {
   cursor: pointer;
   animation: pulsate 1.5s ease-in-out infinite;
-  margin: 4% -29%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-left: -57%;
+  margin-bottom: 12%;
+  margin-top: 2%;
+  width: 40px;
 }
 
 .product-iteration {
   display: block ruby;
   position: absolute;
-  margin: -18% 21%;
+  margin: -16% -17%;
+  width: 100%;
   .box-share,
   .box-heart-product,
   .box-description-list {
-    width: 45px;
+    width: 40px;
     height: 40px;
-    border-radius: 4px;
     background-color: var(--card--edge-color);
-    padding: 5px;
-    margin-right: 3%;
+    padding: 7px;
+    border-radius: 4px;
   }
-  img {
-    width: 20px;
-    cursor: pointer;
-  }
-  a {
+  a,
+  .heart-product {
     text-decoration: none;
-    font-weight: 500;
     color: var(--navy-blue-color);
-    margin-right: 4%;
+    font-size: 16px;
+    font-weight: 500;
   }
-  span.heart-product {
-    margin-right: 4%;
-    font-weight: 500;
-    color: var(--navy-blue-color);
+  #shareicon,
+  #hearticon,
+  #descriptionicon {
+    width: 25px;
+    height: 25px;
+  }
+  .share-text,
+  .heart-product,
+  .description-link {
+    margin-left: 1%;
+    margin-right: 1%;
   }
 }
 
