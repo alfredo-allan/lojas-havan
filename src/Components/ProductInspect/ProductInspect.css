@@ -182,13 +182,19 @@ div.quantity-selector button {
   }
 }
 .shipping-calculator {
+  width: 420px;
+  height: auto;
+  border: 1px solid var(--card--edge-color);
+  border-radius: 4px;
+
   span {
     color: var(--navy-blue-color);
-    margin-bottom: 2%;
-    display: grid;
-    justify-content: left;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
     text-align: left;
     width: 100%;
+    font-weight: bold;
   }
   input {
     width: 170px;
@@ -222,6 +228,8 @@ div.quantity-selector button {
 
 .truck-delivery {
   margin-right: 2%;
+  width: 32px;
+  margin-left: 3%;
 }
 
 .calendar {
@@ -458,14 +466,14 @@ div.quantity-selector button {
   }
 
   .payment-information {
+    display: grid;
+    height: 185vh !important;
     margin-left: 0;
     margin-top: 65%;
-    text-align: left;
-    position: absolute;
-    width: 100%;
-    height: 185vh;
     overflow-x: hidden;
-    display: grid;
+    position: absolute;
+    text-align: left;
+    width: 100%;
   }
 
   .product-description {
@@ -514,12 +522,10 @@ div.quantity-selector button {
   div.quantity-selector button {
     margin-left: 2%;
   }
-  .shipping-calculator {
-    width: 100%;
-  }
   .calendar {
-    width: 25px;
     height: 25px;
+    width: 25px;
+    margin-top: 7% !important;
   }
   .descripition-delivery {
     font-size: 13px;
@@ -533,11 +539,12 @@ div.quantity-selector button {
     padding: 2% 10px;
   }
   .back-button {
-    cursor: pointer;
     animation: pulsate 1.5s ease-in-out infinite;
-    margin-top: -84px;
+    cursor: pointer;
+    margin-left: 3%;
+    margin-top: -114px;
     position: absolute;
-    margin-left: -46%;
+    width: 32px;
   }
   .back-text {
     margin-left: -40%;
@@ -551,8 +558,8 @@ div.quantity-selector button {
     margin-left: 2%;
   }
   #truck-green {
-    width: 30px;
     margin: -2% 1%;
+    width: 32px;
   }
   .installments-pi-pi,
   #shipping-deadline {
@@ -566,6 +573,17 @@ div.quantity-selector button {
     width: 30px;
   }
   .shipping-calculator {
+    border: 1px solid var(--card--edge-color) !important;
+    border-radius: 4px;
+    box-shadow: 0 0 5px gray;
+    color: #fff;
+    font-weight: 700;
+    height: 90vh !important;
+    margin: 47% 0;
+    margin-left: 0px;
+    outline: none;
+    width: 95%;
+    padding: 10px;
     & span {
       display: grid;
       color: var(--navy-blue-color);
@@ -596,12 +614,12 @@ div.quantity-selector button {
     }
   }
   .buy-buttons {
-    position: absolute;
-    margin-top: 75%;
     left: 17px;
-    padding: 0% 0% !important;
-    margin-right: auto !important;
     margin-bottom: 5%;
+    margin-right: auto !important;
+    margin-top: 82%;
+    padding: 0 !important;
+    position: absolute;
   }
   .buy-buttons button {
     width: 330px;
@@ -609,51 +627,36 @@ div.quantity-selector button {
   .availability {
     text-align: center;
   }
+
   .shipping-calculator {
-    width: 95%;
-    border: 1px solid var(--card--edge-color);
-    margin-top: 48%;
-  }
-  .shipping-calculator {
-    input {
-      width: 85%;
-      height: 40px;
-      border-radius: 7px;
-      border: 1px solid var(--card--edge-color);
-      outline: none;
-      margin-right: 3%;
-      box-shadow: 0 0 5px gray; /* Adiciona um efeito sutil ao focar */
+    & input {
+      border: 1px solid var(--blue-color) !important;
+      border-radius: 7px !important;
+      height: 40px !important;
+      outline: none !important;
+      margin-left: 6% !important;
+      margin-bottom: 5% !important;
+      width: 70% !important;
+      padding: 0px 57px !important;
     }
   }
   .shipping-calculator {
-    /* box-shadow: 0 0 5px gray; */
-    margin: 47% 0%;
-    height: 93vh;
-
-    & button {
-      background-color: var(--blue-color);
-      color: white;
-      height: 40px;
-      border-radius: 18px;
-      width: 95%;
-      border: none;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      padding: 2%;
-      margin: 0;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 4%;
+    button {
+      background-color: var(--blue-color) !important;
+      border: none !important;
+      border-radius: 18px !important;
+      color: #fff !important;
+      font-weight: 700;
+      height: 40px !important;
+      width: 95% !important;
+      margin-left: 2% !important;
     }
   }
   .title-time {
     font-size: 20px !important;
-    font-weight: bold;
-    height: 148%;
-    width: 100%;
-    padding: 7px 0px 0px !important;
-    background: white !important;
+    font-weight: 700;
+    padding: 12px 10px 0 !important;
+    background-color: white !important;
   }
   .delivery-time {
     .p-time {
@@ -697,6 +700,19 @@ div.quantity-selector button {
     margin-top: -21%;
   }
   .payment-method {
-    margin-top: -23%;
+    margin-top: -31%;
+  }
+  .truck-delivery {
+    margin-right: 2%;
+    width: 32px;
+    height: 32px;
+    margin-left: 5%;
+  }
+  .quantity {
+    color: var(--navy-blue-color);
+    display: grid;
+    font-family: var(--font-primary);
+    margin-left: -6%;
+    margin-top: -5%;
   }
 }
