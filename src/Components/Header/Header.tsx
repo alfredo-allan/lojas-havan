@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Header.css';
-import MobileSideMenu from '../MobileSideMenu/MobileSideMenu';
-import LogoHavan from '../../Assets/Img/havanNameHeader.png';
-import MenuIco from '../../Assets/Img/menu.png';
-import Lupa from '../../Assets/Img/search.png';
-import LupaBranca from '../../Assets/Img/search-white.png';
-import LupaAzulMenor from '../../Assets/Img/search.png'; // Nova lupa azul menor
-import CloseIcon from '../../Assets/Img/close.png'; // Ícone de fechar
-import Localizacao from '../../Assets/Img/location.png';
-import UserLoginIco from '../../Assets/Img/user.png';
-import CarrinhoCompras from '../../Assets/Img/shopping-cart.png';
+import React, { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Header.css";
+import MobileSideMenu from "../MobileSideMenu/MobileSideMenu";
+import LoginOrRegister from "../LoginOrRegister/LoginOrRegister"; // Importando o Login
+import LogoHavan from "../../Assets/Img/havanNameHeader.png";
+import MenuIco from "../../Assets/Img/menu.png";
+import Lupa from "../../Assets/Img/search.png";
+import LupaBranca from "../../Assets/Img/search-white.png";
+import LupaAzulMenor from "../../Assets/Img/search.png"; // Nova lupa azul menor
+import CloseIcon from "../../Assets/Img/close.png"; // Ícone de fechar
+import Localizacao from "../../Assets/Img/location.png";
+import UserLoginIco from "../../Assets/Img/user.png";
+import CarrinhoCompras from "../../Assets/Img/shopping-cart.png";
 
 interface HeaderProps {
     onSearch: (term: string) => void;
@@ -21,19 +22,20 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
     const [isSearchVisible, setIsSearchVisible] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [showLogin, setShowLogin] = useState(false); // Estado para controlar login
 
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
         };
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
-        document.body.classList.toggle('mobile-menu-open', !isMobileMenuOpen);
+        document.body.classList.toggle("mobile-menu-open", !isMobileMenuOpen);
     };
 
     const handleSearch = () => {
@@ -45,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
 
     const closeSearch = () => {
         setIsSearchVisible(false);
-        setSearchTerm(''); // Limpa o campo ao fechar
+        setSearchTerm(""); // Limpa o campo ao fechar
     };
 
     return (
@@ -77,7 +79,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                                 placeholder="Buscar na Havan"
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
-                                onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+                                onKeyPress={(e) => e.key === "Enter" && handleSearch()}
                             />
                             <img className="search-icon" src={LupaAzulMenor} alt="Buscar" onClick={handleSearch} />
                             <img className="close-icon" src={CloseIcon} alt="Fechar" onClick={closeSearch} />
@@ -91,7 +93,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                                     placeholder="Buscar na Havan"
                                     value={searchTerm}
                                     onChange={(e) => setSearchTerm(e.target.value)}
-                                    onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+                                    onKeyPress={(e) => e.key === "Enter" && handleSearch()}
                                 />
                                 <img className="search-icon" src={LupaAzulMenor} alt="Buscar" onClick={handleSearch} />
                                 <img className="close-icon" src={CloseIcon} alt="Fechar" onClick={closeSearch} />
@@ -104,17 +106,37 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                         )}
                     </div>
 
-
-
                     {/* Ícones de Usuário e Carrinho */}
                     <div className="icon">
-                        <img src={UserLoginIco} id='UserLogin' alt="Usuário" />
-                        <a id='Text-Login' href="#">Olá, Entre na conta ou Cadastre-se</a>
-                        <img src={CarrinhoCompras} id='Carrinho' alt="Carrinho de Compras" />
+                        <img
+                            src={UserLoginIco}
+                            id="UserLogin"
+                            alt="Usuário"
+                            onClick={() => setShowLogin(true)} // Exibir Login
+                            style={{ cursor: "pointer" }}
+                        />
+                        <a id="Text-Login" href="#" onClick={(e) => {
+                            e.preventDefault();
+                            setShowLogin(true);
+                        }}>
+                            Olá, Entre na conta ou Cadastre-se
+                        </a>
+                        <img src={CarrinhoCompras} id="Carrinho" alt="Carrinho de Compras" />
                     </div>
                 </div>
             </nav>
+
             <MobileSideMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} />
+
+            {/* Modal do Login */}
+            {showLogin && (
+                <div className="modal-overlay" onClick={() => setShowLogin(false)}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <LoginOrRegister />
+                        <button className="close-modal" onClick={() => setShowLogin(false)}>X</button>
+                    </div>
+                </div>
+            )}
         </header>
     );
 };

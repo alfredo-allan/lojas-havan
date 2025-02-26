@@ -1,10 +1,9 @@
 .product-inspect {
-  width: 100%;
-  overflow-x: hidden;
-  overflow: hidden; /* Remove a rolagem vertical */
   margin: 0;
   padding: 0;
-  height: 100%;
+  width: 100%;
+  min-height: 200vh;
+  overflow-x: hidden;
 }
 .product-image-large {
   width: 100%;
@@ -541,7 +540,7 @@ div.quantity-selector button {
     animation: pulsate 1.5s ease-in-out infinite;
     cursor: pointer;
     margin-left: 3%;
-    margin-top: -114px;
+    margin-top: -92px;
     position: absolute;
     width: 32px;
   }
@@ -572,15 +571,16 @@ div.quantity-selector button {
     width: 30px;
   }
   .shipping-calculator {
-    border: 1px solid var(--card--edge-color) !important;
+    /* border: 1px solid var(--card--edge-color) !important; */
     border-radius: 4px;
-    box-shadow: 0 0 5px gray;
+    /* box-shadow: 0 0 5px gray; */
     color: #fff;
     font-weight: 700;
-    height: 280vh !important;
+    height: 100vh;
     margin-left: 2% !important;
     outline: none;
     width: 95%;
+    margin-top: -131vh !important;
     & span {
       display: grid;
       color: var(--navy-blue-color);
@@ -590,7 +590,7 @@ div.quantity-selector button {
     }
   }
   .with-delivery {
-    margin-top: 199vh;
+    margin-top: 228vh;
   }
   .product-iteration {
     margin: 88px -85px;
@@ -614,13 +614,13 @@ div.quantity-selector button {
     left: 17px;
     margin-bottom: 5%;
     margin-right: auto !important;
-    margin-top: 70%;
+    margin-top: 80%;
     padding: 0 !important;
     position: absolute;
     margin-left: 0;
   }
   .buy-buttons button {
-    width: 330px;
+    width: 90%;
   }
   .availability {
     text-align: center;
@@ -693,6 +693,7 @@ div.quantity-selector button {
   .quantity-selector {
     display: block;
     margin-left: 7%;
+    margin-top: 345%;
   }
   .installments-pi {
     margin-top: -4%;
@@ -710,7 +711,7 @@ div.quantity-selector button {
     display: grid;
     font-family: var(--font-primary);
     margin-left: 3% !important;
-    margin-top: 4%;
-    margin-bottom: 3%;
+    margin-top: -367%;
+    margin-bottom: 0;
   }
 }
