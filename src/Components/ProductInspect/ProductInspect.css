@@ -540,7 +540,7 @@ div.quantity-selector button {
     animation: pulsate 1.5s ease-in-out infinite;
     cursor: pointer;
     margin-left: 3%;
-    margin-top: -92px;
+    margin-top: -111px;
     position: absolute;
     width: 32px;
   }
@@ -571,7 +571,7 @@ div.quantity-selector button {
     width: 30px;
   }
   .shipping-calculator {
-    /* border: 1px solid var(--card--edge-color) !important; */
+    border: none !important;
     border-radius: 4px;
     /* box-shadow: 0 0 5px gray; */
     color: #fff;
@@ -698,8 +698,7 @@ div.quantity-selector button {
   .installments-pi {
     margin-top: -4%;
   }
-  .payment-method {
-  }
+
   .truck-delivery {
     margin-right: 2%;
     width: 32px;

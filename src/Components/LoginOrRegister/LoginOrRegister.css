@@ -1,60 +1,179 @@
-.login-container {
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
-  text-align: center;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+div.login-register-content {
+  a,
+  li,
+  ul {
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+  }
 }
-
-h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-form {
+.login-register-container.open {
   display: flex;
-  flex-direction: column;
+  direction: rtl;
 }
 
-input {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px;
-  background: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.toggle-link {
-  margin-top: 10px;
-  color: #007bff;
-  cursor: pointer;
-}
-
-.toggle-link:hover {
-  text-decoration: underline;
-}
-
-/* Fundo escuro ao abrir o login */
-.modal-overlay {
+/* 🔹 Overlay escuro para dar foco no menu */
+.login-register-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7); /* Mais opaco para dar mais foco */
+  z-index: 8;
+  display: none; /* Oculto por padrão */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Ativa o overlay quando o menu estiver aberto */
+.login-register-container.open ~ .login-register-overlay {
+  display: block;
+  opacity: 1;
+}
+
+/* 🔹 Estilização do menu */
+div.login-register-content {
+  background-color: white !important;
+  width: 20%;
   display: flex;
+  flex-direction: column;
+  direction: ltr;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateX(100%);
+  opacity: 0; /* Começa invisível */
+}
+
+/* Quando o menu estiver aberto */
+.login-register-container.open .login-register-content {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.close-button {
+  display: flex;
+  justify-content: end;
+  direction: rtl;
+  margin-left: 86%;
+  margin-top: 0;
+  color: var(--blue-color);
+  font-size: 25px;
+}
+
+.user-icon {
+  display: flex;
+  justify-content: left;
+  margin-left: 7%;
+  margin-top: 0;
+}
+
+.login-link {
+  display: flex;
+  justify-content: left;
+  margin-top: -27px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 20%;
+  color: var(--blue-color);
+}
+
+.order-iteration a {
+  display: flex;
+  margin-left: 0;
+  margin-top: 30px;
+  color: var(--navy-blue-color) !important;
+}
+
+.login-link {
+  text-decoration: none; /* Remove o sublinhado padrão */
+  color: inherit; /* Mantém a cor do texto */
+  transition: text-decoration 0.3s ease-in-out; /* Suaviza o efeito */
+}
+
+.login-link:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.login-link {
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  margin-left: 70px;
+  color: var(--blue-color);
+}
+
+.modal-dialog.modal-dialog-centered {
+  --bs-modal-width: 1040px !important;
+}
+
+.col-md-6.border-end li {
+  list-style: none !important;
+}
+
+.btn.btn-primary.w-100 {
+  display: flex !important;
+  justify-content: end !important;
+  width: 50% !important;
+  margin-left: 48% !important;
+  margin-top: 27% !important;
+  background-color: var(--blue-color) !important;
+  border-radius: 32px !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+.col-md-6.border-end,
+h2,
+p,
+ul {
+  color: var(--navy-blue-color) !important;
+}
+
+.w-100.btn.btn-secondary {
+  margin-top: -1% !important;
+  display: flex !important;
   justify-content: center;
-  align-items: center;
-  z-index: 999;
+  width: 20% !important;
+  margin-left: 78%;
+  border-radius: 32px !important;
+  background-color: white !important;
+  color: var(--blue-color) !important;
+  border-color: 2px solid var(--blue-color) !important;
+}
+
+.d-block.mb-3 {
+  color: var(--blue-color) !important;
+}
+@media (max-width: 768px) {
+  .login-register-content {
+    width: 100% !important;
+  }
+  .btn.btn-primary.w-100 {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-left: 0% !important;
+    margin-top: 27% !important;
+    background-color: var(--blue-color) !important;
+    border-radius: 32px !important;
+    color: white !important;
+    font-weight: 600;
+    margin-bottom: 15% !important;
+  }
+  .w-100.btn.btn-secondary {
+    margin-top: -1% !important;
+    display: flex !important;
+    justify-content: center;
+    width: 100% !important;
+    margin-left: 0% !important;
+    border-radius: 32px !important;
+    background-color: white !important;
+    color: var(--blue-color) !important;
+    border-color: var(--blue-color) !important;
+  }
 }

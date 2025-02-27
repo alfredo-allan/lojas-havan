@@ -158,7 +158,7 @@ footer {
 .footer-button {
   P {
     margin-top: 2%;
-    color: var(--footer-lyrics);
+    color: var(--footer-lyrics) !important;
     letter-spacing: 1px;
   }
   .divider-footer {
@@ -244,7 +244,8 @@ footer {
     .box-suport,
     .box-bank-slip,
     .box-temple {
-      width: 55%;
+      width: 63%;
+      height: 47px;
     }
   }
   .footer-social {
