@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lojas-havan/static/css/main.78300ef2.css",
-    "main.js": "/lojas-havan/static/js/main.d4c5027b.js",
+    "main.js": "/lojas-havan/static/js/main.1a3c07bf.js",
     "static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940330.webp": "/lojas-havan/static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940330.f570abff67ce4283b23d.webp",
     "static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940329.webp": "/lojas-havan/static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940329.82a83082970a42ae102a.webp",
     "static/media/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003418.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003418.d308031e5757fe75ca16.webp",
@@ -153,10 +153,10 @@
     "static/media/carregador-portatil-power-bank-xiaomi-10000mah_1052586.webp": "/lojas-havan/static/media/carregador-portatil-power-bank-xiaomi-10000mah_1052586.d6b19b041359fba81003.webp",
     "static/media/mousepad-gamer-logitech-tecido-g-g640_1031937.webp": "/lojas-havan/static/media/mousepad-gamer-logitech-tecido-g-g640_1031937.489ca159437d5198231d.webp",
     "main.78300ef2.css.map": "/lojas-havan/static/css/main.78300ef2.css.map",
-    "main.d4c5027b.js.map": "/lojas-havan/static/js/main.d4c5027b.js.map"
+    "main.1a3c07bf.js.map": "/lojas-havan/static/js/main.1a3c07bf.js.map"
   },
   "entrypoints": [
     "static/css/main.78300ef2.css",
-    "static/js/main.d4c5027b.js"
+    "static/js/main.1a3c07bf.js"
   ]
 }
