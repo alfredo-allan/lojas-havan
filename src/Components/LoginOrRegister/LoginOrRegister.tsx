@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Modal, Button } from "react-bootstrap";
 import "./LoginOrRegister.css";
 import UserLoginIcoBlue from '../../Assets/Img/user-blue.png';
+import CpfCnpjInput from "../CpfCnpjInput/CpfCnpjInput"; // Importe o componente
 
 interface LoginOrRegisterProps {
     isOpen: boolean;
@@ -13,6 +14,8 @@ const LoginOrRegister: React.FC<LoginOrRegisterProps> = ({ isOpen, onClose }) =>
     const [showLoginModal, setShowLoginModal] = useState(false);
     const [showRegisterModal, setShowRegisterModal] = useState(false);
     const [tipoPessoa, setTipoPessoa] = useState(""); // Estado para o select
+    const [cpf, setCpf] = useState("");
+    const [cnpj, setCnpj] = useState("");
 
 
     const handleShowLogin = () => setShowLoginModal(true);
@@ -24,7 +27,41 @@ const LoginOrRegister: React.FC<LoginOrRegisterProps> = ({ isOpen, onClose }) =>
     };
 
     const handleCloseRegister = () => setShowRegisterModal(false);
+    // Função para formatar CPF automaticamente
+    const formatCpf = (value: string) => {
+        // Remove qualquer caractere que não seja número
+        let cpfOnlyNumbers = value.replace(/\D/g, "");
 
+        // Limita a 11 dígitos
+        cpfOnlyNumbers = cpfOnlyNumbers.slice(0, 11);
+
+        // Aplica a formatação XXX.XXX.XXX-XX
+        return cpfOnlyNumbers
+            .replace(/(\d{3})(\d)/, "$1.$2")
+            .replace(/(\d{3})(\d)/, "$1.$2")
+            .replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+    };
+
+    // Atualiza o estado do CPF conforme o usuário digita
+    const handleCpfChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const formattedCpf = formatCpf(event.target.value);
+        setCpf(formattedCpf);
+    };
+    const formatCnpj = (value: string) => {
+        let numbersOnly = value.replace(/\D/g, ""); // Remove tudo que não é número
+        numbersOnly = numbersOnly.slice(0, 14); // Limita a 14 dígitos
+
+        return numbersOnly
+            .replace(/(\d{2})(\d)/, "$1.$2")
+            .replace(/(\d{3})(\d)/, "$1.$2")
+            .replace(/(\d{3})(\d)/, "$1/$2")
+            .replace(/(\d{4})(\d{1,2})$/, "$1-$2");
+    };
+
+    const handleCnpjChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const formattedCnpj = formatCnpj(event.target.value);
+        setCnpj(formattedCnpj);
+    };
     if (!isOpen) return null;
 
     return (
@@ -73,9 +110,8 @@ const LoginOrRegister: React.FC<LoginOrRegisterProps> = ({ isOpen, onClose }) =>
                             <h2>Finalize seu pedido com a sua conta</h2>
                             <form>
                                 <div className="mb-3">
-                                    <label className="form-label">CPF ou CNPJ</label>
-                                    <input type="text" className="form-control" placeholder="Digite seu CPF ou CNPJ" />
-                                </div>
+                                    {/* <label className="form-label">CPF ou CNPJ</label> */}
+                                    <CpfCnpjInput /> {/* Campo de CPF/CNPJ com a formatação */}                                </div>
                                 <div className="mb-3">
                                     <label className="form-label">Senha</label>
                                     <input type="password" className="form-control" placeholder="Digite sua senha" />
@@ -125,7 +161,14 @@ const LoginOrRegister: React.FC<LoginOrRegisterProps> = ({ isOpen, onClose }) =>
                         {tipoPessoa === "fisica" && (
                             <div className="mb-3">
                                 <label className="form-label">CPF *</label>
-                                <input type="text" className="form-control" placeholder="Insira o nº do seu CPF" />
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    placeholder="Insira o nº do seu CPF"
+                                    value={cpf}
+                                    onChange={handleCpfChange}
+                                    maxLength={14} // Garante que o usuário não digite além do necessário
+                                />
                             </div>
                         )}
 
