@@ -118,8 +118,8 @@ div.login-register-content {
 .btn.btn-primary.w-100 {
   display: flex !important;
   justify-content: end !important;
-  width: 50% !important;
-  margin-left: 48% !important;
+  width: 56% !important;
+  margin-left: 42% !important;
   margin-top: 27% !important;
   background-color: var(--blue-color) !important;
   border-radius: 32px !important;
@@ -175,5 +175,106 @@ ul {
     background-color: white !important;
     color: var(--blue-color) !important;
     border-color: var(--blue-color) !important;
+  }
+}
+
+.w-100.create-account.btn.btn-primary {
+  display: flex !important;
+  justify-content: center !important;
+  width: 30% !important;
+  margin-left: 2% !important;
+  margin-top: 20% !important;
+  background-color: var(--blue-color) !important;
+  border-radius: 32px !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+.w-100.create-account.btn.btn-primary:hover {
+  background-color: var(--card--edge-color) !important;
+  color: white !important;
+}
+
+.btn.btn-primary.w-100:hover {
+  background-color: var(--card--edge-color) !important;
+  color: white !important;
+}
+
+.w-100.btn.btn-secondary:hover {
+  background-color: var(--blue-color) !important;
+  color: white !important;
+}
+
+.info-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-left: -23%;
+  margin-top: 2%;
+  text-align: left !important;
+  color: var(--navy-blue-color) !important;
+  margin-bottom: -3% !important;
+}
+
+.info-text {
+  font-size: 16px;
+  color: var(--navy-blue-color);
+}
+
+.info-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--navy-blue-color) !important;
+}
+
+.create-account-title {
+  margin-bottom: 0;
+  line-height: var(--bs-modal-title-line-height);
+  margin-top: -7% !important;
+  color: var(--navy-blue-color) !important;
+}
+
+.form-label {
+  color: var(--navy-blue-color) !important;
+}
+
+.fade.modal.show {
+  font-family: var(--font-primary);
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: var(--bs-modal-title-line-height);
+  color: var(--navy-blue-color) !important;
+}
+
+.info-title.mt-3.creact-accont-subtitle {
+  font-weight: lighter !important;
+}
+
+.info-text.d-block.creat-accont-span {
+  text-wrap-mode: nowrap;
+}
+@media (max-width: 768px) {
+  .create-account-title.modal-title {
+    text-wrap-mode: nowrap !important;
+    margin-top: -42% !important;
+  }
+  .info-container {
+    margin-left: -59% !important;
+    margin-top: 19% !important;
+  }
+  .info-text.d-block.creat-accont-span {
+    width: 105% !important;
+    text-wrap-mode: inherit !important;
+  }
+  .w-100.create-account.btn.btn-primary {
+    width: 100% !important;
+    margin-left: 0% !important;
   }
 }

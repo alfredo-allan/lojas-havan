@@ -36,9 +36,18 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
 }) => {
     const [selectedImage, setSelectedImage] = useState(image);
     const [quantity, setQuantity] = useState(1);
-    const [cep, setCep] = useState("");
+    const [cep, setCep] = useState(""); // Estado do CEP
     const [showDelivery, setShowDelivery] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const [liked, setLiked] = useState(false);
+
+    // Carregar o CEP salvo no localStorage ao iniciar o componente
+    useEffect(() => {
+        const savedCep = localStorage.getItem("userCep");
+        if (savedCep) {
+            setCep(savedCep);
+        }
+    }, []);
 
     useEffect(() => {
         const handleResize = () => {
@@ -46,9 +55,9 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
         };
 
         handleResize();
-        window.addEventListener('resize', handleResize);
+        window.addEventListener("resize", handleResize);
 
-        return () => window.removeEventListener('resize', handleResize);
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     const increaseQuantity = () => setQuantity(quantity + 1);
@@ -62,12 +71,12 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
             value = value.slice(0, 5) + "-" + value.slice(5, 8);
         }
         setCep(value);
+        localStorage.setItem("userCep", value); // Atualiza o localStorage
     };
 
     const handleCalculateClick = () => {
         setShowDelivery(cep.length === 9);
     };
-    const [liked, setLiked] = useState(false);
 
     const toggleLike = () => {
         setLiked(!liked);
@@ -171,7 +180,13 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                     <div className="shipping-calculator  with-delivery">
                         <span id='shipping-deadline'>Calcule o valor do frete e prazo de entrega</span>
                         <img className='truck-delivery' src={TruckDelivery} alt="" />
-                        <input type="text" placeholder="Digite o CEP" value={cep} onChange={handleCepChange} maxLength={9} />
+                        <input
+                            type="text"
+                            placeholder="Digite o CEP"
+                            value={cep}
+                            onChange={handleCepChange}
+                            maxLength={9}
+                        />
                         <button onClick={handleCalculateClick}>Calcular</button>
 
                         <div className="delivery-condition">
