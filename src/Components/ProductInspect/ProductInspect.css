@@ -377,9 +377,12 @@ div.quantity-selector button {
   cursor: pointer;
   animation: pulsate 1.5s ease-in-out infinite;
   margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
   display: flex;
   justify-content: center;
-  margin-left: -57%;
+  margin-left: 19%;
   margin-bottom: 12%;
   margin-top: 2%;
   width: 40px;
@@ -388,7 +391,7 @@ div.quantity-selector button {
 .product-iteration {
   display: block ruby;
   position: absolute;
-  margin: -16% -17%;
+  margin: -16% 19%;
   width: 100%;
   .box-share,
   .box-heart-product,
@@ -463,6 +466,9 @@ div.quantity-selector button {
     width: 95%;
     font-weight: bold;
     color: var(--navy-blue-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
   .payment-information {
@@ -535,14 +541,14 @@ div.quantity-selector button {
   }
   .title-box-decription {
     margin: -12% 0%;
-    width: 25%;
+    width: 28%;
     padding: 2% 10px;
   }
   .back-button {
     animation: pulsate 1.5s ease-in-out infinite;
     cursor: pointer;
     margin-left: 3%;
-    margin-top: -91px;
+    margin-top: -112px;
     position: absolute;
     width: 32px;
   }
@@ -595,7 +601,7 @@ div.quantity-selector button {
     margin-top: 228vh;
   }
   .product-iteration {
-    margin: 88px -85px;
+    margin: 88px 5px;
     .heart-product,
     .share-text {
       display: none;
@@ -607,7 +613,7 @@ div.quantity-selector button {
       color: var(--blue-color);
       top: 0px;
       padding: 8px 42px;
-      left: 285px;
+      left: 159px;
       width: 44%;
       margin-left: -4%;
     }

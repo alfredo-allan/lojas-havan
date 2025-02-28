@@ -91,7 +91,7 @@ input:focus {
 
 .icon {
   display: flex;
-  margin-top: -5px;
+  margin-top: -22px;
   #Text-Login {
     width: 44%;
     color: white;
@@ -121,10 +121,12 @@ input:focus {
 
 #Lupa {
   margin-top: -6%;
-  margin-left: 43%;
+  margin-left: 92%;
   width: 4%;
   position: absolute;
   cursor: pointer;
+  display: flex;
+  justify-content: end;
 }
 .d-flex.align-items-center {
   margin-top: -23%;
@@ -181,8 +183,10 @@ input:focus {
     margin: 0px 0px;
   }
   #Lupa {
-    margin-left: 15%;
+    margin-left: 64%;
     margin-top: -10%;
+    display: flex;
+    justify-content: end;
   }
   #logo {
     margin-top: -10%;
@@ -249,13 +253,15 @@ input:focus {
     padding-left: 8%;
   }
   .search-box input {
-    flex: 1;
+    flex: 1 1;
     border: none;
     outline: none;
-    padding: 8px;
-    font-size: 16px;
+    padding: 7px 0px;
+    padding-left: 0px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
+    padding-left: 7px;
   }
   .search-icon {
     width: 20px;

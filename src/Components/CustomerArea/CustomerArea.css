@@ -1,0 +1,102 @@
+.position-sticky {
+  color: var(--navy-blue-color) !important;
+  font-family: var(--font-primary) !important;
+}
+.list-group.p-3 {
+  text-wrap-mode: nowrap !important;
+}
+.bs-list-group-active-bg {
+  color: var(--blue-color) !important;
+}
+.bs-list-group-active-border-color {
+  color: var(--blue-color) !important;
+}
+
+.col-md-9.ms-sm-auto.col-lg-10.px-md-4 {
+  margin-bottom: 10%;
+}
+.btn-link:hover {
+  text-decoration: none !important;
+  color: var(--blue-color) !important;
+}
+
+.sidebar {
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px !important;
+}
+
+.list-group-item.active {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.btn-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  margin-left: 250px; /* Ajuste conforme a largura do sidebar */
+  padding: 20px;
+}
+
+.btn.btn-primary.save-address {
+  display: flex !important;
+  width: 22% !important;
+  margin-top: 5% !important;
+  background-color: var(--blue-color) !important;
+  border-radius: 32px !important;
+  color: white !important;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.btn.btn-primary.save-address:hover {
+  background-color: var(--card--edge-color) !important;
+  color: white !important;
+}
+
+.col-md-9.ms-sm-auto.col-lg-10.px-md-4 {
+  color: var(--navy-blue-color) !important;
+  font-family: var(--font-primary) !important;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(128, 128, 128, 0.136) !important;
+}
+.list-group-item + .list-group-item {
+  border-top-width: 0;
+  background-color: #00000003 !important;
+}
+
+.list-group-item.active {
+  color: var(--blue-color) !important;
+  font-family: var(--font-primary) !important;
+}
+.divider-custoumer {
+  margin: 0;
+  color: rgba(255, 255, 255, 0);
+  padding: 2%;
+}
+
+.btn.btn-link.w-100.text-start {
+  color: var(--navy-blue-color) !important;
+  font-family: var(--font-primary) !important;
+}
+
+@media (max-width: 768px) {
+  .btn.btn-primary.save-address {
+    width: 100% !important;
+  }
+}

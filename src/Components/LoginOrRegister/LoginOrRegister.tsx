@@ -4,7 +4,7 @@ import { Modal, Button } from "react-bootstrap";
 import "./LoginOrRegister.css";
 import UserLoginIcoBlue from '../../Assets/Img/user-blue.png';
 import CpfCnpjInput from "../CpfCnpjInput/CpfCnpjInput"; // Importe o componente
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 interface LoginOrRegisterProps {
     isOpen: boolean;
@@ -17,7 +17,7 @@ const LoginOrRegister: React.FC<LoginOrRegisterProps> = ({ isOpen, onClose }) =>
     const [tipoPessoa, setTipoPessoa] = useState(""); // Estado para o select
     const [cpf, setCpf] = useState("");
     const [cnpj, setCnpj] = useState("");
-
+    const navigate = useNavigate();
 
     const handleShowLogin = () => setShowLoginModal(true);
     const handleCloseLogin = () => setShowLoginModal(false);
@@ -42,6 +42,7 @@ const LoginOrRegister: React.FC<LoginOrRegisterProps> = ({ isOpen, onClose }) =>
             .replace(/(\d{3})(\d)/, "$1.$2")
             .replace(/(\d{3})(\d{1,2})$/, "$1-$2");
     };
+
 
     // Atualiza o estado do CPF conforme o usuário digita
     const handleCpfChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -112,13 +113,21 @@ const LoginOrRegister: React.FC<LoginOrRegisterProps> = ({ isOpen, onClose }) =>
                             <form>
                                 <div className="mb-3">
                                     {/* <label className="form-label">CPF ou CNPJ</label> */}
-                                    <CpfCnpjInput /> {/* Campo de CPF/CNPJ com a formatação */}                                </div>
+                                    <CpfCnpjInput /> {/* Campo de CPF/CNPJ com a formatação */}
+                                </div>
                                 <div className="mb-3">
                                     <label className="form-label">Senha</label>
                                     <input type="password" className="form-control" placeholder="Digite sua senha" />
                                 </div>
                                 <a href="#" className="d-block mb-3">Esqueceu sua senha?</a>
-                                <Button variant="secondary" className="w-100">Entrar</Button>
+                                <Button
+                                    variant="secondary"
+                                    id="true-login"
+                                    className="w-100"
+                                    onClick={() => navigate('/customer-area')}
+                                >
+                                    Entrar
+                                </Button>
                             </form>
                         </div>
                     </div>

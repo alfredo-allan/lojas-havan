@@ -1,20 +1,22 @@
-// // src/Routes/Routes.tsx
-// import React from 'react';
-// import { Route, Routes } from 'react-router-dom';
-// import CustomerArea from '../Components/CustomerArea/CustomerArea';
-// import Layout from '../Components/Layout/Layout';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import CustomerAreaPage from '../Pages/CustomerAreaPage';
+import Informatica from '../Pages/Computing';
+import Home from '../Pages/Home';  // Importando o Home
 
-// interface AppRoutesProps {
-//     onSearch: (term: string) => void; // Definindo que onSearch será passado
-// }
+interface AppRoutesProps {
+    searchTerm: string;
+    onSearch: (term: string) => void;
+}
 
-// const AppRoutes = ({ onSearch }: AppRoutesProps) => {
-//     return (
-//         <Routes>
-//             <Route path="/customer-area" element={<Layout onSearch={onSearch}><CustomerArea /></Layout>} />
-//             {/* Outras rotas podem ir aqui */}
-//         </Routes>
-//     );
-// };
+const AppRoutes = ({ searchTerm, onSearch }: AppRoutesProps) => {
+    return (
+        <Routes>
+            <Route path="/" element={<Home searchTerm={searchTerm} onSearch={onSearch} />} />  {/* Página inicial */}
+            <Route path="/customer-area" element={<CustomerAreaPage />} />
+            <Route path="/informatica" element={<Informatica />} />
+        </Routes>
+    );
+};
 
-// export default AppRoutes;
+export default AppRoutes;

@@ -7,8 +7,10 @@
 
 .result-page-location {
   position: absolute;
-  margin-left: -648px;
+  margin-left: 24%;
   margin-top: -6%;
+  display: flex;
+  justify-content: left;
 }
 
 @media (max-width: 760px) {
@@ -20,7 +22,8 @@
   }
   .result-page-location {
     position: absolute;
-    margin: -23% -48%;
+    margin-top: -23%;
     font-size: x-small;
+    margin-left: 1%;
   }
 }
