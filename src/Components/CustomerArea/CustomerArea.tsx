@@ -1,86 +1,87 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import "./CustomerArea.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const CustomerArea = () => {
-    const [activeForm, setActiveForm] = useState('address'); // Estado para o formulário ativo
+    const [activeForm, setActiveForm] = useState("address");
 
-    const handleMenuClick = (form: string) => { // Definindo tipo 'string' para o parâmetro 'form'
-        setActiveForm(form);
-    };
     return (
         <div className="container-fluid">
             <div className="row">
-                {/* Sidebar */}
-                <div className="col-md-3 col-lg-2 p-3 bg-light" style={{ position: 'fixed', height: '100%' }}>
-                    <ul className="nav flex-column">
-                        <li className="nav-item">
-                            <strong>Minha Conta</strong>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#" onClick={() => handleMenuClick('address')}>
-                                Meus endereços
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="">
-                                Lista de Desejos e Favoritos
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="">
-                                Consulta de saldo
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="">
-                                Sair
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                {/* Sidebar fixa */}
+                <nav className="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                    <div className="position-sticky">
+                        <ul className="nav flex-column p-3">
+                            <li className="nav-item">
+                                <strong>Minha Conta</strong>
+                            </li>
+                            <li className="nav-item">
+                                <button className="nav-link btn btn-link text-start w-100" onClick={() => setActiveForm("address")}>
+                                    Meus endereços
+                                </button>
+                            </li>
+                            <li className="nav-item">
+                                <button className="nav-link btn btn-link text-start w-100">
+                                    Lista de Desejos e Favoritos
+                                </button>
+                            </li>
+                            <li className="nav-item">
+                                <button className="nav-link btn btn-link text-start w-100">
+                                    Consulta de saldo
+                                </button>
+                            </li>
+                            <li className="nav-item">
+                                <button className="nav-link btn btn-link text-start w-100">
+                                    Sair
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 
-                {/* Content Area */}
-                <div className="col-md-9 col-lg-10 offset-md-3 offset-lg-2 p-4" style={{ marginLeft: '20%' }}>
-                    {activeForm === 'address' && (
-                        <div>
+                {/* Área de conteúdo */}
+                <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                    {activeForm === "address" && (
+                        <div className="mt-4">
                             <h1>Adicionar novo endereço</h1>
-                            <form className="form-address-edit" action="" method="post">
+                            <form className="form-address-edit">
                                 <fieldset className="fieldset">
-                                    <legend><span>Informações de contato</span></legend>
-                                    <div className="form-group">
-                                        <label htmlFor="firstname">Nome</label>
+                                    <legend>Informações de contato</legend>
+                                    <div className="mb-3">
+                                        <label htmlFor="firstname" className="form-label">Nome</label>
                                         <input type="text" className="form-control" id="firstname" placeholder="Insira o seu nome" />
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="lastname">Sobrenome</label>
+                                    <div className="mb-3">
+                                        <label htmlFor="lastname" className="form-label">Sobrenome</label>
                                         <input type="text" className="form-control" id="lastname" placeholder="Insira o seu sobrenome" />
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="telephone">Celular</label>
+                                    <div className="mb-3">
+                                        <label htmlFor="telephone" className="form-label">Celular</label>
                                         <input type="tel" className="form-control" id="telephone" placeholder="(DD) 90000-0000" />
                                     </div>
                                 </fieldset>
 
-                                <fieldset className="fieldset">
-                                    <legend><span>Endereço</span></legend>
-                                    <div className="form-group">
-                                        <label htmlFor="zip">CEP</label>
+                                <fieldset className="fieldset mt-4">
+                                    <legend>Endereço</legend>
+                                    <div className="mb-3">
+                                        <label htmlFor="zip" className="form-label">CEP</label>
                                         <input type="text" className="form-control" id="zip" placeholder="Insira o CEP" />
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="street_1">Logradouro</label>
+                                    <div className="mb-3">
+                                        <label htmlFor="street_1" className="form-label">Logradouro</label>
                                         <input type="text" className="form-control" id="street_1" placeholder="Insira o endereço de entrega" />
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="street_2">Número</label>
+                                    <div className="mb-3">
+                                        <label htmlFor="street_2" className="form-label">Número</label>
                                         <input type="text" className="form-control" id="street_2" placeholder="Digite o número do seu endereço" />
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="city">Cidade</label>
+                                    <div className="mb-3">
+                                        <label htmlFor="city" className="form-label">Cidade</label>
                                         <input type="text" className="form-control" id="city" placeholder="Insira a cidade" />
                                     </div>
-                                    <div className="form-group">
-                                        <label htmlFor="region_id">Estado</label>
-                                        <select className="form-control" id="region_id">
+                                    <div className="mb-3">
+                                        <label htmlFor="region_id" className="form-label">Estado</label>
+                                        <select className="form-select" id="region_id">
                                             <option value="">Selecione o estado</option>
                                             <option value="SP">São Paulo</option>
                                             <option value="RJ">Rio de Janeiro</option>
@@ -92,7 +93,7 @@ const CustomerArea = () => {
                             </form>
                         </div>
                     )}
-                </div>
+                </main>
             </div>
         </div>
     );

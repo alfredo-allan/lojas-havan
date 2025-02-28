@@ -4,6 +4,7 @@ import { Modal, Button } from "react-bootstrap";
 import "./LoginOrRegister.css";
 import UserLoginIcoBlue from '../../Assets/Img/user-blue.png';
 import CpfCnpjInput from "../CpfCnpjInput/CpfCnpjInput"; // Importe o componente
+import { useNavigate } from "react-router-dom";
 
 interface LoginOrRegisterProps {
     isOpen: boolean;
@@ -177,7 +178,13 @@ const LoginOrRegister: React.FC<LoginOrRegisterProps> = ({ isOpen, onClose }) =>
                             <>
                                 <div className="mb-3">
                                     <label className="form-label">CNPJ *</label>
-                                    <input type="text" className="form-control" placeholder="Insira o nº do seu CNPJ" />
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="Insira o nº do seu CNPJ"
+                                        value={cnpj}
+                                        onChange={(e) => setCnpj(formatCnpj(e.target.value))}
+                                    />
                                 </div>
                                 <div className="mb-3">
                                     <label className="form-label">Nome Comercial *</label>

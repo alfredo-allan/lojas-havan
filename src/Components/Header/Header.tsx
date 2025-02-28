@@ -70,7 +70,8 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                     {isSearchVisible && <div className="overlay" onClick={closeSearch}></div>}
 
                     <div className="search-container">
-                        <div className="search-box search-desktop">
+                        {/* Desktop Search Box */}
+                        <div className={`search-box ${isMobile ? 'd-none' : ''} search-desktop`}>
                             <input
                                 type="search"
                                 placeholder="Buscar na Havan"
@@ -78,20 +79,50 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 onKeyPress={(e) => e.key === "Enter" && handleSearch()}
                             />
-                            <img className="search-icon" src={LupaAzulMenor} alt="Buscar" onClick={handleSearch} />
-                            <img className="close-icon" src={CloseIcon} alt="Fechar" onClick={closeSearch} />
+                            <img
+                                className="search-icon"
+                                src={LupaAzulMenor} // Lupa azul no desktop
+                                alt="Buscar"
+                                onClick={handleSearch}
+                            />
                         </div>
 
+                        {/* Mobile Search Box */}
+                        {isSearchVisible && isMobile && (
+                            <div className="search-box search-mobile">
+                                <input
+                                    type="search"
+                                    placeholder="Buscar na Havan"
+                                    value={searchTerm}
+                                    onChange={(e) => setSearchTerm(e.target.value)}
+                                    onKeyPress={(e) => e.key === "Enter" && handleSearch()}
+                                    autoFocus
+                                />
+                                <img
+                                    className="search-icon"
+                                    src={LupaAzulMenor} // Lupa azul no mobile também
+                                    alt="Buscar"
+                                    onClick={handleSearch}
+                                />
+                                <img
+                                    className="close-icon-search"
+                                    src={CloseIcon} // Botão de fechar só aparece no mobile
+                                    alt="Fechar"
+                                    onClick={closeSearch}
+                                />
+                            </div>
+                        )}
+
+                        {/* Lupa Icon (Appears on mobile or when search box is not visible) */}
                         {!isSearchVisible && (
                             <img
                                 id="Lupa"
-                                src={isMobile ? LupaBranca : Lupa}
+                                src={isMobile ? LupaBranca : LupaAzulMenor} // Lupa branca no mobile e azul no desktop
                                 alt="Buscar"
                                 onClick={() => setIsSearchVisible(true)}
                             />
                         )}
                     </div>
-
                     <div className="icon" onClick={() => setIsLoginOpen(true)} style={{ cursor: "pointer" }}>
                         <img src={UserLoginIco} id="UserLogin" alt="Usuário" />
                         <a id="Text-Login" href="#">Olá, Entre na conta ou Cadastre-se</a>
