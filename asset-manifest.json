@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lojas-havan/static/css/main.e42af909.css",
-    "main.js": "/lojas-havan/static/js/main.14fbe8b6.js",
+    "main.css": "/lojas-havan/static/css/main.bb7d840b.css",
+    "main.js": "/lojas-havan/static/js/main.1107fbc9.js",
     "static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940330.webp": "/lojas-havan/static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940330.f570abff67ce4283b23d.webp",
     "static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940329.webp": "/lojas-havan/static/media/impressora-hp-multifuncional-wi-fi-smart-tank-583_940329.82a83082970a42ae102a.webp",
     "static/media/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003418.webp": "/lojas-havan/static/media/kit-teclado-e-mouse-maxprint-exagon-sem-fio_1003418.d308031e5757fe75ca16.webp",
@@ -152,11 +152,11 @@
     "static/media/fone-de-ouvido-pace-105-motorola_467927.webp": "/lojas-havan/static/media/fone-de-ouvido-pace-105-motorola_467927.44f0320d9555f62d3937.webp",
     "static/media/carregador-portatil-power-bank-xiaomi-10000mah_1052586.webp": "/lojas-havan/static/media/carregador-portatil-power-bank-xiaomi-10000mah_1052586.d6b19b041359fba81003.webp",
     "static/media/mousepad-gamer-logitech-tecido-g-g640_1031937.webp": "/lojas-havan/static/media/mousepad-gamer-logitech-tecido-g-g640_1031937.489ca159437d5198231d.webp",
-    "main.e42af909.css.map": "/lojas-havan/static/css/main.e42af909.css.map",
-    "main.14fbe8b6.js.map": "/lojas-havan/static/js/main.14fbe8b6.js.map"
+    "main.bb7d840b.css.map": "/lojas-havan/static/css/main.bb7d840b.css.map",
+    "main.1107fbc9.js.map": "/lojas-havan/static/js/main.1107fbc9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e42af909.css",
-    "static/js/main.14fbe8b6.js"
+    "static/css/main.bb7d840b.css",
+    "static/js/main.1107fbc9.js"
   ]
 }
