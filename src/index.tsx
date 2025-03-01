@@ -1,9 +1,9 @@
+// index.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './index.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,10 +11,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/lojas-havan">
+    <BrowserRouter basename="/lojas-havan">  {/* Adicionando o basename */}
       <App />
     </BrowserRouter>
   </React.StrictMode>
 );
-
-reportWebVitals();
