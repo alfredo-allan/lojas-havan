@@ -13,6 +13,7 @@ import CloseIcon from "../../Assets/Img/close.png";
 import Localizacao from "../../Assets/Img/location.png";
 import UserLoginIco from "../../Assets/Img/user.png";
 import CarrinhoCompras from "../../Assets/Img/shopping-cart.png";
+import { useNavigate } from "react-router-dom";
 
 interface HeaderProps {
     onSearch: (term: string) => void;
@@ -24,6 +25,8 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
     const [searchTerm, setSearchTerm] = useState("");
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const [isLoginOpen, setIsLoginOpen] = useState(false);
+    const [cartCount, setCartCount] = useState<number>(0);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleResize = () => {
@@ -49,7 +52,20 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
         setIsSearchVisible(false);
         setSearchTerm("");
     };
+    useEffect(() => {
+        const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+        setCartCount(cart.length);
+    }, []);
 
+    useEffect(() => {
+        const updateCart = () => {
+            const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+            setCartCount(cart.length);
+        };
+
+        window.addEventListener("storage", updateCart);
+        return () => window.removeEventListener("storage", updateCart);
+    }, []);
     return (
         <header>
             <nav className="navbar navbar-expand-lg">
@@ -123,10 +139,13 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                             />
                         )}
                     </div>
-                    <div className="icon" onClick={() => setIsLoginOpen(true)} style={{ cursor: "pointer" }}>
+                    <div className="icon-container" onClick={() => setIsLoginOpen(true)} style={{ cursor: "pointer" }}>
                         <img src={UserLoginIco} id="UserLogin" alt="Usuário" />
                         <a id="Text-Login" href="#">Olá, Entre na conta ou Cadastre-se</a>
-                        <img src={CarrinhoCompras} id="Carrinho" alt="Carrinho de Compras" />
+                        <div className="cart-icon" onClick={() => navigate("/shopping-cart")} style={{ cursor: "pointer" }}>
+                            <img src={CarrinhoCompras} id="Carrinho" alt="Carrinho de Compras" />
+                            {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
+                        </div>
                     </div>
                 </div>
             </nav>

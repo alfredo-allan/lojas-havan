@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ProductInspect.css';
 import { ProductCardProps } from '../ProductCard/ProductCard';
 import PixIcon from "../../Assets/Img/pix-icon.png";
@@ -14,7 +15,6 @@ import ShareIcon from '../../Assets/Img/share.png';
 import HeartProduct from '../../Assets/Img/heart-product.png';
 import DescriptionListIco from '../../Assets/Img/list.png';
 import HeartProductLike from '../../Assets/Img/heart-product-like.png';
-
 
 
 interface ProductInspectProps extends ProductCardProps {
@@ -40,6 +40,8 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
     const [showDelivery, setShowDelivery] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const [liked, setLiked] = useState(false);
+    const navigate = useNavigate();
+
 
     // Carregar o CEP salvo no localStorage ao iniciar o componente
     useEffect(() => {
@@ -80,6 +82,46 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
 
     const toggleLike = () => {
         setLiked(!liked);
+    };
+
+    const handleBuyNow = () => {
+        handleAddToCart();
+        navigate('/shopping-cart'); // Altere conforme necessário
+    };
+
+    const handleAddToCart = () => {
+        // Criando o objeto do produto corretamente
+        const product: ProductCardProps = {
+            name,
+            image,
+            discountPrice,
+            installment,
+            installments,
+            discount,
+            icoHeart,
+            gallery,
+            description
+        };
+
+        // Pega os itens do carrinho já existente
+        const cart: (ProductCardProps & { quantity: number })[] = JSON.parse(localStorage.getItem("cart") || "[]");
+
+        // Verifica se o item já está no carrinho
+        const existingItemIndex = cart.findIndex((item) => item.name === product.name);
+
+        if (existingItemIndex !== -1) {
+            // Se o item já estiver no carrinho, atualiza a quantidade com o valor atual
+            cart[existingItemIndex].quantity += quantity;
+        } else {
+            // Caso contrário, adiciona o item com a quantidade selecionada
+            cart.push({ ...product, quantity });
+        }
+
+        // Atualiza o carrinho no localStorage
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        // Dispara evento para atualizar o Header
+        window.dispatchEvent(new Event("storage"));
     };
 
     return (
@@ -173,8 +215,8 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                     </div>
 
                     <div className="buy-buttons">
-                        <button className="buy-button">Comprar Agora</button>
-                        <button className="add-to-cart-button">Adicionar ao Carrinho</button>
+                        <button className="buy-button" onClick={handleBuyNow}>Comprar Agora</button>
+                        <button className="add-to-cart-button" onClick={handleAddToCart}>Adicionar ao Carrinho</button>
                     </div>
 
                     <div className="shipping-calculator  with-delivery">

@@ -1,0 +1,13 @@
+/* Remove rolagem horizontal da página inteira */
+html,
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/* Remove rolagem horizontal de um contêiner específico */
+.informatica-container {
+  overflow-x: hidden; /* Evita rolagem horizontal */
+  width: 100%; /* Garante que o elemento não ultrapasse a largura da tela */
+  max-width: 100vw; /* Limita a largura para não estourar */
+}

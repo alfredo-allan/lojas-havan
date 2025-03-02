@@ -1,0 +1,30 @@
+.shopping-cart-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que a página ocupe toda a altura da tela */
+  margin: 0;
+  background-color: var(--page-background);
+}
+
+.shopping-cart-container {
+  flex: 1; /* Faz o conteúdo ocupar o espaço disponível, empurrando o footer para baixo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.empty-cart-message {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: auto; /* Ajusta automaticamente o espaçamento */
+}
+
+.space-footer {
+  margin-top: auto; /* Empurra o footer para o final */
+  width: 100%;
+  margin-top: 30%;
+}

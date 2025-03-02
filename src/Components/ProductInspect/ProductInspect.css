@@ -393,6 +393,7 @@ div.quantity-selector button {
   position: absolute;
   margin: -16% 19%;
   width: 100%;
+  z-index: -1;
   .box-share,
   .box-heart-product,
   .box-description-list {
@@ -593,7 +594,7 @@ div.quantity-selector button {
       display: grid;
       color: var(--navy-blue-color);
       margin-bottom: 2%;
-      width: 84%;
+      width: 85% !important;
       padding: 10px;
     }
   }

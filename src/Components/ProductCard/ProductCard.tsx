@@ -15,6 +15,7 @@ export interface ProductCardProps {
     onClick?: () => void;
     gallery: string[];
     description: { title?: string; content: string | string[] }[]; // Aqui precisa ser array
+    
 }
 
 

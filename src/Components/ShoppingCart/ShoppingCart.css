@@ -1,0 +1,400 @@
+.shopping-cart {
+  justify-content: center;
+  display: grid;
+  font-family: var(--font-primary);
+  background-color: var(--page-background);
+}
+
+.cart-item-image {
+  width: 15%;
+}
+
+.shopping-cart-description {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: -25px 110px;
+  font-size: 22px;
+}
+
+.cart-item {
+  width: 800px;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 45px;
+  margin-bottom: 5%;
+  margin-top: 28%;
+  margin-left: -560px;
+}
+
+.quantity-selector-shopping {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: -110px 595px;
+  width: 120px;
+  height: 45px;
+  border: 1px solid var(--card--edge-color);
+  border-radius: 30px;
+}
+
+.decrease {
+  display: flex;
+  justify-content: left;
+  margin-left: -8vh;
+  position: absolute;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 30px;
+  top: -2px;
+  color: gray;
+}
+
+.add {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  margin-left: 7vh;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 30px;
+  color: var(--blue-color);
+}
+
+.numeral-indicator-shopping {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 1vh;
+  margin: 3px;
+}
+
+.shopping-cart-text {
+  color: var(--navy-blue-color);
+  font-family: var(--font-primary);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-left: 292px;
+}
+
+.delete-shopping {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin: -148px 689px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer !important;
+}
+
+.cart-item-price {
+  font-weight: bold;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin: -103px 475px;
+}
+
+.shopping-payment-method {
+  display: grid;
+  justify-content: center;
+  position: absolute;
+  margin-left: 1140px;
+  margin-top: 60px;
+}
+
+.payment-button-pay-card {
+  background-color: var(--discount-background);
+  color: var(--discount--color);
+  border: none;
+  border-radius: 4px;
+  margin-right: 10%;
+}
+
+.payment-button-pay-pix {
+  background-color: var(--discount-background);
+  color: var(--discount--color);
+  border: none;
+  border-radius: 4px;
+}
+
+.shipping-calculator-shopping-cart {
+  width: 420px;
+  height: auto;
+  border: 1px solid var(--card--edge-color);
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 5%;
+  input {
+    width: 285px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid var(--blue-color);
+    outline: none;
+    margin-right: 1%;
+    padding: 0px 85px;
+  }
+}
+
+.delivery.time-span {
+  color: var(--navy-blue-color);
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+}
+
+.delivery.time-calculate {
+  background-color: var(--blue-color);
+  color: white;
+  height: 40px;
+  border-radius: 18px;
+  width: 90%;
+  border: none;
+  font-weight: bold;
+  margin-top: 7%;
+  margin-bottom: 10%;
+}
+
+.green-shopping-truck {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+  margin-left: 25px;
+}
+
+.shopee-temple {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+  margin-left: 25px;
+}
+
+.shopee-temple-text {
+  padding: 0% 0%;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.205);
+  text-align: left;
+  display: flex;
+  margin: -10% 15% 0%;
+  font-weight: bold;
+  width: 80%;
+}
+
+.shopping-payment-method-text {
+  font-size: 30px;
+  display: flex;
+  margin-left: 0;
+  text-align: center;
+  justify-content: unset;
+  color: var(--navy-blue-color);
+}
+
+.pay-option {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+.truck-delivery-shopping {
+  margin-right: 20px;
+  margin-left: -25px;
+}
+
+.delivery-options {
+  display: grid;
+  justify-content: center;
+  width: 420px;
+  height: auto;
+  border: 1px solid var(--card--edge-color);
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.delivery-options-text {
+  font-size: 22px;
+  padding: 0px;
+  text-align: start;
+  margin-left: 25px;
+}
+
+.space-green-truck {
+  margin-bottom: 25px;
+}
+
+.divider-shopping {
+  width: 420px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.delivery-option-contents {
+  margin-top: -20px;
+  margin-bottom: 1px;
+}
+
+.cart-value {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    width: 95%;
+    margin-left: 2%;
+    margin-bottom: -22%;
+  }
+  .shopping-cart-description {
+    margin: 0;
+    font-size: 12px;
+    margin-top: 2%;
+  }
+  .cart-item-price {
+    font-size: 17px;
+    margin: -13% 33%;
+    text-wrap-mode: nowrap;
+  }
+  .cart-item-image {
+    width: 25%;
+  }
+  .quantity-selector-shopping {
+    width: 24%;
+    height: 45px;
+    margin: -16% 55%;
+  }
+  .delete-shopping {
+    margin: -26% 75%;
+  }
+  .shopping-cart-text {
+    margin-left: 4%;
+    margin-top: 3%;
+  }
+
+  .cart-value {
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 25%;
+    position: relative;
+  }
+  .space-footer {
+    margin-top: auto;
+    margin-top: 130%;
+  }
+  .shopping-payment-method {
+    margin-left: 5%;
+    margin-top: 40%;
+    width: 95%;
+    position: relative;
+  }
+  .shipping-calculator-shopping-cart {
+    width: 95%;
+  }
+  .space-footer {
+    margin-top: auto;
+    width: 100%;
+    margin-top: 30% !important;
+  }
+  .shipping-calculator-shopping-cart {
+    & input {
+      width: 70%;
+      padding: 0px 62px;
+    }
+  }
+  .delivery-options {
+    width: 95% !important;
+    padding: 0 !important;
+  }
+  .divider-shopping {
+    width: 100% !important;
+    margin-bottom: 15px !important;
+  }
+  .green-shopping-truck {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    margin-left: 4px;
+  }
+  .green-shopping-truck-text {
+    font-size: small;
+  }
+  .delivery-options-text {
+    margin-top: 10px;
+  }
+  .shopee-temple {
+    width: 32px;
+    height: 32px;
+    margin-left: 4px;
+    margin-right: 15px;
+  }
+  .shopee-temple-text {
+    font-size: small;
+    margin-bottom: 5%;
+  }
+  .finalize-purchase-desktop {
+    display: none;
+  }
+  .finalize-purchase-mobile {
+    position: fixed;
+    bottom: 10px; /* Mantém o botão um pouco acima do rodapé */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o botão */
+    width: 90%; /* Define uma largura adaptável */
+    max-width: 400px; /* Limita o tamanho do botão */
+    height: 50px;
+    border-radius: 4px;
+    background-color: var(--blue-color);
+    color: white;
+    font-weight: bold;
+    border: 1px solid var(--discount--color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000; /* Garante que o botão fique sobre outros elementos */
+  }
+
+  /* Efeito ao passar o mouse */
+  .finalize-purchase-mobile:hover {
+    background-color: rgba(0, 128, 0, 0.32);
+    transform: translateX(-50%) scale(1.05); /* Aumenta ligeiramente */
+  }
+
+  /* Efeito ao clicar */
+  .finalize-purchase-mobile:active {
+    transform: translateX(-50%) scale(0.95);
+    background-color: rgba(0, 100, 0, 0.5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .finalize-purchase-mobile {
+    display: none !important;
+  }
+}
+
+.finalize-purchase-desktop {
+  width: auto;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--discount-background);
+  color: var(--discount--color);
+  border: 1px solid var(--discount--color);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Suaviza a transição */
+}
+
+/* Efeito ao passar o mouse */
+.finalize-purchase-desktop:hover {
+  background-color: rgba(0, 128, 0, 0.32);
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+/* Efeito de clique */
+.finalize-purchase-desktop:active {
+  transform: scale(0.95); /* Dá um efeito de "pressionado" */
+  background-color: rgba(0, 100, 0, 0.5); /* Cor mais escura ao clicar */
+}
