@@ -184,8 +184,8 @@ input:focus {
     margin: 0px 0px;
   }
   #Lupa {
-    margin-left: 64%;
-    margin-top: -10%;
+    margin-left: 62%;
+    margin-top: -40px;
     display: flex;
     justify-content: end;
   }
