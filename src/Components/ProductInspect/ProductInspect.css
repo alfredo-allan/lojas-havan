@@ -392,8 +392,7 @@ div.quantity-selector button {
   display: block ruby;
   position: absolute;
   margin: -16% 19%;
-  width: 100%;
-  z-index: -1;
+  width: 50%;
   .box-share,
   .box-heart-product,
   .box-description-list {
@@ -615,7 +614,7 @@ div.quantity-selector button {
       top: 0px;
       padding: 8px 42px;
       left: 159px;
-      width: 44%;
+      width: 80%;
       margin-left: -4%;
     }
   }

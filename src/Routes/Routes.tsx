@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom'; // Adicionado Navigate
 import CustomerAreaPage from '../Pages/CustomerAreaPage';
 import Informatica from '../Pages/ComputingPage';
 import Home from '../Pages/Home';
@@ -16,7 +16,10 @@ const AppRoutes = ({ searchTerm, onSearch }: AppRoutesProps) => {
             <Route path="/" element={<Home searchTerm={searchTerm} onSearch={onSearch} />} />
             <Route path="/customer-area" element={<CustomerAreaPage />} />
             <Route path="/informatica" element={<Informatica />} />
-            <Route path="/shopping-cart" element={<ShoppingCartPage />} /> {/* Nova Rota */}
+            <Route path="/shopping-cart" element={<ShoppingCartPage />} />
+
+            {/* Redireciona para a home caso a rota não seja encontrada */}
+            <Route path="*" element={<Navigate to="/" />} />
         </Routes>
     );
 };

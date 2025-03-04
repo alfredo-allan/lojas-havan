@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ShoppingCart.css';
 import { ProductCardProps } from '../ProductCard/ProductCard';
 import PixIcon from "../../Assets/Img/pix-icon.png";
@@ -19,15 +20,34 @@ const ShoppingCart: React.FC<ShoppingCartProps> = ({ cartItems: initialCartItems
     const [cartItems, setCartItems] = useState(initialCartItems);
     const [cep, setCep] = useState("");
     const [showDelivery, setShowDelivery] = useState(false);
+    const navigate = useNavigate();
 
+    // Garante que o estado do carrinho está sincronizado com as props
     useEffect(() => {
-        setCartItems(initialCartItems); // Garante que o estado sincroniza com as props
+        setCartItems(initialCartItems);
     }, [initialCartItems]);
 
+    // Atualiza a contagem total de itens no carrinho
     useEffect(() => {
         const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
         onUpdateCartCount(totalItems);
     }, [cartItems, onUpdateCartCount]);
+
+    // Carregar o CEP salvo no localStorage ao iniciar o componente
+    useEffect(() => {
+        const savedCep = localStorage.getItem("userCep");
+        if (savedCep) {
+            setCep(savedCep);
+        }
+    }, []);
+
+    // Verifica se o carrinho está vazio ao abrir a página e redireciona para a home
+    useEffect(() => {
+        const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+        if (cart.length === 0) {
+            navigate('/');
+        }
+    }, [navigate]);
 
     const handleCepChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         let value = event.target.value.replace(/\D/g, "");
@@ -64,13 +84,7 @@ const ShoppingCart: React.FC<ShoppingCartProps> = ({ cartItems: initialCartItems
     const totalAmount = cartItems.reduce((total, item) => {
         return total + parseFloat(item.discountPrice.replace('R$', '').replace(',', '.')) * item.quantity;
     }, 0);
-    // Carregar o CEP salvo no localStorage ao iniciar o componente
-    useEffect(() => {
-        const savedCep = localStorage.getItem("userCep");
-        if (savedCep) {
-            setCep(savedCep);
-        }
-    }, []);
+
     return (
         <div className="shopping-cart">
             <h1 className='shopping-cart-text'>Seu Carrinho</h1>
