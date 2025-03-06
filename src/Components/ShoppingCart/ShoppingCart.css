@@ -97,7 +97,8 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  margin: -103px 475px;
+  margin: -103px 450px;
+  text-wrap-mode: nowrap;
 }
 
 .shopping-payment-method {
@@ -223,6 +224,7 @@
   padding: 0px;
   text-align: start;
   margin-left: 25px;
+  font-weight: bold;
 }
 
 .space-green-truck {
@@ -398,3 +400,4 @@
   transform: scale(0.95); /* Dá um efeito de "pressionado" */
   background-color: rgba(0, 100, 0, 0.5); /* Cor mais escura ao clicar */
 }
+

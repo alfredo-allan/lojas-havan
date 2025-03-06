@@ -5,7 +5,6 @@ import { ProductCardProps } from '../ProductCard/ProductCard';
 import PixIcon from "../../Assets/Img/pix-icon.png";
 import CardIcon from "../../Assets/Img/credit-card.png";
 import TruckDelivery from "../../Assets/Img/caminhao-de-entrega.png";
-import CheckedCalendar from '../../Assets/Img/check-mark.png';
 import TruckDeliveryGreen from "../../Assets/Img/caminhao-de-entrega-verde.png";
 import BuildingIcon from "../../Assets/Img/fotor-20250214194212.png";
 import Lixeira from '../../Assets/Img/lixeira.png'
@@ -85,6 +84,10 @@ const ShoppingCart: React.FC<ShoppingCartProps> = ({ cartItems: initialCartItems
         return total + parseFloat(item.discountPrice.replace('R$', '').replace(',', '.')) * item.quantity;
     }, 0);
 
+    const handleFinalizePurchase = () => {
+        // Navegar para a página de confirmação ou finalização do pedido
+        navigate("/shopping-finish"); // Ou para qualquer outra página desejada
+    };
     return (
         <div className="shopping-cart">
             <h1 className='shopping-cart-text'>Seu Carrinho</h1>
@@ -108,7 +111,7 @@ const ShoppingCart: React.FC<ShoppingCartProps> = ({ cartItems: initialCartItems
                         </div>
                     ))}
                     <h2 className='cart-value'>Total: R$ {totalAmount.toFixed(2)}</h2>
-                    <button className='finalize-purchase-desktop'>Finalizar compra</button>
+                    <button className='finalize-purchase-desktop' onClick={handleFinalizePurchase}>Finalizar compra</button>
                     <div className="shopping-payment-method">
                         <div className="payment-options">
                             <h1 className="shopping-payment-method-text">Forma de entrega</h1>
@@ -155,8 +158,7 @@ const ShoppingCart: React.FC<ShoppingCartProps> = ({ cartItems: initialCartItems
                                     <img className='shopee-temple' src={BuildingIcon} alt="Retirada na loja" />
                                     <span className='shopee-temple-text' >Indisponível para retirada nas lojas próximas.</span>
                                 </div>
-                                <button className='finalize-purchase-mobile' >Finalizar compra</button>
-                            </div>
+                                <button className='finalize-purchase-mobile' onClick={handleFinalizePurchase}>Finalizar compra</button>                            </div>
                         )}
                     </div>
                 </>

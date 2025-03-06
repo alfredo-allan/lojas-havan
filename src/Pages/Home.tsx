@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Components/Header/Header';
 import CategoryDetails from '../Components/CategoryDetails/CategoryDetails';
 import Footer from '../Components/Footer/Footer';
+import './HomePage.css'
 
 interface HomeProps {
     searchTerm: string;
@@ -10,7 +11,7 @@ interface HomeProps {
 
 const Home = ({ searchTerm, onSearch }: HomeProps) => {
     return (
-        <div>
+        <div className='home'>
             <Header onSearch={onSearch} />
             <CategoryDetails searchTerm={searchTerm} />
             <Footer />
