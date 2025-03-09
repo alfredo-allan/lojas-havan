@@ -3,7 +3,7 @@ import { Form, Row, Col } from "react-bootstrap";
 
 const BuyerDetailsForm: React.FC = () => {
     return (
-        <div className="container mt-4">
+        <div className="container mt-4 custom-modal-data-user">
             <div className="p-4 rounded shadow-sm bg-white">
                 <h4 className="mb-4">Dados do Comprador</h4>
                 <Form>

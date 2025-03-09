@@ -52,13 +52,15 @@ body {
   font-size: 1.5rem;
   position: absolute;
   margin: -10%;
+  margin-top: -10%;
+  margin-left: -10%;
   font-family: var(--font-primary);
   font-weight: lighter;
   color: var(--navy-blue-color);
   justify-content: center;
   display: flex;
-  margin-left: 19%;
-  margin-top: -25%;
+  margin-left: -35%;
+  margin-top: 32%;
 }
 
 .payment-information {
@@ -371,7 +373,7 @@ div.quantity-selector button {
   position: absolute;
   display: flex;
   justify-content: center;
-  margin-top: -14%;
+  margin-top: -100px;
   margin-left: 24%;
 }
 .to-go-back {

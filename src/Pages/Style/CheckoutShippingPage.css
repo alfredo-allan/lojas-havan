@@ -19,7 +19,7 @@
 .p-4.rounded.shadow-sm.bg-white {
   width: 615px;
   margin-left: -50px;
-  margin-top: -830px;
+  margin-top: -217vh;
   border-radius: 20px !important;
   display: grid;
   justify-content: center;
@@ -38,6 +38,7 @@
   justify-content: center;
   margin-top: 40px;
   color: var(--navy-blue-color);
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
