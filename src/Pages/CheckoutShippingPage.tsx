@@ -85,19 +85,20 @@ const CheckoutShippingPage: React.FC = () => {
                     <h2 className='cart-value'>Total: R$ {totalAmount.toFixed(2)}</h2>
 
                 </section>
-                <section className="buyer-data">
-                    <BuyerData />
+                <section className='user-data-and-delivery'>
+                    <section className="buyer-data">
+                        <BuyerData />
+                    </section>
+                    <section className="shopping-cart-finish">
+                        <ShoppingCartFinish
+                            cep={cep}
+                            setCep={setCep}
+                            showDelivery={showDelivery}
+                            handleCepChange={handleCepChange}
+                            handleCalculateClick={handleCalculateClick}
+                        />
+                    </section>
                 </section>
-                <section className="shopping-cart-finish">
-                    <ShoppingCartFinish
-                        cep={cep}
-                        setCep={setCep}
-                        showDelivery={showDelivery}
-                        handleCepChange={handleCepChange}
-                        handleCalculateClick={handleCalculateClick}
-                    />
-                </section>
-
                 <button className='finalize-purchase-finish' onClick={handleFinalizePurchase}>
                     Finalizar compra
                 </button>

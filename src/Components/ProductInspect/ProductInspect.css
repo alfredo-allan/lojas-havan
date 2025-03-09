@@ -1,3 +1,7 @@
+html,
+body {
+  font-family: var(--font-primary);
+}
 .product-inspect {
   margin: 0;
   padding: 0;
@@ -396,7 +400,7 @@ div.quantity-selector button {
 .product-iteration {
   display: block ruby;
   position: absolute;
-  margin: -16% 19%;
+  margin: -79% 19%;
   width: 50%;
   .box-share,
   .box-heart-product,
@@ -443,10 +447,14 @@ div.quantity-selector button {
 }
 
 .box-payment-information {
+  margin-top: -14%;
+}
+.shopping-cart-text {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 240%;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 1%;
 }
 
 @media (max-width: 768px) {
@@ -755,5 +763,11 @@ div.quantity-selector button {
     margin-left: 3% !important;
     margin-top: -367%;
     margin-bottom: 0;
+  }
+  .box-payment-information {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 240%;
   }
 }

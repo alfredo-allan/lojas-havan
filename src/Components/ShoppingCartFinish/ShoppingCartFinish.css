@@ -79,7 +79,7 @@ input[type="radio"]:checked + label.custom-radio {
   font-weight: bold;
   margin-top: -65px;
   margin-bottom: 10%;
-  margin-left: 321px;
+  margin-left: 155px;
   min-width: 420px;
   z-index: 1;
 }
@@ -117,14 +117,15 @@ input[type="radio"]:checked + label.custom-radio {
 .shopping-cart-finish {
   width: 615px;
   height: 730px;
-  margin-left: 27vh;
+  margin: 0;
+  margin-top: 0px;
+  margin-left: 0px;
   margin-top: 44px;
   background-color: white;
   border-radius: 20px;
-  display: flex;
+  display: grid;
   justify-content: center;
-  flex-direction: column;
-  direction: initial;
+  margin-left: 69px;
 }
 
 .divider-shopping-finish {

@@ -32,6 +32,8 @@
   display: flex;
   justify-content: center;
   color: var(--navy-blue-color);
+  font-size: 30px;
+  margin-top: 3%;
 }
 
 .order-summary-modal-title {
@@ -59,7 +61,7 @@
 }
 
 .buyer-data-verifying {
-  margin-top: -431px;
+  margin-top: 323px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -85,7 +87,7 @@
 }
 
 .copy-code-button {
-  width: 60%;
+  width: 80%;
   background: var(--blue-color);
   color: white;
   padding: 10px;
@@ -123,7 +125,7 @@
   }
   .verifying-card {
     width: 100%;
-    margin-left: 0%;
+    margin-left: -3%;
     margin-top: -20%;
   }
   .cart-value-verifying {
