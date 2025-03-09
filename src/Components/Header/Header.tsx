@@ -7,7 +7,7 @@ import CepInput from "../CepInput/CepInput"; // Importação do novo componente
 import LogoHavan from "../../Assets/Img/havanNameHeader.png";
 import MenuIco from "../../Assets/Img/menu.png";
 import Lupa from "../../Assets/Img/search.png";
-import LupaBranca from "../../Assets/Img/search-white.png";
+import LupaBranca from "../../Assets/Img/loupe.png";
 import LupaAzulMenor from "../../Assets/Img/search.png";
 import CloseIcon from "../../Assets/Img/close.png";
 import Localizacao from "../../Assets/Img/location.png";

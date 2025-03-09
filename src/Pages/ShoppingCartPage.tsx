@@ -3,7 +3,7 @@ import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import ShoppingCart from "../Components/ShoppingCart/ShoppingCart";
 import { ProductCardProps } from "../Components/ProductCard/ProductCard";  // Importando ProductCardProps corretamente
-import "../Pages/ ShoppingCartPage.css"; // Criar um CSS específico para essa página
+import "../Pages/Style/ ShoppingCartPage.css"; // Criar um CSS específico para essa página
 
 const ShoppingCartPage: React.FC = () => {
     const [cartItems, setCartItems] = useState<(ProductCardProps & { quantity: number })[]>([]);

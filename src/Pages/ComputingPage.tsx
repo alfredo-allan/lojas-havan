@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../Components/Header/Header';
 import CategoryDetails from '../Components/CategoryDetails/CategoryDetails';
 import Footer from '../Components/Footer/Footer';
-import "../Pages/ComputingPage.css"; // Criar um CSS específico para essa página
+import "../Pages/Style/ComputingPage.css"; // Criar um CSS específico para essa página
 
 const Computing: React.FC = () => {
     const [searchTerm, setSearchTerm] = useState(''); // Estado para armazenar o termo de pesquisa

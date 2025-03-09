@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Components/Header/Header';
 import CategoryDetails from '../Components/CategoryDetails/CategoryDetails';
 import Footer from '../Components/Footer/Footer';
-import './HomePage.css'
+import '../Pages/Style/HomePage.css'
 
 interface HomeProps {
     searchTerm: string;

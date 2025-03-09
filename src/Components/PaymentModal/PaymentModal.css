@@ -1,0 +1,153 @@
+.payment-container {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin: 28px 110px;
+  border-radius: 20px;
+}
+
+.payment-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.payment-option input {
+  display: none;
+}
+
+.custom-radio-payment-modal,
+.custom-radio-verifying {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--card--edge-color);
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-left: 350px;
+}
+
+.payment-option.selected .custom-radio-payment-modal {
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+.payment-option.selected .custom-radio-verifying {
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+.payment-box {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.payment-box label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.payment-box input,
+.payment-box select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.row div {
+  flex: 1;
+}
+
+.privacy-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.finalize-button {
+  width: 100%;
+  background: var(--blue-color);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid var(--discount--color);
+  font-weight: bold;
+}
+/* Efeito ao passar o mouse */
+.finalize-button:hover {
+  background-color: var(--discount-background);
+}
+
+/* Efeito ao clicar */
+.finalize-button:active {
+  background-color: var(--discount-background);
+  color: var(--discount--color);
+}
+
+/* Esconde o checkbox padrão */
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--blue-color); /* Cor da borda */
+  border-radius: 5px; /* Deixa os cantos arredondados */
+  background-color: white; /* Fundo padrão */
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+/* Quando o checkbox estiver marcado */
+input[type="checkbox"]:checked {
+  background-color: var(--blue-color); /* Cor de fundo quando marcado */
+  border-color: var(--card--edge-color);
+  position: relative;
+}
+
+/* Adiciona um check dentro do checkbox */
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  left: 4px;
+  top: -1px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .payment-container {
+    margin-left: 0%;
+  }
+}

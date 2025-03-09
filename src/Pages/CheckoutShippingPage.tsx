@@ -5,7 +5,7 @@ import Footer from "../Components/Footer/Footer";
 import ShoppingCartItem from "../Components/ShoppingCartItem/ShoppingCartItem";
 import BuyerData from "../Components/BuyerDetailsForm/BuyerDetailsForm";
 import ShoppingCartFinish from "../Components/ShoppingCartFinish/ShoppingCartFinish"; // Importação correta
-import './CheckoutShippingPage.css'
+import '../Pages/Style/CheckoutShippingPage.css'
 
 const CheckoutShippingPage: React.FC = () => {
     const [cartItems, setCartItems] = useState<any[]>([]);
@@ -57,7 +57,7 @@ const CheckoutShippingPage: React.FC = () => {
     };
 
     const handleFinalizePurchase = () => {
-        navigate("/customer-area");
+        navigate("/verifying-payment");
     };
     const totalAmount = cartItems.reduce((total, item) => {
         return total + parseFloat(item.discountPrice.replace('R$', '').replace(',', '.')) * item.quantity;
@@ -68,7 +68,7 @@ const CheckoutShippingPage: React.FC = () => {
         <>
             <Header onSearch={handleSearch} />
             <main className="checkout-container">
-                <h1 className="checkout-title">Finalização da Compra</h1>
+                <h1 className="checkout-title">Confirmar Entrega</h1>
                 <section className="checkout-items">
                     {cartItems.map((item, index) => (
                         <ShoppingCartItem

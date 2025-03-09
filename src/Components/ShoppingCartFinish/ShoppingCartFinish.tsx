@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import CardIcon from '../../Assets/Img/credit-card.png';
 import PixIcon from '../../Assets/Img/pix-icon.png';
 import TruckDelivery from '../../Assets/Img/caminhao-de-entrega.png';
@@ -10,10 +11,13 @@ interface ShoppingCartFinishProps {
     showDelivery: boolean;
     handleCepChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
     handleCalculateClick: () => void;
+
 }
 
 const ShoppingCartFinish: React.FC<ShoppingCartFinishProps> = ({ cep, setCep, showDelivery, handleCepChange, handleCalculateClick }) => {
     const [selectedDelivery, setSelectedDelivery] = useState<string | null>(null);
+    
+    const navigate = useNavigate();
 
     // Recupera a opção de entrega do localStorage ao carregar a página
     useEffect(() => {
@@ -29,6 +33,9 @@ const ShoppingCartFinish: React.FC<ShoppingCartFinishProps> = ({ cep, setCep, sh
         localStorage.setItem("selectedDelivery", option);
     };
 
+    const handleFinalizePurchase = () => {
+        navigate("/verifying-payment");
+    };
     return (
         <div className="shopping-payment-method-finish">
             <div className="payment-options">
@@ -75,7 +82,7 @@ const ShoppingCartFinish: React.FC<ShoppingCartFinishProps> = ({ cep, setCep, sh
                     <img className='shopee-temple-finish' src={BuildingIcon} alt="Retirada na loja" />
                     <span className='shopee-temple-text-finish'>Indisponível para retirada nas lojas próximas.</span>
                 </div>
-                <button className='finalize-purchase-mobile'>Finalizar compra</button>
+                <button className='finalize-purchase-mobile' onClick={handleFinalizePurchase}>Ir para o forma de pagamento </button>
             </div>
         </div>
     );

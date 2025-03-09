@@ -137,8 +137,9 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
             </div>
 
             <div className="product-details">
-                <h1 className='inspection-name'>{name}</h1>
-
+                <div className="inspection-title">
+                    <h1 className='inspection-name'>{name}</h1>
+                </div>
                 {isMobile ? (
                     <ProductInspectCarousel
                         gallery={[image, ...gallery]}
@@ -161,106 +162,109 @@ const ProductInspect: React.FC<ProductInspectProps> = ({
                         </div>
                     </>
                 )}
-                <div className="product-iteration">
-                    <a
-                        href={`https://api.whatsapp.com/send?text=${encodeURIComponent('Confira este link: https://alfredo-allan.github.io/lojas-havan/')}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <div className="box-share">
-                            <img id='shareicon' src={ShareIcon} alt="Compartilhar" />
-                        </div>
-                        <span className='share-text'>Compartilhar</span>
-                    </a>
+                <div className="box-iteration">
+                    <div className="product-iteration">
+                        <a
+                            href={`https://api.whatsapp.com/send?text=${encodeURIComponent('Confira este link: https://alfredo-allan.github.io/lojas-havan/')}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="box-share">
+                                <img id='shareicon' src={ShareIcon} alt="Compartilhar" />
+                            </div>
+                            <span className='share-text'>Compartilhar</span>
+                        </a>
 
-                    <div className="box-heart-product" onClick={toggleLike} style={{ cursor: 'pointer' }}>
-                        <img id='hearticon' src={liked ? HeartProductLike : HeartProduct} alt="Curtir Produto" />
-                    </div>
-
-                    <span className='heart-product' >Adicionar à lista de desejos</span>
-                    <a
-                        href="#"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            const target = document.querySelector(".product-description");
-                            if (target) {
-                                target.scrollIntoView({ behavior: "smooth", block: "start" });
-                            }
-                        }}
-                    >
-                        <div className="box-description-list">
-                            <img id='descriptionicon' src={DescriptionListIco} alt="Descrição" />
-                        </div>
-                        <span className='description-link'>Detalhes</span>
-                    </a>
-
-                </div>
-                <div className="payment-information">
-                    <p className="discount-price-details" style={{ color: "var(--blue-color)", fontSize: "30px", marginLeft: "-6%" }}>
-                        {discountPrice}
-                    </p>
-                    <p className="installments-pi">Em até {installments}x de R$ {installment} sem juros</p>
-
-                    <div className="payment-options">
-                        <span className="payment-method">Opções de pagamento:</span>
-                        <button className="payment-button"><img src={CardIcon} alt="" /> Cartão de Crédito</button>
-                        <button className="payment-button"><img src={PixIcon} alt="" /> Pix</button>
-                    </div>
-
-                    <div className="quantity-selector">
-                        <span className="quantity">Escolha a quantidade:</span>
-                        <button onClick={decreaseQuantity}>-</button>
-                        <span className='numeral-indicator'>{quantity}</span>
-                        <button onClick={increaseQuantity}>+</button>
-                    </div>
-
-                    <div className="buy-buttons">
-                        <button className="buy-button" onClick={handleBuyNow}>Comprar Agora</button>
-                        <button className="add-to-cart-button" onClick={handleAddToCart}>Adicionar ao Carrinho</button>
-                    </div>
-
-                    <div className="shipping-calculator  with-delivery">
-                        <span id='shipping-deadline'>Calcule o valor do frete e prazo de entrega</span>
-                        <img className='truck-delivery' src={TruckDelivery} alt="" />
-                        <input
-                            type="text"
-                            placeholder="Digite o CEP"
-                            value={cep}
-                            onChange={handleCepChange}
-                            maxLength={9}
-                        />
-                        <button onClick={handleCalculateClick}>Calcular</button>
-
-                        <div className="delivery-condition">
-                            <img className='calendar' src={CheckedCalendar} alt="" />
-                            <span className="descripition-delivery">Os prazos de entrega começam a contar a partir da confirmação de pagamento!</span>
+                        <div className="box-heart-product" onClick={toggleLike} style={{ cursor: 'pointer' }}>
+                            <img id='hearticon' src={liked ? HeartProductLike : HeartProduct} alt="Curtir Produto" />
                         </div>
 
-                        {showDelivery && (
-                            <>
-                                <div className="delivery-time">
-                                    <h2 className='title-time'>Entrega</h2>
-                                    <hr className="title-divider" />
-                                    <img id='truck-green' src={TruckDeliveryGreen} alt="" />
-                                    <b className='standard-delivery'>Entrega Padrão</b>
-                                    <p className='p-time'>Em até 2 dias úteis <b>R$ 10,99</b></p>
-                                    <hr className="title-divider" />
-                                    <img id='truck-green' src={TruckDeliveryGreen} alt="" />
-                                    <b className='standard-delivery'>Entrega Expressa</b>
-                                    <p className='p-time'>Em até 1 dia útil <b>R$ 20,99</b></p>
-                                </div>
+                        <span className='heart-product' >Adicionar à lista de desejos</span>
+                        <a
+                            href="#"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                const target = document.querySelector(".product-description");
+                                if (target) {
+                                    target.scrollIntoView({ behavior: "smooth", block: "start" });
+                                }
+                            }}
+                        >
+                            <div className="box-description-list">
+                                <img id='descriptionicon' src={DescriptionListIco} alt="Descrição" />
+                            </div>
+                            <span className='description-link'>Detalhes</span>
+                        </a>
 
-                                <div className="delivery-time">
-                                    <h2 className='title-time'>Retire em loja</h2>
-                                    <hr className="title-divider" />
-                                    <img id='building' src={BuildingIcon} alt="" />
-                                    <b className='availability'>Produto indisponível para retirada nas lojas próximas à localidade informada.</b>
-                                </div>
-                            </>
-                        )}
                     </div>
                 </div>
+                <div className="box-payment-information">
+                    <div className="payment-information">
+                        <p className="discount-price-details" style={{ color: "var(--blue-color)", fontSize: "30px", marginLeft: "-6%" }}>
+                            {discountPrice}
+                        </p>
+                        <p className="installments-pi">Em até {installments}x de R$ {installment} sem juros</p>
 
+                        <div className="payment-options">
+                            <span className="payment-method">Opções de pagamento:</span>
+                            <button className="payment-button"><img src={CardIcon} alt="" /> Cartão de Crédito</button>
+                            <button className="payment-button"><img src={PixIcon} alt="" /> Pix</button>
+                        </div>
+
+                        <div className="quantity-selector">
+                            <span className="quantity">Escolha a quantidade:</span>
+                            <button onClick={decreaseQuantity}>-</button>
+                            <span className='numeral-indicator'>{quantity}</span>
+                            <button onClick={increaseQuantity}>+</button>
+                        </div>
+
+                        <div className="buy-buttons">
+                            <button className="buy-button" onClick={handleBuyNow}>Comprar Agora</button>
+                            <button className="add-to-cart-button" onClick={handleAddToCart}>Adicionar ao Carrinho</button>
+                        </div>
+
+                        <div className="shipping-calculator  with-delivery">
+                            <span id='shipping-deadline'>Calcule o valor do frete e prazo de entrega</span>
+                            <img className='truck-delivery' src={TruckDelivery} alt="" />
+                            <input
+                                type="text"
+                                placeholder="Digite o CEP"
+                                value={cep}
+                                onChange={handleCepChange}
+                                maxLength={9}
+                            />
+                            <button onClick={handleCalculateClick}>Calcular</button>
+
+                            <div className="delivery-condition">
+                                <img className='calendar' src={CheckedCalendar} alt="" />
+                                <span className="descripition-delivery">Os prazos de entrega começam a contar a partir da confirmação de pagamento!</span>
+                            </div>
+
+                            {showDelivery && (
+                                <>
+                                    <div className="delivery-time">
+                                        <h2 className='title-time'>Entrega</h2>
+                                        <hr className="title-divider" />
+                                        <img id='truck-green' src={TruckDeliveryGreen} alt="" />
+                                        <b className='standard-delivery'>Entrega Padrão</b>
+                                        <p className='p-time'>Em até 2 dias úteis <b>R$ 10,99</b></p>
+                                        <hr className="title-divider" />
+                                        <img id='truck-green' src={TruckDeliveryGreen} alt="" />
+                                        <b className='standard-delivery'>Entrega Expressa</b>
+                                        <p className='p-time'>Em até 1 dia útil <b>R$ 20,99</b></p>
+                                    </div>
+
+                                    <div className="delivery-time">
+                                        <h2 className='title-time'>Retire em loja</h2>
+                                        <hr className="title-divider" />
+                                        <img id='building' src={BuildingIcon} alt="" />
+                                        <b className='availability'>Produto indisponível para retirada nas lojas próximas à localidade informada.</b>
+                                    </div>
+                                </>
+                            )}
+                        </div>
+                    </div>
+                </div>
                 <div className={`product-description ${showDelivery ? "with-delivery" : ""}`}>
                     <h4 className='title-box-decription'>Detalhes</h4>
                     {description.map((section, index) => (

@@ -92,7 +92,7 @@ const LoginOrRegister: React.FC<LoginOrRegisterProps> = ({ isOpen, onClose }) =>
                     <Modal.Title>Login ou Cadastro</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div className="row">
+                    <div className="row custom-modal-register">
                         <div className="col-md-6 border-end">
                             <h2>Não tem uma conta?</h2>
                             <p>Criando uma conta você tem muitos benefícios:</p>

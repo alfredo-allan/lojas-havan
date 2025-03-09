@@ -258,7 +258,7 @@
   }
   .cart-item-price {
     font-size: 17px;
-    margin: -13% 33%;
+    margin: -13% 30%;
     text-wrap-mode: nowrap;
   }
   .cart-item-image {
@@ -281,7 +281,7 @@
     font-size: 21px;
     font-weight: bold;
     margin-left: 3%;
-    margin-top: 25%;
+    margin-top: 26%;
     position: relative;
   }
   .space-footer {
@@ -400,4 +400,3 @@
   transform: scale(0.95); /* Dá um efeito de "pressionado" */
   background-color: rgba(0, 100, 0, 0.5); /* Cor mais escura ao clicar */
 }
-

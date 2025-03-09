@@ -85,7 +85,7 @@ input[type="radio"]:checked + label.custom-radio {
 }
 
 .shopping-payment-method-finish {
-  margin-top: 50px;
+  margin-top: -89px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -106,32 +106,32 @@ input[type="radio"]:checked + label.custom-radio {
 .delivery-options-finish {
   display: grid;
   justify-content: center;
-  height: auto;
   border: 1px solid var(--card--edge-color);
   padding: 12px;
-  margin-top: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  margin-top: 13px;
   position: relative;
   width: 499px;
-  height: 430px;
+  height: 340px;
 }
 
 .shopping-cart-finish {
   width: 615px;
   height: 730px;
-  position: relative;
   margin-left: 27vh;
   margin-top: 44px;
   background-color: white;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  direction: initial;
 }
 
 .divider-shopping-finish {
   width: 497px;
   margin-top: 10px;
   margin-bottom: 20px;
-  color: var(--blue-color);
+  color: gray;
 }
 
 .shopee-temple-text-finish {
@@ -199,12 +199,12 @@ input[type="radio"]:checked + label.custom-radio {
   .shopping-payment-method-finish {
     width: 100%;
     margin-left: 0px;
-    margin-top: 32px;
+    margin-top: -3%;
     height: 573px;
   }
   .delivery-options-finish {
-    width: 100%;
-    margin-left: 0px;
+    width: 95%;
+    margin-left: 9px;
     position: relative;
   }
   .delivery-options-text-finish {
@@ -218,22 +218,21 @@ input[type="radio"]:checked + label.custom-radio {
     margin-left: -32px;
   }
   .blue-shopping-truck-finish {
-    margin-left: -81%;
+    margin-left: -93%;
   }
   .blue-shopping-truck-text {
     font-size: small;
-    margin-left: -14%;
+    margin-left: -25%;
   }
   .custom-radio {
-    margin-left: 62%;
+    margin-left: 56%;
     margin-top: 9px;
   }
   .divider-shopping-finish {
-    width: 116%;
+    width: 100%;
     justify-content: left;
     display: flex;
-    margin-left: 0;
-    margin: 0% -8%;
+    margin: 0;
   }
   .shopee-temple-text-finish {
     font-size: small;
@@ -241,7 +240,7 @@ input[type="radio"]:checked + label.custom-radio {
     margin-left: 18%;
   }
   .shopee-temple-finish {
-    margin-left: -82%;
+    margin-left: -93%;
   }
   .finalize-purchase-finish {
     width: 380px;

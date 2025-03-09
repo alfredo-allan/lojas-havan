@@ -108,6 +108,7 @@ input:focus {
     margin-right: 4%;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    margin-top: 0%;
   }
   #Carrinho {
     cursor: pointer;
@@ -184,8 +185,8 @@ input:focus {
     margin: 0px 0px;
   }
   #Lupa {
-    margin-left: 62%;
-    margin-top: -40px;
+    margin-left: 60%;
+    margin-top: -10%;
     display: flex;
     justify-content: end;
   }
@@ -293,7 +294,7 @@ input:focus {
     padding: 12px 0px;
   }
   .icon-container {
-    margin-top: -55px;
+    margin-top: -14%;
     margin-left: 75%;
   }
 }

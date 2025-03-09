@@ -41,7 +41,7 @@ const BuyerDetailsForm: React.FC = () => {
                         <Col md={9}>
                             <Form.Group controlId="address">
                                 <Form.Label>Endereço *</Form.Label>
-                                <Form.Control type="text" placeholder="Rua das Crianças" disabled />
+                                <Form.Control type="text" placeholder="Digite a rua" required />
                             </Form.Group>
                         </Col>
                         <Col md={3}>
@@ -63,7 +63,7 @@ const BuyerDetailsForm: React.FC = () => {
                         <Col md={6}>
                             <Form.Group controlId="neighborhood">
                                 <Form.Label>Bairro *</Form.Label>
-                                <Form.Control type="text" placeholder="Sacomã" disabled />
+                                <Form.Control type="text" placeholder="Bairro" required />
                             </Form.Group>
                         </Col>
                     </Row>
@@ -72,13 +72,13 @@ const BuyerDetailsForm: React.FC = () => {
                         <Col md={6}>
                             <Form.Group controlId="city">
                                 <Form.Label>Cidade *</Form.Label>
-                                <Form.Control type="text" placeholder="São Paulo" disabled />
+                                <Form.Control type="text" placeholder="Cidade" required />
                             </Form.Group>
                         </Col>
                         <Col md={6}>
                             <Form.Group controlId="state">
                                 <Form.Label>Estado *</Form.Label>
-                                <Form.Control type="text" placeholder="São Paulo" disabled />
+                                <Form.Control type="text" placeholder="Ex..São Paulo" required />
                             </Form.Group>
                         </Col>
                     </Row>
