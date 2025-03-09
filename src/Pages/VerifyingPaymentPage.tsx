@@ -70,34 +70,36 @@ const VerifyingPaymentPage: React.FC = () => {
 
 
                 <section className='order-summary-page'>
-                    <div className="order-sumamary-title">
-                        <h1 className='order-summary-modal-title'> Resumo do Pedido</h1>
-                        <h3 className="order-summary-text">
-                            Subtotal:
-                            <span className="cart-value">R$ {totalAmount.toFixed(2)}</span>
-                        </h3>
+                    <div className='order-summary-box'>
+                        <div className="order-sumamary-title">
+                            <h1 className='order-summary-modal-title'> Resumo do Pedido</h1>
+                            <h3 className="order-summary-text">
+                                Subtotal:
+                                <span className="cart-value">R$ {totalAmount.toFixed(2)}</span>
+                            </h3>
 
-                        <h3 className="order-summary-text">
-                            Entrega ({selectedDelivery ? selectedDelivery.charAt(0).toUpperCase() + selectedDelivery.slice(1) : "Não selecionada"}):
-                            <span className="cart-value">R$ {deliveryCost.toFixed(2)}</span>
-                        </h3>
+                            <h3 className="order-summary-text">
+                                Entrega ({selectedDelivery ? selectedDelivery.charAt(0).toUpperCase() + selectedDelivery.slice(1) : "Não selecionada"}):
+                                <span className="cart-value">R$ {deliveryCost.toFixed(2)}</span>
+                            </h3>
+                        </div>
+                        <section className="verifying-card">
+                            {cartItems.map((item, index) => (
+                                <ShoppingCartItem
+                                    key={index}
+                                    item={item}
+                                    index={index}
+                                    onIncrease={handleIncrease}
+                                    onDecrease={handleDecrease}
+                                    onRemove={handleRemove}
+                                />
+                            ))}
+                        </section>
+
+                        <section className='cart-value-verifying'>
+                            <h2 className='cart-value'>Total Final: R$ {(totalAmount + deliveryCost).toFixed(2)}</h2>
+                        </section>
                     </div>
-                    <section className="verifying-card">
-                        {cartItems.map((item, index) => (
-                            <ShoppingCartItem
-                                key={index}
-                                item={item}
-                                index={index}
-                                onIncrease={handleIncrease}
-                                onDecrease={handleDecrease}
-                                onRemove={handleRemove}
-                            />
-                        ))}
-                    </section>
-
-                    <section className='cart-value-verifying'>
-                        <h2 className='cart-value'>Total Final: R$ {(totalAmount + deliveryCost).toFixed(2)}</h2>
-                    </section>
                 </section>
 
                 <section className="buyer-data-verifying"> {/* quero inserir o modal de pix ou cartão abaixo desse ok ? */}

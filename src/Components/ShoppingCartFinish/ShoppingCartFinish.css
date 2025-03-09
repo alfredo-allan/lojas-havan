@@ -185,6 +185,10 @@ input[type="radio"]:checked + label.custom-radio {
   margin-top: 36%;
 }
 
+.container.mt-4.custom-modal-data-user {
+  margin-top: 755px !important;
+}
+
 /* Resposividade mobile */
 @media (max-width: 768px) {
   .p-4.rounded.shadow-sm.bg-white {

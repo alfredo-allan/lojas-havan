@@ -109,8 +109,8 @@
   background-color: var(--card--edge-color) !important;
   color: var(--blue-color) !important;
 }
-.container.mt-4.custom-modal-data-user {
-  margin-top: 36% !important;
+.order-summary-box {
+  margin-top: 34px;
 }
 
 @media (max-width: 768px) {
@@ -129,11 +129,13 @@
     margin-left: 3%;
     display: grid;
     height: 100vh;
+    margin-bottom: -140%;
   }
   .verifying-card {
     width: 100%;
     margin-left: -3%;
-    margin-top: -20%;
+    margin-top: -25%;
+    margin-bottom: 35%;
   }
   .cart-value-verifying {
     margin-left: 48%;
